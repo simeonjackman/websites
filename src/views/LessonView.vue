@@ -1,19 +1,21 @@
 <script setup>
 import { computed } from 'vue'
-import { useRoute, RouterLink } from 'vue-router'
+import { RouterLink } from 'vue-router'
 import { findLessonBySlug } from '../data/siteNavigation'
 
-const route = useRoute()
+const props = defineProps({
+  sectionSlug: {
+    type: String,
+    required: true,
+  },
+  lessonSlug: {
+    type: String,
+    required: true,
+  },
+})
 
 const content = computed(() => {
-  const sectionSlug = route.params.sectionSlug
-  const lessonSlug = route.params.lessonSlug
-
-  if (typeof sectionSlug !== 'string' || typeof lessonSlug !== 'string') {
-    return null
-  }
-
-  return findLessonBySlug(sectionSlug, lessonSlug)
+  return findLessonBySlug(props.sectionSlug, props.lessonSlug)
 })
 </script>
 

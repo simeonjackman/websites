@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { findSectionBySlug } from '../data/siteNavigation'
 
 const props = defineProps({
@@ -11,11 +11,14 @@ const props = defineProps({
 })
 
 const section = computed(() => findSectionBySlug(props.sectionSlug))
+const route = useRoute()
+
+const isLessonRoute = computed(() => typeof route.params.lessonSlug === 'string')
 </script>
 
 <template>
   <section v-if="section" class="page stack">
-    <section class="hero">
+    <section v-if="!isLessonRoute" class="hero">
       <div class="hero-grid">
         <div>
           <p class="kicker">{{ section.label }}</p>
@@ -54,7 +57,7 @@ const section = computed(() => findSectionBySlug(props.sectionSlug))
       </div>
     </section>
 
-    <section class="section-grid">
+    <section v-if="!isLessonRoute" class="section-grid">
       <article v-for="lesson in section.lessons" :key="lesson.slug" class="card">
         <h3>{{ lesson.title }}</h3>
         <p>{{ lesson.summary }}</p>
@@ -62,7 +65,7 @@ const section = computed(() => findSectionBySlug(props.sectionSlug))
       </article>
     </section>
 
-    <section class="panel">
+    <section v-if="!isLessonRoute" class="panel">
       <p class="kicker">Nächster Schritt</p>
       <h2>Öffne eine Unterseite, um das Thema im Detail zu lesen.</h2>
     </section>

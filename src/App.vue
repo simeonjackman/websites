@@ -1,17 +1,22 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { sections } from './data/siteNavigation'
 
 const route = useRoute()
 
 const navigation = sections
+const menuOpen = ref(false)
 
 const activeSection = computed(() => {
   return navigation.find(
     (section) => route.path === section.path || route.path.startsWith(`${section.path}/`),
   )
 })
+
+function closeMenu() {
+  menuOpen.value = false
+}
 </script>
 
 <template>
@@ -20,21 +25,51 @@ const activeSection = computed(() => {
     <div class="ambient ambient-two"></div>
 
     <header class="topbar">
-      <nav class="nav-bar" aria-label="Primary navigation">
-        <RouterLink to="/" class="nav-pill" :class="{ active: route.path === '/' }">
+      <div class="topbar-row">
+        <RouterLink to="/" class="brand">
+          <span class="brand-mark">PA</span>
+          <span>
+            <strong>Website Blueprint</strong>
+            <small>Frontend-only starter guide</small>
+          </span>
+        </RouterLink>
+
+        <button
+          type="button"
+          class="burger-button"
+          :class="{ open: menuOpen }"
+          :aria-expanded="menuOpen"
+          aria-controls="mobile-nav"
+          aria-label="Navigation umschalten"
+          @click="menuOpen = !menuOpen"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="nav-bar" :class="{ open: menuOpen }" aria-label="Primary navigation">
+        <RouterLink to="/" class="nav-pill nav-home" :class="{ active: route.path === '/' }" @click="closeMenu">
           Startseite
         </RouterLink>
 
-        <div v-for="section in navigation" :key="section.slug" class="nav-dropdown-group">
-          <RouterLink :to="section.path" class="nav-pill nav-pill-main" :class="{ active: activeSection?.slug === section.slug }">
+        <article v-for="section in navigation" :key="section.slug" class="nav-section">
+          <RouterLink
+            :to="section.path"
+            class="nav-pill nav-section-title"
+            :class="{ active: activeSection?.slug === section.slug }"
+            @click="closeMenu"
+          >
             {{ section.label }}
           </RouterLink>
 
-          <div class="nav-dropdown" :aria-label="`Untermenü für ${section.label}`">
+          <div class="nav-section-items">
             <RouterLink
               :to="section.path"
               class="subnav-pill"
               :class="{ active: route.path === section.path }"
+              @click="closeMenu"
             >
               Übersicht
             </RouterLink>
@@ -44,11 +79,12 @@ const activeSection = computed(() => {
               :to="`${section.path}/${lesson.slug}`"
               class="subnav-pill"
               :class="{ active: route.path === `${section.path}/${lesson.slug}` }"
+              @click="closeMenu"
             >
               {{ lesson.title }}
             </RouterLink>
           </div>
-        </div>
+        </article>
       </nav>
     </header>
 
