@@ -29,7 +29,7 @@ function closeMenu() {
         <RouterLink to="/" class="brand">
           <img class="brand-mark" src="/favicon.ico" alt="" aria-hidden="true" />
           <span>
-            <strong>Webseiten Einführung</strong>
+            <strong>Webseiten Projekt</strong>
             <small>Starter Guide</small>
           </span>
         </RouterLink>

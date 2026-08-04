@@ -2,18 +2,6 @@
 import CodeExample from '../components/CodeExample.vue'
 import { sections } from '../data/siteNavigation'
 
-const htmlExample = `<!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Meine Webseite</title>
-  </head>
-  <body>
-    <h1>Hallo Welt</h1>
-    <p>Dies ist meine erste Webseite.</p>
-  </body>
-</html>`
-
 </script>
 
 <template>
@@ -21,45 +9,22 @@ const htmlExample = `<!doctype html>
     <section class="hero">
       <div class="hero-grid">
         <div>
-          <p class="kicker">Frontend-only Starter</p>
-          <h1>Kurze Einführung in Webseiten und ihren Aufbau.</h1>
-          <p class="lead">
-            Webseiten bestehen aus sichtbaren Inhalten, Struktur und Gestaltung. Diese Webseite
-            dient dazu, eine einfache Webseite mit HTML, CSS und JavaScript zu erstellen und die
-            Grundlagen dafür Schritt für Schritt zu erklären.
-          </p>
-          <div class="hero-actions">
-            <RouterLink :to="sections[0].path" class="cta">Zur ersten Rubrik</RouterLink>
-            <RouterLink :to="sections[1].path" class="ghost">Navigation ansehen</RouterLink>
-          </div>
+          <p class="kicker">Webseiten Projekt</p>
+          <h1>Übersicht</h1>
         </div>
-
         <div class="hero-aside">
           <div class="panel">
-            <h3>Was diese Vorlage enthält</h3>
-            <p>
-              Eine einfache Lernumgebung mit Seiten zu HTML, CSS, JavaScript und dem Aufbau einer
-              kleinen Website.
-            </p>
-            <div class="signature">
-              <span class="chip">Vue 3</span>
-              <span class="chip">Vite</span>
-              <span class="chip">Vue Router</span>
-              <span class="chip">Deutsch</span>
-            </div>
-          </div>
-          <div class="stats-grid">
-            <div class="metric">
-              <span>Rubriken</span>
-              <strong>{{ sections.length }}</strong>
-            </div>
-            <div class="metric">
-              <span>Unterseiten</span>
-              <strong>{{ sections.reduce((total, section) => total + section.lessons.length, 0) }}</strong>
-            </div>
-            <div class="metric">
-              <span>Backend</span>
-              <strong>0</strong>
+            <h3>Diese Webseite enthält:</h3>
+            <div class="stats-grid" style="margin-top: 1rem">
+              <div class="metric">
+                <span>Rubriken</span>
+                <strong>{{ sections.length }}</strong>
+              </div>
+              <div class="metric">
+                <span>Unterseiten</span>
+                <strong>{{sections.reduce((total, section) => total + section.lessons.length, 0)
+                }}</strong>
+              </div>
             </div>
           </div>
         </div>
@@ -87,14 +52,6 @@ const htmlExample = `<!doctype html>
           Die Inhalte bauen aufeinander auf und führen durch die Grundlagen, damit du eine einfache
           Webseite mit HTML, CSS und JavaScript erstellen kannst.
         </p>
-      </div>
-
-      <div style="margin-top: 1rem">
-        <CodeExample
-          title="Ein einfaches HTML-Grundgerüst"
-          language="html"
-          :code="htmlExample"
-        />
       </div>
     </section>
   </section>

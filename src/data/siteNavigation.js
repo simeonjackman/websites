@@ -1,61 +1,142 @@
 export const sections = [
   {
-    slug: 'einfuehrung',
-    label: 'Einführung',
-    path: '/einfuehrung',
-    summary: 'Die Grundlagen: wie Webseiten funktionieren, was installiert wird und wie VS Code hilft.',
+    slug: "einfuehrung",
+    label: "Einführung",
+    path: "/einfuehrung",
+    summary:
+        "Die Grundlagen der Webentwicklung",
+
     lessons: [
-      {
-        slug: 'wie-webseiten-funktionieren',
-        title: 'Wie Webseiten funktionieren',
-        summary: 'Browser laden Dateien, interpretieren HTML und bauen daraus eine sichtbare Seite.',
-        bullets: [
-          'Der Browser liest HTML, CSS und JavaScript.',
-          'Eine URL verweist auf eine Ressource im Web.',
-          'Statische Seiten brauchen nicht zwingend ein Backend.',
-        ],
-        hint: 'Jede Seite beginnt mit einer HTML-Datei.',
-        codeExample: {
-          title: 'Ein einfaches HTML-Grundgerüst',
-          language: 'html',
-          code:
-`<!doctype html>
+        {
+            slug: "wie-webseiten-funktionieren",
+            title: "Wie Webseiten funktionieren",
+
+            summary:
+                "Browser laden Dateien, interpretieren HTML, CSS und JavaScript und stellen daraus eine Webseite dar.",
+
+            text: `
+                Wenn du eine Internetadresse in deinen Browser eingibst, beginnt ein
+                mehrstufiger Prozess.
+
+                Zunächst fragt der Browser einen Server nach den benötigten Dateien.
+                Anschliessend werden HTML, CSS und JavaScript heruntergeladen.
+
+                HTML beschreibt die Struktur einer Seite. CSS kümmert sich um das
+                Aussehen. JavaScript sorgt für Interaktivität.
+
+                Der Browser kombiniert diese Informationen und stellt daraus die
+                fertige Webseite dar.
+`,
+
+            bullets: [
+                "Der Browser liest HTML, CSS und JavaScript.",
+                "Eine URL verweist auf eine Ressource im Internet.",
+                "HTML beschreibt die Struktur einer Webseite.",
+                "CSS gestaltet das Aussehen.",
+                "JavaScript erweitert die Funktionalität."
+            ],
+
+            hint: "Jede Webseite beginnt mit einer HTML-Datei.",
+
+            codeExample: {
+                title: "Ein einfaches HTML-Grundgerüst",
+                language: "html",
+                code: `<!doctype html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Meine Webseite</title>
-    </head>
-    <body>
-        <h1>Hallo Welt</h1>
-        <p>Dies ist meine erste Webseite.</p>
-    </body>
-</html>`,
+<head>
+    <meta charset="UTF-8">
+    <title>Meine Webseite</title>
+</head>
+<body>
+    <h1>Hallo Welt</h1>
+    <p>Dies ist meine erste Webseite.</p>
+</body>
+</html>`
+            },
+
+            exercise:
+                "Erstelle eine Webseite mit einer Überschrift und zwei Absätzen."
         },
-      },
-      {
-        slug: 'installation',
-        title: 'Installation',
-        summary: 'Für den Einstieg reichen ein Editor, ein Browser und ein lokaler Entwicklungsserver.',
-        bullets: [
-          'Installiere Node.js für moderne Frontend-Tools.',
-          'Nutze npm, pnpm oder yarn für Pakete.',
-          'Starte das Projekt im Browser mit einem Dev-Server.',
-        ],
-        hint: 'Für diese Vorlage genügt ein einfacher Vite-Start.',
-      },
-      {
-        slug: 'tipps-fuer-vscode',
-        title: 'Tipps für VS Code',
-        summary: 'Ein gut eingerichteter Editor spart Zeit und macht Fehler schneller sichtbar.',
-        bullets: [
-          'Aktiviere Formatierung beim Speichern.',
-          'Arbeite mit Dateibrowser, Suchfunktion und Split-Ansicht.',
-          'Nutze Extensions nur dort, wo sie echten Mehrwert bringen.',
-        ],
-        hint: 'Weniger Werkzeuge bedeuten oft klarere Arbeitsabläufe.',
-      },
-    ],
-  },
+
+        {
+            slug: "installation",
+            title: "Installation",
+
+            summary:
+                "Für moderne Webseiten werden ein Editor, ein Browser und einige Werkzeuge benötigt.",
+
+            text: `
+Professionelle Entwicklerinnen und Entwickler verwenden zahlreiche
+Werkzeuge, um ihre Arbeit zu vereinfachen.
+
+Für den Anfang genügen jedoch ein Browser, ein Editor und Node.js.
+Node.js ermöglicht die Verwendung moderner Werkzeuge wie Vite.
+
+Zusätzlich sollte Git installiert werden, damit Änderungen gespeichert
+und nachvollzogen werden können.
+`,
+
+            bullets: [
+                "Installiere Node.js.",
+                "Verwende VS Code als Editor.",
+                "Nutze npm oder pnpm.",
+                "Arbeite mit einem lokalen Entwicklungsserver."
+            ],
+
+            hint:
+                "Eine einfache Entwicklungsumgebung reicht für den Einstieg aus.",
+
+            codeExample: {
+                title: "Projekt mit Vite erstellen",
+                language: "bash",
+                code: `npm create vite@latest
+cd mein-projekt
+npm install
+npm run dev`
+            },
+
+            exercise:
+                "Installiere Node.js und starte dein erstes Projekt."
+        },
+
+        {
+            slug: "tipps-fuer-vscode",
+            title: "Tipps für VS Code",
+
+            summary:
+                "Eine gut eingerichtete Entwicklungsumgebung spart Zeit und vermeidet Fehler.",
+
+            text: `
+Visual Studio Code gehört zu den beliebtesten Editoren der Welt.
+
+Die Suchfunktion erleichtert das Finden von Dateien. Mit Erweiterungen
+lassen sich zusätzliche Funktionen integrieren.
+
+Besonders hilfreich sind automatische Formatierungen und eine
+integrierte Git-Unterstützung.
+`,
+
+            bullets: [
+                "Aktiviere die automatische Formatierung.",
+                "Lerne die wichtigsten Tastenkombinationen.",
+                "Nutze die integrierte Konsole.",
+                "Arbeite mit mehreren geöffneten Dateien."
+            ],
+
+            hint:
+                "Eine aufgeräumte Entwicklungsumgebung erhöht die Produktivität.",
+
+            codeExample: {
+                title: "Nützliche Tastenkombinationen (auf Mac cmd statt ctrl verwenden)",
+                language: "text",
+                code: `ctrl + S  → Speichern
+ctrl + C  → Kopieren
+ctrl + V  → Einfügen
+ctrl + F  → Suchen`
+            }
+        }
+    ]
+},
   {
     slug: 'git',
     label: 'Git',
@@ -89,11 +170,11 @@ export const sections = [
         title: 'Häufige Fehler',
         summary: 'Typische Git-Fehler entstehen durch fehlende Ordnung oder unklare Abläufe.',
         bullets: [
-          'Zu große Änderungen in einem Commit machen die Suche schwer.',
+          'Zu grosse Änderungen in einem Commit machen die Suche schwer.',
           'Unbedachte Branch-Wechsel können lokale Arbeiten durcheinanderbringen.',
           'Vergessene Dateien führen oft zu inkonsistenten Ständen.',
         ],
-        hint: 'Regelmäßiges Speichern und Committen reduziert Stress.',
+        hint: 'Regelmässiges Speichern und Committen reduziert Stress.',
       },
     ],
   },
@@ -150,7 +231,7 @@ export const sections = [
         summary: 'CSS entscheidet über Farbe, Abstand, Typografie und Layout.',
         bullets: [
           'Variablen vereinfachen ein konsistentes Farbsystem.',
-          'Abstände und Größe prägen die Lesbarkeit.',
+          'Abstände und Grösse prägen die Lesbarkeit.',
           'Ein Designsystem muss nicht kompliziert sein, um gut zu wirken.',
         ],
         hint: 'Wenige starke Regeln sind oft besser als viele Sonderfälle.',
@@ -169,7 +250,7 @@ export const sections = [
       {
         slug: 'css-box-modell',
         title: 'CSS Box Modell',
-        summary: 'Jedes Element besteht aus Inhalt, Innenabstand, Rahmen und Außenabstand.',
+        summary: 'Jedes Element besteht aus Inhalt, Innenabstand, Rahmen und Aussenabstand.',
         bullets: [
           'Padding schafft Luft im Element.',
           'Margin trennt Elemente voneinander.',
@@ -203,7 +284,7 @@ export const sections = [
         bullets: [
           'Blockelemente können mit Auto-Margins zentriert werden.',
           'Flexbox ist hilfreich für variable Layouts.',
-          'Die Größe des Bildes sollte zum verfügbaren Raum passen.',
+          'Die Grösse des Bildes sollte zum verfügbaren Raum passen.',
         ],
         hint: 'Zentrierung ist oft einfacher, wenn du den umgebenden Container kontrollierst.',
       },
@@ -235,7 +316,7 @@ export const sections = [
         summary: 'Bild und Text lassen sich in einer gemeinsamen Struktur gut kombinieren.',
         bullets: [
           'Raster oder Flexbox helfen bei der Aufteilung.',
-          'Die Reihenfolge sollte auf kleinen Bildschirmen gut umfließen können.',
+          'Die Reihenfolge sollte auf kleinen Bildschirmen gut umfliessen können.',
           'Abstände sind wichtiger als eine starre Aufteilung.',
         ],
         hint: 'Gute Komposition bleibt auch auf mobilen Geräten lesbar.',

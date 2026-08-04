@@ -28,6 +28,10 @@ const content = computed(() => {
       <p class="lead">{{ content.lesson.summary }}</p>
     </section>
 
+    <section class="panel">
+      <p class="">{{ content.lesson.text }}</p>
+    </section>
+
     <section class="analysis-grid">
       <article class="chart-box">
         <div class="summary-row">

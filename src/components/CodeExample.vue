@@ -10,7 +10,7 @@ const props = defineProps({
     type: String,
     default: 'html',
     validator(value) {
-      return ['html', 'css', 'javascript'].includes(value)
+      return ['html', 'css', 'javascript', 'bash', 'text'].includes(value)
     },
   },
   code: {
@@ -26,6 +26,8 @@ const languageLabels = {
   html: 'HTML',
   css: 'CSS',
   javascript: 'JavaScript',
+  bash: 'bash oder Powershell',
+  text: 'Text',
 }
 
 async function copyCode() {
@@ -57,7 +59,6 @@ onBeforeUnmount(() => {
   <section class="code-example">
     <div class="code-example__header">
       <div>
-        <p class="code-example__eyebrow">Beispiel</p>
         <h3 class="code-example__title">{{ props.title }}</h3>
       </div>
       <div class="code-example__actions">
