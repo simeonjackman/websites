@@ -66,14 +66,6 @@ function closeMenu() {
 
           <div class="nav-section-items">
             <RouterLink
-              :to="section.path"
-              class="subnav-pill"
-              :class="{ active: route.path === section.path }"
-              @click="closeMenu"
-            >
-              Übersicht
-            </RouterLink>
-            <RouterLink
               v-for="lesson in section.lessons"
               :key="lesson.slug"
               :to="`${section.path}/${lesson.slug}`"

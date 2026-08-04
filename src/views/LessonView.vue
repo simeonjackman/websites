@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import { findLessonBySlug } from '../data/siteNavigation'
+import CodeExample from '../components/CodeExample.vue'
 
 const props = defineProps({
   sectionSlug: {
@@ -39,6 +40,13 @@ const content = computed(() => {
         <ul class="chapter-list">
           <li v-for="point in content.lesson.bullets" :key="point">{{ point }}</li>
         </ul>
+
+        <CodeExample
+          v-if="content.lesson.codeExample"
+          :title="content.lesson.codeExample.title"
+          :language="content.lesson.codeExample.language"
+          :code="content.lesson.codeExample.code"
+        />
       </article>
 
       <aside class="detail-box">

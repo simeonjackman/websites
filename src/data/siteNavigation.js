@@ -15,6 +15,22 @@ export const sections = [
           'Statische Seiten brauchen nicht zwingend ein Backend.',
         ],
         hint: 'Jede Seite beginnt mit einer HTML-Datei.',
+        codeExample: {
+          title: 'Ein einfaches HTML-Grundgerüst',
+          language: 'html',
+          code:
+`<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Meine Webseite</title>
+    </head>
+    <body>
+        <h1>Hallo Welt</h1>
+        <p>Dies ist meine erste Webseite.</p>
+    </body>
+</html>`,
+        },
       },
       {
         slug: 'installation',
