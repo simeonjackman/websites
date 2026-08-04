@@ -27,10 +27,10 @@ function closeMenu() {
     <header class="topbar">
       <div class="topbar-row">
         <RouterLink to="/" class="brand">
-          <span class="brand-mark">PA</span>
+          <img class="brand-mark" src="/favicon.ico" alt="" aria-hidden="true" />
           <span>
-            <strong>Website Blueprint</strong>
-            <small>Frontend-only starter guide</small>
+            <strong>Webseiten Einführung</strong>
+            <small>Starter Guide</small>
           </span>
         </RouterLink>
 
