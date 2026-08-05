@@ -6,6 +6,10 @@ const props = defineProps({
     type: String,
     default: 'Code Example',
   },
+  filename: {
+    type: String,
+    default: '',
+  },
   language: {
     type: String,
     default: 'html',
@@ -60,10 +64,11 @@ onBeforeUnmount(() => {
     <div class="code-example__header">
       <div>
         <h3 class="code-example__title">{{ props.title }}</h3>
+        <p v-if="props.filename" class="code-example__filename">{{ props.filename }}</p>
       </div>
       <div class="code-example__actions">
         <span class="code-example__language">{{ languageLabels[props.language] }}</span>
-        <button class="code-example__copy" type="button" @click="copyCode">
+        <button class="code-example__copy" type="button" @click="copyCode" :aria-live="'polite'">
           {{ copied ? 'Kopiert' : 'Kopieren' }}
         </button>
       </div>
@@ -110,6 +115,13 @@ onBeforeUnmount(() => {
 .code-example__title {
   margin: 0;
   font-size: 1.05rem;
+}
+
+.code-example__filename {
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: 'SFMono-Regular', 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
 }
 
 .code-example__language {

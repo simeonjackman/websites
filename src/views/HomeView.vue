@@ -1,7 +1,6 @@
 <script setup>
-import CodeExample from '../components/CodeExample.vue'
+import { RouterLink } from 'vue-router'
 import { sections } from '../data/siteNavigation'
-
 </script>
 
 <template>
@@ -22,8 +21,7 @@ import { sections } from '../data/siteNavigation'
               </div>
               <div class="metric">
                 <span>Unterseiten</span>
-                <strong>{{sections.reduce((total, section) => total + section.lessons.length, 0)
-                }}</strong>
+                <strong>{{ sections.reduce((total, section) => total + section.lessons.length, 0) }}</strong>
               </div>
             </div>
           </div>
