@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -22,13 +23,13 @@ import CodeExample from '../../../components/CodeExample.vue'
     <template #intro>
       <p>
         Ein Layout entscheidet darüber, wie deine Inhalte angeordnet sind und
-        wie sie wirken. Mit CSS Grid und Flexbox hast du zwei starke Werkzeuge,
+        wie sie wirken. Mit CSS <Term term="Grid" def="Grid ist ein CSS-System, um Elemente in Zeilen und Spalten anzuordnen." /> und <Term term="Flexbox" def="Flexbox ist eine CSS-Methode, um Elemente in einer Reihe flexibel anzuordnen." /> hast du zwei starke Werkzeuge,
         um Struktur in deine Seite zu bringen.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="grid-mehrdimensionale-strukturen" title="1. Grid für mehrdimensionale Strukturen">
+      <LessonStep slug="grid-mehrdimensionale-strukturen" title="Grid für mehrdimensionale Strukturen">
         <p>
           CSS Grid eignet sich, wenn du Zeilen und Spalten gleichzeitig
           kontrollieren möchtest – etwa für ein Kartenraster.
@@ -41,7 +42,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="flexbox-fuer-eine-richtung" title="2. Flexbox für eine Richtung">
+      <LessonStep slug="flexbox-fuer-eine-richtung" title="Flexbox für eine Richtung">
         <p>
           Stellst du nur eine Richtung in den Vordergrund, ist Flexbox oft die
           flexiblere Wahl. Deine Elemente verteilen sich dabei ohne feste
@@ -55,7 +56,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="mobile-first-verschachteln" title="3. Mobile-First und verschachtelte Strukturen">
+      <LessonStep slug="mobile-first-verschachteln" title="Mobile-First und verschachtelte Strukturen">
         <p>
           Beginne mit einer schlanken Grundstruktur und baue sie auf grösseren
           Bildschirmen weiter aus. So bleibt das Layout auch auf dem Handy
@@ -74,7 +75,7 @@ import CodeExample from '../../../components/CodeExample.vue'
       <ul class="lesson-list">
         <li>Grid eignet sich für mehrdimensionale Strukturen.</li>
         <li>Flexbox ist stark für eine Richtung mit flexiblen Elementen.</li>
-        <li>Mobile-First hilft dabei, die Struktur schlank zu halten.</li>
+        <li><Term term="Mobile-First" def="Mobile-First bedeutet, das Layout zuerst für kleine Bildschirme zu entwerfen und später zu erweitern." /> hilft dabei, die Struktur schlank zu halten.</li>
       </ul>
       <p class="lesson-tip">Ein gutes Layout erklärt sich fast von selbst.</p>
     </template>

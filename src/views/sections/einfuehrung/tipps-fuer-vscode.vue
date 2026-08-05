@@ -1,7 +1,8 @@
 <script setup>
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
-import CodeExample from '../../../components/CodeExample.vue'
+import Shortcut from '../../../components/Shortcut.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -21,50 +22,44 @@ import CodeExample from '../../../components/CodeExample.vue'
 
     <template #intro>
       <p>
-        Visual Studio Code gehört zu den beliebtesten Editoren der Welt. Die
-        Suchfunktion erleichtert das Finden von Dateien. Mit Erweiterungen lassen
-        sich zusätzliche Funktionen integrieren.
+        Visual Studio Code gehört zu den beliebtesten
+        <Term term="Editoren" def="Programme, in denen du Code schreibst und bearbeitest." />.
+        Auf dem Mac benutzt du <strong>cmd</strong>, auf Windows <strong>ctrl</strong> –
+        alle Tastenkombinationen unten passen sich automatisch an dein
+        <Term term="Betriebssystem" def="Das Grundprogramm deines Computers, z. B. Windows oder macOS." /> an.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="suchen-und-springen" title="1. Suchen und Springen">
+      <LessonStep slug="suchen-und-springen" title="Suchen und Springen">
         <p>
-          Mit <code>cmd + P</code> (Mac) beziehungsweise <code>ctrl + P</code>
-          (Windows) kannst du jede Datei im Projekt sofort öffnen – ohne durch
-          Ordner zu klicken.
+          Mit einer Tastenkombination öffnest du jede Datei im Projekt sofort –
+          ohne durch Ordner zu klicken.
         </p>
-        <ul class="lesson-list">
-          <li>Die Suchfunktion findet Dateien in Sekunden.</li>
-          <li>Arbeite mit mehreren geöffneten Dateien.</li>
-          <li>Nutze die integrierte Konsole unter <code>ctrl + ö</code>.</li>
-        </ul>
+        <Shortcut label="Datei öffnen" :keys="['mod', 'P']" />
+        <Shortcut label="Suchen im Projekt" :keys="['mod', 'shift', 'F']" />
+        <p>Auch die integrierte Konsole lässt sich direkt öffnen:</p>
+        <Shortcut label="Integriertes Terminal öffnen" :keys="['mod', 'ö']" />
       </LessonStep>
 
-      <LessonStep slug="formatierung-aktivieren" title="2. Automatische Formatierung">
+      <LessonStep slug="formatierung-aktivieren" title="Automatische Formatierung">
         <p>
-          Besonders hilfreich sind automatische Formatierungen. Deaktiviere die
-          automatische Speicherung, damit nicht jede Datei sofort verändert wird,
-          und aktiviere „Format On Save", um deinen Code beim Speichern sauber zu
-          formatieren.
+          Besonders hilfreich sind automatische Formatierungen. Damit dein Code
+          beim Speichern sauber ausgerichtet wird, öffnest du die Einstellungen
+          und aktivierst <strong>Format On Save</strong>.
         </p>
-        <p>
-          In den Einstellungen (<code>cmd + ,</code>) unter <em>Editor › Formatting</em>
-          findest du die Option <strong>Format On Save</strong>.
-        </p>
+        <Shortcut label="Einstellungen öffnen" :keys="['mod', ',']" />
+        <Shortcut label="Dokument manuell formatieren" :keys="['shift', 'alt', 'F']" />
       </LessonStep>
 
-      <LessonStep slug="tastenkombinationen" title="3. Die wichtigsten Tastenkombinationen">
+      <LessonStep slug="tastenkombinationen" title="Die wichtigsten Befehle">
         <p>
-          Kurzbefehle sparen viel Zeit. Die häufigsten findest du hier – auf dem
-          Mac nimmst du <code>cmd</code> statt <code>ctrl</code>.
+          Jede Tastenkombination ist einzeln kopierbar – so kannst du sie direkt
+          im <Term term="Terminal" def="Ein Fenster, in dem du Befehle an deinen Computer schreibst." /> verwenden.
         </p>
-        <CodeExample
-          title="Nützliche Tastenkombinationen"
-          language="text"
-          filename="shortcuts.txt"
-          :code="`ctrl + S  → Speichern\nctrl + C  → Kopieren\nctrl + V  → Einfügen\nctrl + F  → Suchen\ncmd  + P  → Datei öffnen\nctrl + Z  → Rückgängig`"
-        />
+        <Shortcut label="Speichern" :keys="['mod', 'S']" />
+        <Shortcut label="Rückgängig machen" :keys="['mod', 'Z']" />
+        <Shortcut label="Zeile duplizieren" :keys="['shift', 'alt', '↓']" />
       </LessonStep>
     </template>
 
@@ -80,9 +75,9 @@ import CodeExample from '../../../components/CodeExample.vue'
 
     <template #exercise>
       <p>
-        Erstelle ein neues Projekt, öffne eine Datei über die Schnellsuche und
-        formatiere sie mit <code>shift + alt + F</code>. Prüfe, ob Format On Save
-        aktiviert ist.
+        Öffne über die Schnellsuche eine Datei, formatiere sie mit
+        <Shortcut label="Dokument formatieren" :keys="['shift', 'alt', 'F']" />
+        und überprüfe, ob <em>Format On Save</em> in den Einstellungen aktiviert ist.
       </p>
     </template>
   </LessonScaffold>

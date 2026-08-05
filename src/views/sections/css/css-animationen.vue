@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -13,7 +14,7 @@ import CodeExample from '../../../components/CodeExample.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kennst die Grundlagen von Übergängen und Keyframes.</li>
+        <li>Du kennst die Grundlagen von <Term term="Übergang" def="Ein Übergang, auch Transition genannt, lässt eine Eigenschaft weich zwischen zwei Zuständen wechseln." /> und <Term term="Keyframe" def="Ein Keyframe gibt den Zustand einer Animation zu einem bestimmten Zeitpunkt vor." />.</li>
         <li>Du kannst eine Transition auf eine Zustandsänderung anwenden.</li>
         <li>Du weisst, wie du Bewegung dezent und sinnvoll einsetzt.</li>
       </ul>
@@ -28,7 +29,7 @@ import CodeExample from '../../../components/CodeExample.vue'
     </template>
 
     <template #steps>
-      <LessonStep slug="uebergaenge" title="1. Sanfte Übergänge mit transition">
+      <LessonStep slug="uebergaenge" title="Sanfte Übergänge mit transition">
         <p>
           Mit <code>transition</code> läuft eine Eigenschaft weich von einem Wert
           zum anderen, statt abrupt zu springen. Kleine, kurze Übergänge wirken
@@ -42,7 +43,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="keyframes" title="2. Bewegungen mit @keyframes">
+      <LessonStep slug="keyframes" title="Bewegungen mit @keyframes">
         <p>
           Soll etwas von allein laufen oder sich in mehr als zwei Zuständen
           bewegen, beschreibst du mit <code>@keyframes</code> eine Abfolge und
@@ -56,7 +57,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="sparsam-einsetzen" title="3. Animation als Akzent einsetzen">
+      <LessonStep slug="sparsam-einsetzen" title="Animation als Akzent einsetzen">
         <p>
           Bewegung sollte eine Funktion haben – Orientierung, Aufmerksamkeit,
           Bestätigung. Wer die ganze Seite animiert, lenkt den Blick von dem ab,
@@ -65,7 +66,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         <ul class="lesson-list">
           <li>Kleine Übergänge wirken oft natürlicher als harte Sprünge.</li>
           <li>Bewegung sollte eine Funktion haben, nicht nur Dekoration sein.</li>
-          <li>Zu viel Animation lenkt vom Inhalt ab.</li>
+          <li>Zu viel <Term term="Animation" def="Eine Animation bewegt ein Element automatisch, etwa durch Einblenden oder Verschieben." /> lenkt vom Inhalt ab.</li>
         </ul>
       </LessonStep>
     </template>

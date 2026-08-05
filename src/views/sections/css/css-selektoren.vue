@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -21,14 +22,14 @@ import CodeExample from '../../../components/CodeExample.vue'
 
     <template #intro>
       <p>
-        Bevor eine Regel Wirkung zeigt, muss CSS wissen, welche Elemente
-        gemeint sind. Genau dafür gibt es Selektoren – sie sind das Bindeglied
+        Bevor eine <Term term="Regel" def="Eine CSS-Regel legt fest, wie bestimmte Elemente auf einer Webseite gestaltet werden." /> Wirkung zeigt, muss CSS wissen, welche Elemente
+          gemeint sind. Genau dafür gibt es <Term term="Selektoren" def="Ein Selektor bestimmt, auf welche Elemente eine CSS-Regel angewendet wird." /> – sie sind das Bindeglied
         zwischen HTML und Gestaltung.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="die-grundtypen" title="1. Element, Klasse und ID">
+      <LessonStep slug="die-grundtypen" title="Element, Klasse und ID">
         <p>
           Der einfachste Selektor zielt direkt auf einen Elementtyp.
           Klassen sprechen einzelne Bausteine an, IDs genau ein Element auf
@@ -42,10 +43,10 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="nachfahren-vs-kind" title="2. Nachfahren und direkte Kinder">
+      <LessonStep slug="nachfahren-vs-kind" title="Nachfahren und direkte Kinder">
         <p>
           Mit zwei Leerzeichen triffst du jeden Nachfahren, egal wie tief er
-          verschachtelt ist. Mit <code>></code> wählst du nur direkte Kinder.
+          verschachtelt ist. Mit <code>></code> wählst du nur direkte <Term term="Kind" def="Ein Kind ist ein Element, das direkt in einem anderen Element liegt, ohne Zwischenelemente." />.
           Das erste ist flexibel, das zweite präziser.
         </p>
         <CodeExample
@@ -56,9 +57,9 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="einfach-wahl" title="3. Wähle die einfachste Lösung">
+      <LessonStep slug="einfach-wahl" title="Wähle die einfachste Lösung">
         <p>
-          Lange Verschachtelungen werden schnell unübersichtlich. Oft genügt
+          Lange <Term term="Verschachtelung" def="Verschachtelung bedeutet, dass Elemente ineinander liegen, ähnlich wie ineinander geschachtelte Schachteln." />en werden schnell unübersichtlich. Oft genügt
           eine Klasse, die den Zweck klar benennt – das hält Regeln verständlich
           und wartbar.
         </p>

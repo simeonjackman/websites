@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -28,10 +29,10 @@ import CodeExample from '../../../components/CodeExample.vue'
     </template>
 
     <template #steps>
-      <LessonStep slug="grosse-commits" title="1. Zu grosse Änderungen in einem Commit">
+      <LessonStep slug="grosse-commits" title="Zu grosse Änderungen in einem Commit">
         <p>
-          Wenn ein Commit viele unzusammenhängende Änderungen enthält, ist die
-          Historie schwer zu lesen und Fehler sind kaum noch zu finden.
+          Wenn ein <Term term="Commit" def="Ein gespeicherter Zwischenstand deines Projekts mit einer erklärenden Nachricht." /> viele unzusammenhängende Änderungen enthält, ist die
+          <Term term="Versionsgeschichte" def="Der vollständige Verlauf aller gespeicherten Änderungen und Versionen eines Projekts." /> schwer zu lesen und Fehler sind kaum noch zu finden.
         </p>
         <ul class="lesson-list">
           <li>Zu grosse Änderungen in einem Commit machen die Suche schwer.</li>
@@ -39,9 +40,9 @@ import CodeExample from '../../../components/CodeExample.vue'
         <p>Besser ist es, logisch zusammengehörige Schritte einzeln zu speichern.</p>
       </LessonStep>
 
-      <LessonStep slug="branch-wechsel" title="2. Unbedachte Branch-Wechsel">
+      <LessonStep slug="branch-wechsel" title="Unbedachte Branch-Wechsel">
         <p>
-          Der Wechsel zwischen Branches gehört zu Git. Wer ihn unüberlegt
+          Der Wechsel zwischen <Term term="Branches" def="Abzweigungen vom Hauptprojekt, in denen du eigene Änderungen unabhängig entwickeln kannst." /> gehört zu Git. Wer ihn unüberlegt
           ausführt, riskiert, lokale Arbeiten durcheinanderzubringen.
         </p>
         <ul class="lesson-list">
@@ -49,7 +50,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         </ul>
       </LessonStep>
 
-      <LessonStep slug="vergessene-dateien" title="3. Vergessene Dateien">
+      <LessonStep slug="vergessene-dateien" title="Vergessene Dateien">
         <p>
           Dateien, die nicht mit `git add` bereitgestellt werden, fehlen im
           Commit. Das führt schnell zu inkonsistenten Ständen.

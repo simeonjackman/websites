@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -14,7 +15,7 @@ import CodeExample from '../../../components/CodeExample.vue'
     <template #objectives>
       <ul class="lesson-list">
         <li>Du kennst die wichtigsten Strukturbereiche einer Seite.</li>
-        <li>Du kannst Inhalte in Semantik-Blöcke gruppieren.</li>
+        <li>Du kannst Inhalte in <Term term="Semantik" def="Die Bedeutung und der Aufbau von Inhalten, vorgegeben durch passende strukturelle Elemente." />-Blöcke gruppieren.</li>
         <li>Du weisst, warum Struktur vor Design kommt.</li>
       </ul>
     </template>
@@ -22,13 +23,13 @@ import CodeExample from '../../../components/CodeExample.vue'
     <template #intro>
       <p>
         Eine Webseite wirkt nur dann klar, wenn ihre <strong>Struktur</strong>
-        stimmt. Header, Main, Footer und weitere Bereiche geben der Seite eine
+        stimmt. <Term term="Header" def="Der Kopfbereich einer Webseite, der Titel und Navigation enthält." />, <Term term="Main" def="Der Hauptbereich einer Webseite, in dem der eigentliche Inhalt steht." />, <Term term="Footer" def="Der Fussbereich einer Webseite mit Zusatzinfos wie Kontakt und Impressum." /> und weitere Bereiche geben der Seite eine
         Logik, die Besucher und Entwickler gleichermassen schnell verstehen.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="bereiche-mit-aufgabe" title="1. Jeder Bereich hat eine Aufgabe">
+      <LessonStep slug="bereiche-mit-aufgabe" title="Jeder Bereich hat eine Aufgabe">
         <p>
           Grosse Seiten bestehen aus klar abgegrenzten Bereichen. Werden sie
           gezielt eingesetzt, findet man den Startpunkt und den Inhalt auf den
@@ -39,18 +40,18 @@ import CodeExample from '../../../components/CodeExample.vue'
         </ul>
       </LessonStep>
 
-      <LessonStep slug="inhalte-gruppieren" title="2. Artikel und Sektionen gruppieren Inhalte">
+      <LessonStep slug="inhalte-gruppieren" title="Artikel und Sektionen gruppieren Inhalte">
         <p>
           <code>section</code> und <code>article</code> helfen dabei, den Inhalt
           thematisch zu gruppieren. So bleibt die Seite übersichtlich, auch wenn
           sie wächst.
         </p>
         <ul class="lesson-list">
-          <li>Artikel und Sektionen helfen beim Gruppieren von Inhalten.</li>
+          <li><Term term="Artikel" def="Ein in sich abgeschlossener Inhaltsblock, der sich auch allein sinnvoll lesen lässt." /> und <Term term="Sektionen" def="Bereiche, die inhaltlich zusammengehörige Elemente einer Seite zusammenfassen." /> helfen beim Gruppieren von Inhalten.</li>
         </ul>
       </LessonStep>
 
-      <LessonStep slug="struktur-vor-design" title="3. Struktur ist wichtiger als Dekoration">
+      <LessonStep slug="struktur-vor-design" title="Struktur ist wichtiger als Dekoration">
         <p>
           Bevor du dich um Farben und Abstände kümmerst, ist die Grundstruktur
           entscheidend. Sie trägt die ganze Seite und erleichtert jede spätere

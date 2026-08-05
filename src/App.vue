@@ -2,8 +2,11 @@
 import { computed, ref } from 'vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { sections } from './data/siteNavigation'
+import { useOs } from './composables/useOs'
 
 const route = useRoute()
+
+const { os, setOs } = useOs()
 
 const navigation = sections
 const menuOpen = ref(false)
@@ -34,19 +37,42 @@ function closeMenu() {
           </span>
         </RouterLink>
 
-        <button
-          type="button"
-          class="burger-button"
-          :class="{ open: menuOpen }"
-          :aria-expanded="menuOpen"
-          aria-controls="mobile-nav"
-          aria-label="Navigation umschalten"
-          @click="menuOpen = !menuOpen"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div class="topbar-tools">
+          <div class="os-toggle os-toggle--header" role="group" aria-label="Betriebssystem wählen">
+            <button
+              type="button"
+              class="os-toggle__btn"
+              :class="{ active: os === 'windows' }"
+              :aria-pressed="os === 'windows'"
+              @click="setOs('windows')"
+            >
+              Windows
+            </button>
+            <button
+              type="button"
+              class="os-toggle__btn"
+              :class="{ active: os === 'mac' }"
+              :aria-pressed="os === 'mac'"
+              @click="setOs('mac')"
+            >
+              Mac
+            </button>
+          </div>
+
+          <button
+            type="button"
+            class="burger-button"
+            :class="{ open: menuOpen }"
+            :aria-expanded="menuOpen"
+            aria-controls="mobile-nav"
+            aria-label="Navigation umschalten"
+            @click="menuOpen = !menuOpen"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
 
       <nav id="mobile-nav" class="nav-bar" :class="{ open: menuOpen }" aria-label="Primary navigation">

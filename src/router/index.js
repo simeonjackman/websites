@@ -15,6 +15,7 @@ import HtmlIndex from '../views/sections/html/index.vue'
 import HtmlAlsGrundgeruest from '../views/sections/html/html-als-grundgeruest.vue'
 import WebseitenStrukturieren from '../views/sections/html/webseiten-strukturieren.vue'
 import HtmlAttribute from '../views/sections/html/html-attribute.vue'
+import CssVerknuepfen from '../views/sections/html/css-verknuepfen.vue'
 
 import CssIndex from '../views/sections/css/index.vue'
 import CssAlsDesignsprache from '../views/sections/css/css-als-designsprache.vue'
@@ -50,6 +51,7 @@ const routes = [
   { path: '/html/html-als-grundgeruest', name: 'html-als-grundgeruest', component: HtmlAlsGrundgeruest },
   { path: '/html/webseiten-strukturieren', name: 'webseiten-strukturieren', component: WebseitenStrukturieren },
   { path: '/html/html-attribute', name: 'html-attribute', component: HtmlAttribute },
+  { path: '/html/css-verknuepfen', name: 'css-verknuepfen', component: CssVerknuepfen },
 
   { path: '/css', name: 'css', component: CssIndex },
   { path: '/css/css-als-designsprache', name: 'css-als-designsprache', component: CssAlsDesignsprache },

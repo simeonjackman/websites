@@ -1052,3 +1052,165 @@ html {
     padding-right: 1rem;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   OS toggle, OsBlock, Shortcut, Term
+--------------------------------------------------------------------------- */
+.topbar-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.os-toggle {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.os-toggle__btn {
+  padding: 0.45rem 0.85rem;
+  border: 0;
+  border-radius: 999px;
+  color: var(--muted);
+  background: transparent;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.os-toggle__btn:hover {
+  color: var(--text);
+}
+
+.os-toggle__btn.active {
+  color: #06101c;
+  background: linear-gradient(135deg, var(--accent-cool), var(--accent-lime));
+  font-weight: 700;
+}
+
+.os-block {
+  display: grid;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 1.2rem;
+  padding: 1.1rem;
+  background: rgba(8, 16, 29, 0.55);
+  box-shadow: var(--shadow);
+}
+
+.os-block__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.os-block__label {
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.os-block__content {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.os-block__content p,
+.os-block__content ul {
+  max-width: 68ch;
+}
+
+.os-block__content p {
+  margin: 0;
+  color: var(--text);
+}
+
+.shortcut {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.shortcut__label {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.shortcut__keys {
+  display: inline-flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.shortcut__key {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.9rem;
+  padding: 0.28rem 0.5rem;
+  border: 1px solid rgba(200, 220, 255, 0.35);
+  border-bottom-width: 2px;
+  border-radius: 0.5rem;
+  background: rgba(6, 15, 28, 0.9);
+  color: var(--text);
+  font-family: 'SFMono-Regular', 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.8rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.shortcut__copy {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.shortcut__copy:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.term {
+  color: var(--accent-cool);
+  border-bottom: 1px dotted rgba(127, 209, 255, 0.7);
+  text-decoration: none;
+  cursor: help;
+}
+
+@media (max-width: 640px) {
+  .topbar-tools {
+    gap: 0.5rem;
+  }
+
+  .os-toggle--header .os-toggle__btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .shortcut {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .shortcut__keys {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}

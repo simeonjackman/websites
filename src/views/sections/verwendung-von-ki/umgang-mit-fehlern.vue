@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -13,9 +14,9 @@ import CodeExample from '../../../components/CodeExample.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du liest Fehlermeldungen Schritt für Schritt.</li>
+        <li>Du liest <Term term="Fehlermeldungen" def="Hinweisnachrichten vom Programm, die dir sagen, wo und warum etwas schiefgelaufen ist." /> Schritt für Schritt.</li>
         <li>Du änderst nur eine Sache pro Versuch.</li>
-        <li>Du nutzt Tests und die Browser-Entwicklertools zum Prüfen.</li>
+        <li>Du nutzt Tests und die Browser-<Term term="Entwicklertools" def="Werkzeuge im Browser, die dir beim Untersuchen und Beheben von Fehlern im Code helfen." /> zum Prüfen.</li>
       </ul>
     </template>
 
@@ -28,7 +29,7 @@ import CodeExample from '../../../components/CodeExample.vue'
     </template>
 
     <template #steps>
-      <LessonStep slug="fehlermeldung-lesen" title="1. Die Fehlermeldung genau lesen">
+      <LessonStep slug="fehlermeldung-lesen" title="Die Fehlermeldung genau lesen">
         <p>
           Fast jede Meldung sagt dir, wo das Problem liegt: Zeilennummer,
           betroffene Datei und eine Beschreibung. Notiere dir, was du siehst,
@@ -42,7 +43,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="eine-aenderung-pro-versuch" title="2. Nur eine Sache pro Versuch ändern">
+      <LessonStep slug="eine-aenderung-pro-versuch" title="Nur eine Sache pro Versuch ändern">
         <p>
           Änderst du mehrere Dinge gleichzeitig, weisst du danach nicht, welche
           Änderung den Fehler behoben hat. Führe jede Änderung einzeln aus und
@@ -56,7 +57,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="werkzeuge-nutzen" title="3. Tests und Entwicklertools nutzen">
+      <LessonStep slug="werkzeuge-nutzen" title="Tests und Entwicklertools nutzen">
         <p>
           Die Entwicklertools im Browser zeigen dir zum Beispiel, welche Styles
           auf ein Element wirken und welche Netzwerk-Anfragen fehlschlagen.

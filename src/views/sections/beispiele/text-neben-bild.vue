@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 
 const karteHtml = `<section class="karte">
     <img class="karte__bild" src="foto.jpg" alt="Beschreibung">
@@ -29,15 +30,15 @@ const karteHtml = `<section class="karte">
 
     <template #intro>
       <p>
-        Achte auf die Reihenfolge der Elemente und die Abstände. Eine saubere
+        Achte auf die <Term term="Reihenfolge" def="Die Reihenfolge bestimmt, in welcher Anordnung Elemente im Layout erscheinen." /> der Elemente und die Abstände. Eine saubere
         Grundstruktur bleibt auf grossen wie kleinen Bildschirmen lesbar.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="html-grundstruktur" title="1. Die HTML-Grundstruktur">
+      <LessonStep slug="html-grundstruktur" title="Die HTML-Grundstruktur">
         <p>
-          Bild und Text gehören in einen gemeinsamen Container. So kannst du
+          Bild und Text gehören in einen gemeinsamen <Term term="Container" def="Ein Container ist ein Element, das andere Elemente als Gruppe zusammenfasst und anordnet." />. So kannst du
           ihre Aufteilung in einem einzigen Schritt steuern.
         </p>
         <CodeExample
@@ -48,7 +49,7 @@ const karteHtml = `<section class="karte">
         />
       </LessonStep>
 
-      <LessonStep slug="css-zweispaltig" title="2. Die Aufteilung im CSS">
+      <LessonStep slug="css-zweispaltig" title="Die Aufteilung im CSS">
         <p>
           Im CSS legst du fest, wie breit Bild und Text nebeneinander Platz
           haben und welcher Abstand sie trennt.
@@ -61,11 +62,11 @@ const karteHtml = `<section class="karte">
         />
       </LessonStep>
 
-      <LessonStep slug="responsive-umfluss" title="3. Ordnung auf kleinen Bildschirmen">
+      <LessonStep slug="responsive-umfluss" title="Ordnung auf kleinen Bildschirmen">
         <p>
           Auf schmalen Displays soll das Bild über den Text umfliessen können.
           Ein Media-Query sorgt dafür, dass die Aufteilung bei Bedarf in eine
-          Spalte zurückfällt.
+          <Term term="Spalte" def="Eine Spalte ist ein senkrechter Bereich, der Elemente untereinander anordnet." /> zurückfällt.
         </p>
         <CodeExample
           title="Mobile-First-Aufteilung"

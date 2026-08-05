@@ -30,6 +30,7 @@ export const sections = [
       { slug: 'html-als-grundgeruest', title: 'HTML als Grundgerüst' },
       { slug: 'webseiten-strukturieren', title: 'Webseiten Strukturieren' },
       { slug: 'html-attribute', title: 'HTML Attribute' },
+      { slug: 'css-verknuepfen', title: 'CSS mit HTML verknüpfen' },
     ],
   },
   {

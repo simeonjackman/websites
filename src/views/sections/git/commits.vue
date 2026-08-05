@@ -2,13 +2,30 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
-
-const commitMitNachricht = `git commit -m "Fuege Startseite mit Kontaktformular hinzu"`
+import Shortcut from '../../../components/Shortcut.vue'
+import Term from '../../../components/Term.vue'
 
 const ersterCommit = `git init
 # eine Datei anlegen und speichern
 git add .
 git commit -m "Erste Datei im Projekt"`
+
+const indexHtml = `<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Mein erstes Git-Projekt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hallo Git</h1>
+    <p>Diese Datei wurde in einem leeren Repository erstellt.</p>
+</body>
+</html>`
+
+const styleCss = `h1 {
+    color: #2f6fdb;
+}`
 </script>
 
 <template>
@@ -16,69 +33,89 @@ git commit -m "Erste Datei im Projekt"`
     section-slug="git"
     lesson-slug="commits"
     title="Commits"
-    summary="Ein Commit beschreibt einen klaren Zustand mit einer passenden Nachricht."
+    summary="Ein Commit beschreibt einen klaren Zustand mit einer passenden Nachricht – von der leeren Datei bis zur gespeicherten Version."
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du weisst, was ein Commit ist.</li>
-        <li>Du kannst einen Commit erstellen.</li>
-        <li>Du weisst, worauf es bei Commit-Nachrichten ankommt.</li>
+        <li>Du kannst ein leeres Repository anlegen.</li>
+        <li>Du kannst von Hand eine HTML-Datei darin erstellen.</li>
+        <li>Du kannst Dateien mit <code>git add</code> und <code>git commit</code> speichern.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
-        Ein <strong>Commit</strong> ist ein gespeicherter Zwischenstand deines
-        Projekts. Er gehört zu einer verständlichen Nachricht und bildet die
-        Grundlage dafür, später sicher zurückspringen zu können.
+        Ein <Term term="Commit" def="Ein gespeicherter Zwischenstand deines Projekts mit einer erklärenden Nachricht." /> ist
+        ein gespeicherter Zwischenstand deines Projekts. In diesem Kapitel baust du
+        ein Projekt von ganz vorne auf: vom leeren Ordner bis zum ersten Commit.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="repository-erstellen" title="1. Ein Repository anlegen">
+      <LessonStep slug="leeres-repository" title="Ein leeres Repository anlegen">
         <p>
-          Zuerst erstellst du ein Repository. Es verwaltet die gesamte
-          Versionsgeschichte deines Projekts.
+          Erstelle einen neuen Ordner für dein Projekt und initialisiere ihn als
+          <Term term="Repository" def="Der verwaltete Projektordner, in dem Git deine Versionsgeschichte speichert." />.
+          Danach ist dein Projekt bereit, Dateien zu übernehmen.
         </p>
         <CodeExample
-          title="Ein neues Git-Repository"
+          title="Repository starten"
           language="bash"
           filename="Terminal"
-          :code="`git init`"
+          :code="`mkdir mein-projekt\ncd mein-projekt\ngit init`"
         />
       </LessonStep>
 
-      <LessonStep slug="aenderungen-hinzufuegen" title="2. Änderungen zum Commit vorbereiten">
+      <LessonStep slug="dateien-anlegen" title="Dateien von Hand erstellen">
         <p>
-          Bevor du einen Commit erstellst, wählst du aus, welche Dateien
-          aufgenommen werden sollen. Kleine, zusammenhängende Änderungen machen
-          die Historie leicht lesbar.
+          Ein Projekt besteht aus gewöhnlichen Dateien. Erstelle im Ordner eine
+          <code>index.html</code> und eine <code>style.css</code> – genau wie im
+          Kapitel <em>CSS mit HTML verknüpfen</em>.
         </p>
-        <ul class="lesson-list">
-          <li>Kleine Commits sind leichter zu lesen.</li>
-          <li>Ein Commit ist kein Sammelbecken für unklare Zwischenstände.</li>
-        </ul>
+        <CodeExample
+          title="index.html im leeren Repository"
+          language="html"
+          filename="index.html"
+          :code="indexHtml"
+        />
+        <CodeExample
+          title="style.css dazu"
+          language="css"
+          filename="style.css"
+          :code="styleCss"
+        />
+        <p>
+          Mit <Shortcut label="Speichern" :keys="['mod', 'S']" /> sicherst du jede
+          Datei. Git merkt sich zunächst nur, dass neue Dateien vorhanden sind –
+          noch sind sie nicht Teil der Versionsgeschichte.
+        </p>
+      </LessonStep>
+
+      <LessonStep slug="aenderungen-vorbereiten" title="Änderungen vorbereiten">
+        <p>
+          Mit <code>git status</code> siehst du, welche Dateien neu oder verändert
+          sind. Mit <code>git add .</code> nimmst du alle Änderungen in den
+          nächsten Commit auf. Kleine, zusammenhängende Änderungen machen die
+          Historie leicht lesbar.
+        </p>
         <CodeExample
           title="Dateien bereitstellen"
           language="bash"
           filename="Terminal"
-          :code="`git add .`"
+          :code="`git status\ngit add .`"
         />
       </LessonStep>
 
-      <LessonStep slug="commit-erstellen" title="3. Den Commit abschliessen">
+      <LessonStep slug="commit-abschliessen" title="Den Commit abschliessen">
         <p>
           Jetzt wird der Stand mit einer Nachricht gespeichert. Die Nachricht
           sollte erklären, was und warum geändert wurde – nicht wie.
         </p>
-        <ul class="lesson-list">
-          <li>Die Nachricht sollte erklären, was und warum geändert wurde.</li>
-        </ul>
         <CodeExample
           title="Einen Commit erstellen"
           language="bash"
           filename="Terminal"
-          :code="commitMitNachricht"
+          :code="ersterCommit"
         />
       </LessonStep>
     </template>
@@ -94,15 +131,10 @@ git commit -m "Erste Datei im Projekt"`
 
     <template #exercise>
       <p>
-        Lege ein neues Repository an, erstelle eine kleine Datei und mache
-        deinen ersten Commit mit einer passenden Nachricht.
+        Lege ein neues Repository an, erstelle eine <code>index.html</code> und
+        eine <code>style.css</code> von Hand, binde das CSS ein und mache deinen
+        ersten Commit mit einer passenden Nachricht.
       </p>
-      <CodeExample
-        title="Dein erster Commit"
-        language="bash"
-        filename="Terminal"
-        :code="ersterCommit"
-      />
     </template>
   </LessonScaffold>
 </template>

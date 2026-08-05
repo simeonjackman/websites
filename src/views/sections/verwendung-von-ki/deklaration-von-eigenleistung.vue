@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -21,18 +22,17 @@ import CodeExample from '../../../components/CodeExample.vue'
 
     <template #intro>
       <p>
-        KI gehört zu den Werkzeugen, die du in deinem Projekt einsetzen darfst –
+        <Term term="KI" def="Künstliche Intelligenz, ein Programm, das dir Texte und Code-Vorschläge liefert." /> gehört zu den Werkzeugen, die du in deinem Projekt einsetzen darfst –
         vorausgesetzt, es bleibt klar, was du selbst geleistet hast. Eine
         ehrliche Kennzeichnung schützt dich und deine Arbeit.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="fremdes-kennzeichnen" title="1. Fremdes klar kennzeichnen">
+      <LessonStep slug="fremdes-kennzeichnen" title="Fremdes klar kennzeichnen">
         <p>
           Jeder Teil, der nicht vollständig von dir stammt, sollte erkennbar
-          sein. Dafür reicht eine kurze Notiz an der richtigen Stelle – etwa als
-          Kommentar in der Datei.
+          sein. Dafür reicht eine kurze Notiz an der richtigen Stelle – etwa als <Term term="Kommentar" def="Eine kurze Notiz im Code zum Erklären, die das Programm selbst nicht ausführt." /> in der Datei.
         </p>
         <CodeExample
           title="Kennzeichnung als Kommentar"
@@ -42,7 +42,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="eigene-leistung-dokumentieren" title="2. Deine eigene Leistung sichtbar machen">
+      <LessonStep slug="eigene-leistung-dokumentieren" title="Deine eigene Leistung sichtbar machen">
         <p>
           Dokumentiere, welche Teile du verändert hast und warum. So zeigt dein
           Projekt nicht nur das Ergebnis, sondern auch dein Verständnis.
@@ -55,9 +55,9 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="ergebnisse-erklaeren" title="3. Ergebnisse erklären können">
+      <LessonStep slug="ergebnisse-erklaeren" title="Ergebnisse erklären können">
         <p>
-          Eigenleistung heisst auch, dass du deine Abgabe erklären kannst. Ein
+          <Term term="Eigenleistung" def="Der Anteil deiner Arbeit, den du selbst erstellt und wirklich verstanden hast." /> heisst auch, dass du deine Abgabe erklären kannst. Ein
           guter Test: Beschreibe deiner Lehrperson, wie ein schwieriger Teil
           deiner Lösung funktioniert – ganz ohne Hilfsmittel.
         </p>

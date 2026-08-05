@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -14,7 +15,7 @@ import CodeExample from '../../../components/CodeExample.vue'
     <template #objectives>
       <ul class="lesson-list">
         <li>Du kennst die vier Bestandteile des Box-Modells.</li>
-        <li>Du unterscheidest padding von margin.</li>
+        <li>Du unterscheidest <Term term="Padding" def="Padding ist der Innenabstand zwischen dem Inhalt und dem Rand eines Elements." /> von <Term term="Margin" def="Margin ist der Aussenabstand, der ein Element von seinen Nachbarn trennt." />.</li>
         <li>Du weisst, was <code>box-sizing</code> bewirkt.</li>
       </ul>
     </template>
@@ -22,13 +23,13 @@ import CodeExample from '../../../components/CodeExample.vue'
     <template #intro>
       <p>
         Jedes Element im Browser ist eine Box. Wie gross sie tatsächlich ist,
-        hängt von Inhalt, Innenabstand, Rahmen und Aussenabstand ab – genau das
-        beschreibt das Box-Modell.
+        hängt von <Term term="Inhalt" def="Der Inhalt ist das eigentliche Element einer Box, etwa Text oder ein Bild." />, Innenabstand, <Term term="Rahmen" def="Der Rahmen ist die sichtbare Linie am Rand eines Elements, direkt um den Inhalt." /> und Aussenabstand ab – genau das
+        beschreibt das <Term term="Box-Modell" def="Das Box-Modell beschreibt, wie jedes Element aus Inhalt, Innenabstand, Rahmen und Aussenabstand besteht." />.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="innen-und-aussen" title="1. Padding und Margin verstehen">
+      <LessonStep slug="innen-und-aussen" title="Padding und Margin verstehen">
         <p>
           <code>padding</code> erzeugt Luft <em>innerhalb</em> des Elements,
           die <code>margin</code> trennt Elemente <em>voneinander</em>. Beide
@@ -42,7 +43,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="rahmen-und-breite" title="2. Rahmen und die Gesamtbreite">
+      <LessonStep slug="rahmen-und-breite" title="Rahmen und die Gesamtbreite">
         <p>
           Ein <code>border</code> liegt um den Innenabstand herum und vergrössert
           die Box. Ohne Beachtung des Box-Modells wirst du beim Setzen von Breite
@@ -56,7 +57,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="box-sizing" title="3. box-sizing beruhigt das Layout">
+      <LessonStep slug="box-sizing" title="box-sizing beruhigt das Layout">
         <p>
           Mit <code>box-sizing: border-box</code> zählt die angegebene Breite
           Innenabstand und Rahmen bereits mit. Das erleichtert das Layouten

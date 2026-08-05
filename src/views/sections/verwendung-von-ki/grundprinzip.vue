@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -13,7 +14,7 @@ import CodeExample from '../../../components/CodeExample.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du formulierst klare Fragen an ein KI-Tool.</li>
+        <li>Du formulierst klare Fragen an ein <Term term="KI" def="Künstliche Intelligenz, ein Programm, das dir Texte und Code-Vorschläge liefert." />-Tool.</li>
         <li>Du prüfst und passt Vorschläge an.</li>
         <li>Du behältst das Ziel eines verständlichen eigenen Codes im Blick.</li>
       </ul>
@@ -28,7 +29,7 @@ import CodeExample from '../../../components/CodeExample.vue'
     </template>
 
     <template #steps>
-      <LessonStep slug="klar-fragen-stellen" title="1. Klare Fragen stellen">
+      <LessonStep slug="klar-fragen-stellen" title="Klare Fragen stellen">
         <p>
           Je konkreter deine Frage ist, desto brauchbarer ist die Antwort.
           Erwähne Sprache, Ziel und Kontext – so bleibt der Vorschlag klein
@@ -42,7 +43,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="nachfragen-statt-akzeptieren" title="2. Nachfragen statt einfach übernehmen">
+      <LessonStep slug="nachfragen-statt-akzeptieren" title="Nachfragen statt einfach übernehmen">
         <p>
           Eine einzelne Antwort reicht selten. Stelle eine Rückfrage, wenn dir
           etwas unklar ist – so entsteht ein Gespräch, aus dem du tatsächlich
@@ -56,7 +57,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="vorschlaege-pruefen" title="3. Vorschläge prüfen und anpassen">
+      <LessonStep slug="vorschlaege-pruefen" title="Vorschläge prüfen und anpassen">
         <p>
           Prüfe jede Antwort auf Verständlichkeit und Richtigkeit. Passe die
           Vorschläge an deinen eigenen Stil an und ersetze nichts, was du nicht

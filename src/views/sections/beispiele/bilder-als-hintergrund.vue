@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -15,20 +16,20 @@ import CodeExample from '../../../components/CodeExample.vue'
       <ul class="lesson-list">
         <li>Du kannst ein Bild als Hintergrund setzen.</li>
         <li>Du hältst die Lesbarkeit von Text über dem Bild aufrecht.</li>
-        <li>Du ergänzt fliessende Farbverläufe als Übergänge.</li>
+        <li>Du ergänzt fliessende <Term term="Farbverläufe" def="Farbverläufe sind weiche Übergänge zwischen zwei oder mehr Farben." /> als Übergänge.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
-        Hintergrundbilder verleihen einer Seite Atmosphäre. Gerade weil sie den
+        <Term term="Hintergrundbilder" def="Hintergrundbilder liegen hinter dem Inhalt eines Elements und füllen den verfügbaren Raum." /> verleihen einer Seite Atmosphäre. Gerade weil sie den
         Inhalt nicht tragen, brauchst du ein paar Regeln, damit deine Texte gut
         lesbar bleiben.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="hintergrundbild-setzen" title="1. Ein Hintergrundbild einsetzen">
+      <LessonStep slug="hintergrundbild-setzen" title="Ein Hintergrundbild einsetzen">
         <p>
           Mit CSS legen die <code>background</code>-Eigenschaften fest, welches
           Bild, wie es wiederholt und wie es positioniert wird.
@@ -41,11 +42,10 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="lesbarkeit-sichern" title="2. Lesbarkeit und Kontrast sichern">
+      <LessonStep slug="lesbarkeit-sichern" title="Lesbarkeit und Kontrast sichern">
         <p>
           Ein Hintergrund ist nur dann gut, wenn der Text darüber trotzdem
-          lesbar bleibt. Eine halbtransparente Fläche hilft, den Kontrast zu
-          erhöhen.
+          lesbar bleibt. Eine halbtransparente Fläche hilft, den <Term term="Kontrast" def="Kontrast ist der Unterschied zwischen Vorder- und Hintergrund, der die Lesbarkeit von Text bestimmt." /> zu erhöhen.
         </p>
         <CodeExample
           title="Text auf Hintergrund abheben"
@@ -55,7 +55,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="verlauf-fuer-uebergange" title="3. Farbverläufe für harmonische Übergänge">
+      <LessonStep slug="verlauf-fuer-uebergange" title="Farbverläufe für harmonische Übergänge">
         <p>
           Statt eines festen Bildes kannst du mit Farbverläufen weiche
           Übergänge erzeugen – etwa, um einen Hintergrund sanft auslaufen zu

@@ -1,6 +1,7 @@
 <script setup>
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -12,9 +13,9 @@ import LessonStep from '../../../components/LessonStep.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du verstehst den Nutzen von Versionskontrolle.</li>
-        <li>Du kennst die Vorteile des Arbeitens mit Git.</li>
-        <li>Du kannst einfache Begriffe wie Commit und Stand einordnen.</li>
+        <li>Du verstehst den Nutzen von <Term term="Versionskontrolle" def="Das systematische Speichern und Nachvollziehen von Änderungen an deinen Dateien im Laufe der Zeit." />.</li>
+        <li>Du kennst die Vorteile des Arbeitens mit <Term term="Git" def="Ein Werkzeug, das den Entwicklungsverlauf deines Projekts aufzeichnet." />.</li>
+        <li>Du kannst einfache Begriffe wie <Term term="Commit" def="Ein gespeicherter Zwischenstand deines Projekts mit einer erklärenden Nachricht." /> und Stand einordnen.</li>
       </ul>
     </template>
 
@@ -28,7 +29,7 @@ import LessonStep from '../../../components/LessonStep.vue'
     </template>
 
     <template #steps>
-      <LessonStep slug="aenderungen-nachvollziehen" title="1. Änderungen bleiben nachvollziehbar">
+      <LessonStep slug="aenderungen-nachvollziehen" title="Änderungen bleiben nachvollziehbar">
         <p>
           Jede wichtige Änderung wird in Git als Schritt gespeichert. Dadurch
           kannst du jederzeit sehen, was du wann geändert hast.
@@ -38,7 +39,7 @@ import LessonStep from '../../../components/LessonStep.vue'
         </ul>
       </LessonStep>
 
-      <LessonStep slug="parallel-arbeiten" title="2. Mehrere Personen können parallel arbeiten">
+      <LessonStep slug="parallel-arbeiten" title="Mehrere Personen können parallel arbeiten">
         <p>
           Git erlaubt es, dass mehrere Personen am selben Projekt arbeiten,
           ohne dass ihre Änderungen sich gegenseitig überschreiben.
@@ -48,7 +49,7 @@ import LessonStep from '../../../components/LessonStep.vue'
         </ul>
       </LessonStep>
 
-      <LessonStep slug="zurueckspringen-bei-fehlern" title="3. Frühere Stände wiederherstellen">
+      <LessonStep slug="zurueckspringen-bei-fehlern" title="Frühere Stände wiederherstellen">
         <p>
           Falls etwas schiefgeht, kannst du auf einen früheren Stand
           zurückgreifen. Das macht Experimentieren deutlich entspannter.

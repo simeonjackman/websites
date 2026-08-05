@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -15,20 +16,20 @@ import CodeExample from '../../../components/CodeExample.vue'
       <ul class="lesson-list">
         <li>Du verstehst, was eine CSS-Regel ausmacht.</li>
         <li>Du kannst ein konsistentes Farbsystem mit Variablen aufbauen.</li>
-        <li>Du weisst, warum Designsysteme einfach bleiben dürfen.</li>
+        <li>Du weisst, warum <Term term="Designsysteme" def="Ein Designsystem ist eine Sammlung einheitlicher Regeln für Farben, Schriften und Abstände." /> einfach bleiben dürfen.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
-        CSS ist mehr als das «Verschönern» einer Seite. Es ist die Sprache, mit
+        <Term term="CSS" def="CSS (Cascading Style Sheets) steuert Aussehen und Layout von Webseiten, etwa Farbe, Abstand und Schrift." /> ist mehr als das «Verschönern» einer Seite. Es ist die Sprache, mit
         der du entscheidest, wie etwas wirkt – welche Farbe, welcher Abstand,
         welcher Rhythmus. Dieses Kapitel legt das Fundament für all das.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="eine-ccs-regel" title="1. Eine CSS-Regel zerlegen">
+      <LessonStep slug="eine-ccs-regel" title="Eine CSS-Regel zerlegen">
         <p>
           Eine CSS-Regel besteht aus einem Selektoren, der bestimmt, <em>wo</em>
           die Regel wirkt, und aus Eigenschaften, die festlegen, <em>was</em>
@@ -42,10 +43,10 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="farben-zentralisieren" title="2. Farben zentralisieren mit Variablen">
+      <LessonStep slug="farben-zentralisieren" title="Farben zentralisieren mit Variablen">
         <p>
           Statt dieselbe Farbe überall von Hand zu tippen, legst du sie einmal
-          in einer Variable ab. So sorgst du für ein konsistentes Farbsystem
+          in einer <Term term="Variable" def="Eine Variable ist ein benannter Wert, den du einmal anlegst und an vielen Stellen wiederverwendest." /> ab. So sorgst du für ein konsistentes Farbsystem
           und kannst Werte an einer einzigen Stelle ändern.
         </p>
         <CodeExample
@@ -56,7 +57,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="abstand-und-typografie" title="3. Abstand und Typografie prägen den Eindruck">
+      <LessonStep slug="abstand-und-typografie" title="Abstand und Typografie prägen den Eindruck">
         <p>
           Farbe allein macht noch kein gutes Design. Abstände geben den
           Elementen Luft, die Schriftgrösse trägt massgeblich zur Lesbarkeit

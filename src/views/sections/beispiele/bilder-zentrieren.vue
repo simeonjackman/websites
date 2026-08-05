@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 </script>
 
 <template>
@@ -29,10 +30,9 @@ import CodeExample from '../../../components/CodeExample.vue'
     </template>
 
     <template #steps>
-      <LessonStep slug="blockelement-mit-auto-margins" title="1. Blockelemente mit Auto-Margins zentrieren">
+      <LessonStep slug="blockelement-mit-auto-margins" title="Blockelemente mit Auto-Margins zentrieren">
         <p>
-          Bilder sind standardmässig Inline-Elemente. Damit die Auto-Margins
-          greifen können, muss das Bild zuerst zu einem Block-Element werden.
+          Bilder sind standardmässig Inline-Elemente. Damit die <Term term="Auto-Margins" def="Auto-Margins sind automatische Aussenabstände, die ein Element horizontal in der Mitte ausrichten." /> greifen können, muss das Bild zuerst zu einem Block-Element werden.
         </p>
         <CodeExample
           title="Bild als Block zentrieren"
@@ -42,10 +42,10 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="flexbox-fuer-variable-layouts" title="2. Flexbox für variable Layouts">
+      <LessonStep slug="flexbox-fuer-variable-layouts" title="Flexbox für variable Layouts">
         <p>
           Wenn das Bild in einem Container steht und die Bildgrösse flexibel
-          bleiben soll, ist Flexbox oft die bequemere Lösung – sie zentriert
+          bleiben soll, ist <Term term="Flexbox" def="Flexbox ist eine CSS-Methode, um Elemente in einer Reihe flexibel anzuordnen und auszurichten." /> oft die bequemere Lösung – sie zentriert
           horizontal und vertikal in einem Schritt.
         </p>
         <CodeExample
@@ -56,7 +56,7 @@ import CodeExample from '../../../components/CodeExample.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="groesse-anpassen" title="3. Bildgrösse an den Raum anpassen">
+      <LessonStep slug="groesse-anpassen" title="Bildgrösse an den Raum anpassen">
         <p>
           Ein zentriertes Bild ist nur dann schön, wenn es nicht überläuft.
           Mit <code>max-width</code> kannst du verhindern, dass das Bild grösser

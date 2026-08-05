@@ -2,6 +2,7 @@
 import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
+import Term from '../../../components/Term.vue'
 
 const gaengigeAttribute = `<!-- Verknüpfen mit einem Link -->
 <a href="https://example.com">Besuche uns</a>
@@ -28,7 +29,7 @@ const deineUebung = `<p class="einfuehrung">
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du weisst, wie Attribute aufgebaut sind.</li>
+        <li>Du weisst, wie <Term term="Attribute" def="Zusätzliche Angaben an einem Element, die dieses genauer beschreiben oder steuern." /> aufgebaut sind.</li>
         <li>Du kennst die wichtigsten Attribute für Links und Bilder.</li>
         <li>Du kannst mit <code>class</code> und <code>id</code> arbeiten.</li>
       </ul>
@@ -36,14 +37,14 @@ const deineUebung = `<p class="einfuehrung">
 
     <template #intro>
       <p>
-        Attribute stehen innerhalb der öffnenden Tags und liefern zusätzliche
+        Attribute stehen innerhalb der öffnenden <Term term="Tags" def="Kennzeichnungen wie p oder a, die Anfang und Ende eines Elements im HTML-Code markieren." /> und liefern zusätzliche
         Informationen. Mal verknüpfen sie Inhalte, mal verbinden sie HTML mit
         CSS – und sie verbessern die Zugänglichkeit.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="aufbau-von-attribute" title="1. Wie Attribute aufgebaut sind">
+      <LessonStep slug="aufbau-von-attribute" title="Wie Attribute aufgebaut sind">
         <p>
           Ein Attribut besteht aus einem Namen, einem Gleichheitszeichen und
           einem in Anführungszeichen gesetzten Wert.
@@ -53,7 +54,7 @@ const deineUebung = `<p class="einfuehrung">
         </ul>
       </LessonStep>
 
-      <LessonStep slug="wichtige-attribute" title="2. Links, Bilder und Beschreibungen">
+      <LessonStep slug="wichtige-attribute" title="Links, Bilder und Beschreibungen">
         <p>
           Viele Attribute verbinden die Seite mit externen Inhalten oder
           beschreiben sie genauer.
@@ -69,7 +70,7 @@ const deineUebung = `<p class="einfuehrung">
         />
       </LessonStep>
 
-      <LessonStep slug="saubere-attribute" title="3. Knapp und sinnvoll einsetzen">
+      <LessonStep slug="saubere-attribute" title="Knapp und sinnvoll einsetzen">
         <p>
           Gute Attribute sind kurz, sprechend und werden nur dort verwendet, wo
           sie nötig sind.

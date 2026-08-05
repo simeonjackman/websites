@@ -31,22 +31,6 @@ const section = computed(() => findSectionBySlug(props.sectionSlug))
           <h1 v-else>{{ section.summary }}</h1>
           <p class="lead">{{ lead }}</p>
         </div>
-        <div class="hero-aside">
-          <div class="panel">
-            <h3>In dieser Rubrik</h3>
-            <p>{{ section.lessons.length }} Lektionen zum Durcharbeiten – von oben nach unten.</p>
-            <div class="stats-grid" style="margin-top: 1rem">
-              <div class="metric">
-                <span>Lektionen</span>
-                <strong>{{ section.lessons.length }}</strong>
-              </div>
-              <div class="metric">
-                <span>Ziel</span>
-                <strong>Lernen</strong>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
