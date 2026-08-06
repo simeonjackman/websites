@@ -8,17 +8,14 @@ import Term from '../../../components/Term.vue'
 
 const homebrewCmd = `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-const gitConfig = `git config --global user.name "Dein Name"
-git config --global user.email "deine@schule.ch"`
+const gitConfigName = `git config --global user.name "Dein Name"`
+
+const gitConfigEmail = `git config --global user.email "deine@email.ch"`
 </script>
 
 <template>
-  <LessonScaffold
-    section-slug="einfuehrung"
-    lesson-slug="installation"
-    title="Installation"
-    summary="Richte deine Entwicklungsumgebung ein, damit du eine eigene Webseite bauen kannst."
-  >
+  <LessonScaffold section-slug="einfuehrung" lesson-slug="installation" title="Installation"
+    summary="Richte deine Entwicklungsumgebung ein, damit du eine eigene Webseite bauen kannst.">
     <template #objectives>
       <ul class="lesson-list">
         <li>Du hast einen Editor, einen Browser und Git installiert.</li>
@@ -39,7 +36,8 @@ git config --global user.email "deine@schule.ch"`
     <template #steps>
       <LessonStep slug="terminal-oeffnen" title="Ein Terminal öffnen">
         <p>
-          Ein <Term term="Terminal" def="Ein Fenster, in dem du Befehle an deinen Computer schreibst." />
+          Ein
+          <Term term="Terminal" def="Ein Fenster, in dem du Befehle an deinen Computer schreibst." />
           ist der Ort, an dem du die Installationsbefehle eintippst. Öffne es je
           nach Betriebssystem so:
         </p>
@@ -67,8 +65,10 @@ git config --global user.email "deine@schule.ch"`
       <LessonStep slug="paketverwaltung" title="Paketverwaltung einrichten">
         <p>
           Ein Paketmanager lädt Programme für dich herunter und installiert sie.
-          Windows nutzt <Term term="winget" def="Der Paketmanager von Windows zum Installieren von Programmen." /> und
-          Mac nutzt <Term term="homebrew" def="Ein Paketmanager für macOS, mit dem du Programme per Befehl installierst." />.
+          Windows nutzt
+          <Term term="winget" def="Der Paketmanager von Windows zum Installieren von Programmen." /> und
+          Mac nutzt
+          <Term term="homebrew" def="Ein Paketmanager für macOS, mit dem du Programme per Befehl installierst." />.
         </p>
         <OsBlock>
           <template #windows>
@@ -84,27 +84,32 @@ git config --global user.email "deine@schule.ch"`
 
       <LessonStep slug="vscode-installieren" title="VS Code installieren">
         <p>
-          VS Code ist unser <Term term="Editor" def="Ein Programm, in dem du Code schreibst und bearbeitest." />,
+          VS Code ist unser
+          <Term term="Editor" def="Ein Programm, in dem du Code schreibst und bearbeitest." />,
           in dem wir den Code schreiben und bearbeiten.
         </p>
         <OsBlock>
           <template #windows>
-            <CodeExample title="VS Code installieren" language="bash" filename="PowerShell" :code="`winget install -e --id Microsoft.VisualStudioCode`" />
+            <CodeExample title="VS Code installieren" language="bash" filename="PowerShell"
+              :code="`winget install -e --id Microsoft.VisualStudioCode`" />
           </template>
           <template #mac>
-            <CodeExample title="VS Code installieren" language="bash" filename="Terminal" :code="`brew install --cask visual-studio-code`" />
+            <CodeExample title="VS Code installieren" language="bash" filename="Terminal"
+              :code="`brew install --cask visual-studio-code`" />
           </template>
         </OsBlock>
       </LessonStep>
 
       <LessonStep slug="git-installieren" title="Git installieren">
         <p>
-          <Term term="Git" def="Ein Werkzeug, um Versionen deiner Dateien zu speichern und Änderungen nachzuvollziehen." />
+          <Term term="Git"
+            def="Ein Werkzeug, um Versionen deiner Dateien zu speichern und Änderungen nachzuvollziehen." />
           brauchen wir, um Projektvorlagen herunterzuladen und unsere Projekte abzugeben.
         </p>
         <OsBlock>
           <template #windows>
-            <CodeExample title="Git installieren" language="bash" filename="PowerShell" :code="`winget install -e --id Git.Git`" />
+            <CodeExample title="Git installieren" language="bash" filename="PowerShell"
+              :code="`winget install -e --id Git.Git`" />
           </template>
           <template #mac>
             <CodeExample title="Git installieren" language="bash" filename="Terminal" :code="`brew install git`" />
@@ -117,7 +122,8 @@ git config --global user.email "deine@schule.ch"`
           Bevor du Git verwendest, musst du deinen Benutzernamen und deine
           E-Mail-Adresse setzen. So werden deine Änderungen eindeutig zugeordnet.
         </p>
-        <CodeExample title="Git konfigurieren" language="bash" filename="Terminal" :code="gitConfig" />
+        <CodeExample title="Git Namen konfigurieren" language="bash" filename="Terminal" :code="gitConfigName" />
+        <CodeExample title="Git E-Mail konfigurieren" language="bash" filename="Terminal" :code="gitConfigEmail" />
       </LessonStep>
 
       <LessonStep slug="chrome-installieren" title="Chrome installieren">
@@ -129,10 +135,12 @@ git config --global user.email "deine@schule.ch"`
         </p>
         <OsBlock>
           <template #windows>
-            <CodeExample title="Chrome installieren" language="bash" filename="PowerShell" :code="`winget install -e --id Google.Chrome`" />
+            <CodeExample title="Chrome installieren" language="bash" filename="PowerShell"
+              :code="`winget install -e --id Google.Chrome`" />
           </template>
           <template #mac>
-            <CodeExample title="Chrome installieren" language="bash" filename="Terminal" :code="`brew install --cask google-chrome`" />
+            <CodeExample title="Chrome installieren" language="bash" filename="Terminal"
+              :code="`brew install --cask google-chrome`" />
           </template>
         </OsBlock>
       </LessonStep>
@@ -148,7 +156,8 @@ git config --global user.email "deine@schule.ch"`
           <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
           , tippe <code>ext install</code> und gib diesen Befehl ein:
         </p>
-        <CodeExample title="Live Server installieren" language="bash" filename="VS Code" :code="`ext install ritwickdey.liveserver`" />
+        <CodeExample title="Live Server installieren" language="bash" filename="VS Code"
+          :code="`ext install ritwickdey.liveserver`" />
       </LessonStep>
 
       <LessonStep slug="github-konto" title="Ein GitHub-Konto erstellen">
@@ -158,7 +167,8 @@ git config --global user.email "deine@schule.ch"`
           Schul-E-Mail-Adresse einen Account – das Konto brauchst du später, um
           Projekte hoch- und herunterzuladen.
         </p>
-        <p>Öffne <a href="https://github.com" target="_blank" rel="noopener">github.com</a> und klicke auf <strong>Sign up</strong>.</p>
+        <p>Öffne <a href="https://github.com" target="_blank" rel="noopener">github.com</a> und klicke auf <strong>Sign
+            up</strong>.</p>
       </LessonStep>
     </template>
 
@@ -171,14 +181,16 @@ git config --global user.email "deine@schule.ch"`
         <li>Live-Server-Erweiterung in VS Code</li>
         <li>Ein GitHub-Konto</li>
       </ul>
-      <p class="lesson-tip">Helfe deinen Klassenkameradinnen und -kameraden weiter, wenn alle fertig installiert haben.</p>
+      <p class="lesson-tip">Helfe deinen Klassenkameradinnen und -kameraden weiter, wenn alle fertig installiert haben.
+      </p>
     </template>
 
     <template #exercise>
       <p>
         Öffne VS Code und teste deine Installation: Drücke
         <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
-        , tippe <code>Git: Clone</code> und klone ein Projekt. Starte anschliessend
+        , tippe <code>Git: Clone</code> und klone dein Projekt. Den Projektlink erhältst du von der Lehrperson.
+        Starte anschliessend
         mit <code>Live Server</code> einen lokalen Server und öffne die Seite in
         Chrome.
       </p>
