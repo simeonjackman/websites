@@ -6,8 +6,8 @@ export const sections = [
     summary: 'Die Grundlagen der Webentwicklung',
     lessons: [
       { slug: 'installation', title: 'Installation' },
-      { slug: 'wie-webseiten-funktionieren', title: 'Wie Webseiten funktionieren' },
       { slug: 'tipps-fuer-vscode', title: 'Tipps für VS Code' },
+      { slug: 'wie-webseiten-funktionieren', title: 'Wie Webseiten funktionieren' },
     ],
   },
   {

@@ -1065,6 +1065,10 @@ html {
   background: rgba(255, 255, 255, 0.05);
 }
 
+.os-toggle--page {
+  margin-top: 1rem;
+}
+
 .os-toggle__btn {
   padding: 0.45rem 0.85rem;
   border: 0;

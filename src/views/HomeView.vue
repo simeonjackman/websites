@@ -45,7 +45,7 @@ import { sections } from '../data/siteNavigation'
         </article>
       </div>
 
-      <div class="panel-note">
+      <div class="panel-note" style="margin-top: 1rem">
         <p>
           Die Inhalte bauen aufeinander auf und führen durch die Grundlagen, damit du eine einfache
           Webseite mit HTML, CSS und JavaScript erstellen kannst.

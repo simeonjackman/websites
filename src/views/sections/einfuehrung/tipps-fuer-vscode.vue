@@ -3,6 +3,7 @@ import LessonScaffold from '../../../components/LessonScaffold.vue'
 import LessonStep from '../../../components/LessonStep.vue'
 import Shortcut from '../../../components/Shortcut.vue'
 import Term from '../../../components/Term.vue'
+import OsToggle from '../../../components/OsToggle.vue'
 </script>
 
 <template>
@@ -24,10 +25,11 @@ import Term from '../../../components/Term.vue'
       <p>
         Visual Studio Code gehört zu den beliebtesten
         <Term term="Editoren" def="Programme, in denen du Code schreibst und bearbeitest." />.
-        Auf dem Mac benutzt du <strong>cmd</strong>, auf Windows <strong>ctrl</strong> –
-        alle Tastenkombinationen unten passen sich automatisch an dein
-        <Term term="Betriebssystem" def="Das Grundprogramm deines Computers, z. B. Windows oder macOS." /> an.
+        Wähle unten dein Betriebssystem – die Tastenkombinationen passen sich
+        automatisch an: Auf dem Mac erscheint <strong>cmd</strong>, auf Windows
+        <strong>ctrl</strong>.
       </p>
+      <OsToggle class="os-toggle--page" />
     </template>
 
     <template #steps>
@@ -37,6 +39,7 @@ import Term from '../../../components/Term.vue'
           ohne durch Ordner zu klicken.
         </p>
         <Shortcut label="Datei öffnen" :keys="['mod', 'P']" />
+        <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
         <Shortcut label="Suchen im Projekt" :keys="['mod', 'shift', 'F']" />
         <p>Auch die integrierte Konsole lässt sich direkt öffnen:</p>
         <Shortcut label="Integriertes Terminal öffnen" :keys="['mod', 'ö']" />
@@ -54,8 +57,9 @@ import Term from '../../../components/Term.vue'
 
       <LessonStep slug="tastenkombinationen" title="Die wichtigsten Befehle">
         <p>
-          Jede Tastenkombination ist einzeln kopierbar – so kannst du sie direkt
-          im <Term term="Terminal" def="Ein Fenster, in dem du Befehle an deinen Computer schreibst." /> verwenden.
+          Jede Tastenkombination zeigt dir die passenden Tasten für dein
+          <Term term="Betriebssystem" def="Das Grundprogramm deines Computers, z. B. Windows oder macOS." /> –
+          mit <strong>cmd</strong> auf dem Mac und <strong>ctrl</strong> auf Windows.
         </p>
         <Shortcut label="Speichern" :keys="['mod', 'S']" />
         <Shortcut label="Rückgängig machen" :keys="['mod', 'Z']" />
