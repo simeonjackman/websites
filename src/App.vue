@@ -34,21 +34,19 @@ function closeMenu() {
           </span>
         </RouterLink>
 
-        <div class="topbar-tools">
-          <button
-            type="button"
-            class="burger-button"
-            :class="{ open: menuOpen }"
-            :aria-expanded="menuOpen"
-            aria-controls="mobile-nav"
-            aria-label="Navigation umschalten"
-            @click="menuOpen = !menuOpen"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
+        <button
+          type="button"
+          class="burger-button"
+          :class="{ open: menuOpen }"
+          :aria-expanded="menuOpen"
+          aria-controls="mobile-nav"
+          aria-label="Navigation umschalten"
+          @click="menuOpen = !menuOpen"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
       <nav id="mobile-nav" class="nav-bar" :class="{ open: menuOpen }" aria-label="Primary navigation">
