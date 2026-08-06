@@ -76,12 +76,5 @@ import Term from '../../../components/Term.vue'
       <p class="lesson-tip">Regelmässiges Speichern und Committen reduziert Stress.</p>
     </template>
 
-    <template #exercise>
-      <p>
-        Erstelle absichtlich einen kleinen, unvollständigen Commit und prüfe mit
-        <code>git status</code>, welche Datei fehlt. Bereite sie nach und
-        schliesse den Fehler bewusst ab.
-      </p>
-    </template>
   </LessonScaffold>
 </template>

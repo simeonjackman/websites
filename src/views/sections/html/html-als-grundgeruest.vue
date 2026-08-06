@@ -65,8 +65,8 @@ const deinGrundgeruest = `<!doctype html>
       <LessonStep slug="datei-anlegen" title="Eine neue HTML-Datei anlegen">
         <p>
           Öffne deinen Ordner in VS Code und erstelle eine neue Datei
-          (<Shortcut label="Neue Datei" :keys="['mod', 'N']" /> ).
-          Speichere sie – wichtig ist die Endung:
+          <Shortcut label="Neue Datei" :keys="['mod', 'N']" />
+          Speichere sie. Wichtig ist die Endung .html:
         </p>
         <CodeExample
           title="Dateiname für deine Webseite"
@@ -85,7 +85,7 @@ const deinGrundgeruest = `<!doctype html>
         <p>
           Jede HTML-Datei beginnt mit demselben Grundgerüst. Kopiere es in deine
           <code>index.html</code> und speichere mit
-          <Shortcut label="Speichern" :keys="['mod', 'S']" />.
+          <Shortcut label="Speichern" :keys="['mod', 'S']" />
         </p>
         <CodeExample
           title="Ein vollständiges HTML5-Grundgerüst"
