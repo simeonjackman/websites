@@ -4,6 +4,7 @@ import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
 import Shortcut from '../../../components/Shortcut.vue'
 import Term from '../../../components/Term.vue'
+import OsToggle from '../../../components/OsToggle.vue'
 
 const ersterCommit = `git init
 # eine Datei anlegen und speichern
@@ -49,6 +50,7 @@ const styleCss = `h1 {
         ein gespeicherter Zwischenstand deines Projekts. In diesem Kapitel baust du
         ein Projekt von ganz vorne auf: vom leeren Ordner bis zum ersten Commit.
       </p>
+      <OsToggle class="os-toggle--page" />
     </template>
 
     <template #steps>

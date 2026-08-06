@@ -5,6 +5,7 @@ import CodeExample from '../../../components/CodeExample.vue'
 import OsBlock from '../../../components/OsBlock.vue'
 import Shortcut from '../../../components/Shortcut.vue'
 import Term from '../../../components/Term.vue'
+import OsToggle from '../../../components/OsToggle.vue'
 
 const homebrewCmd = `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
@@ -31,6 +32,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         <Term term="Betriebssystem" def="Das Grundprogramm deines Computers, z. B. Windows oder macOS." />
         (Windows oder Mac) – die Befehle unterscheiden sich je nach System.
       </p>
+      <OsToggle class="os-toggle--page" />
     </template>
 
     <template #steps>

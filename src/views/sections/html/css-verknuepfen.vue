@@ -4,6 +4,7 @@ import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
 import Shortcut from '../../../components/Shortcut.vue'
 import Term from '../../../components/Term.vue'
+import OsToggle from '../../../components/OsToggle.vue'
 
 const htmlMitLink = `<!doctype html>
 <html lang="de">
@@ -50,6 +51,7 @@ p {
         HTML-Struktur gestalten kann, musst du die CSS-Datei erstellen und in der
         HTML-Datei einbinden. Genau das zeigst du hier Schritt für Schritt.
       </p>
+      <OsToggle class="os-toggle--page" />
     </template>
 
     <template #steps>

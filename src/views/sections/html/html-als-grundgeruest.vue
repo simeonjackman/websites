@@ -4,6 +4,7 @@ import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
 import Shortcut from '../../../components/Shortcut.vue'
 import Term from '../../../components/Term.vue'
+import OsToggle from '../../../components/OsToggle.vue'
 
 const vollstaendigesGrundgeruest = `<!doctype html>
 <html lang="de">
@@ -57,6 +58,7 @@ const deinGrundgeruest = `<!doctype html>
         es Inhalte wie Überschriften und Absätze – für den Browser, für
         Leserinnen und für Hilfstechnologien.
       </p>
+      <OsToggle class="os-toggle--page" />
     </template>
 
     <template #steps>
