@@ -1146,6 +1146,7 @@ html {
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 0.7rem;
+  margin: 0.4rem 0;
   padding: 0.55rem 0.8rem;
   border: 1px solid var(--border);
   border-radius: 0.95rem;
