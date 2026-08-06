@@ -4,15 +4,20 @@ import LessonStep from '../../../components/LessonStep.vue'
 import CodeExample from '../../../components/CodeExample.vue'
 import Term from '../../../components/Term.vue'
 
-const gaengigeAttribute = `<!-- Verknüpfen mit einem Link -->
-<a href="https://example.com">Besuche uns</a>
-
-<!-- Bild einbinden und beschreiben -->
-<img src="bild.jpg" alt="Ein beschreibender Text">
-
-<!-- Elemente für CSS markieren -->
+const aufbauAttribute = `<!-- Eine Klasse für CSS -->
 <div class="karte">Inhalt</div>
 <p id="einleitung">Intro</p>`
+
+const linkBeispiel = `<!-- Ein Link, der zu einer anderen Seite führt -->
+<a href="https://example.com">Besuche uns</a>`
+
+const bildBeispiel = `<!-- Ein Bild von einer Webadresse einbinden -->
+<img src="https://www.gym-muttenz.ch/fileadmin/gymnasiummuttenz/img/logo-gym-muttenz.png" alt="Logo des Gymnasiums Muttenz">`
+
+const beschreibungBeispiel = `<!-- Ein Bild ohne Beschreibung -->
+<img src="logo.png">
+<!-- Ein Bild mit aussagekräftiger Beschreibung -->
+<img src="logo.png" alt="Logo des Gymnasiums Muttenz">`
 
 const deineUebung = `<p class="einfuehrung">
     Kennst du <a href="https://developer.mozilla.org">MDN</a>?
@@ -49,36 +54,70 @@ const deineUebung = `<p class="einfuehrung">
           Ein Attribut besteht aus einem Namen, einem Gleichheitszeichen und
           einem in Anführungszeichen gesetzten Wert.
         </p>
+        <CodeExample
+          title="Attribute für CSS und Struktur"
+          language="html"
+          filename="beispiel.html"
+          :code="aufbauAttribute"
+        />
         <ul class="lesson-list">
-          <li>Das Attribut <code>class</code> verbindet HTML und CSS.</li>
+          <li><code>class</code> und <code>id</code> verbinden HTML und CSS.</li>
         </ul>
       </LessonStep>
 
-      <LessonStep slug="wichtige-attribute" title="Links, Bilder und Beschreibungen">
+      <LessonStep slug="links" title="Links: das href-Attribut">
         <p>
-          Viele Attribute verbinden die Seite mit externen Inhalten oder
-          beschreiben sie genauer.
+          Das <code>href</code>-Attribut (hypertext reference) gibt an, wohin
+          ein Link führt. Ohne <code>href</code> ist ein Link nur noch ein
+          normaler Text.
         </p>
-        <ul class="lesson-list">
-          <li>Mit <code>href</code>, <code>src</code> und <code>alt</code> werden Inhalte verknüpft und beschrieben.</li>
-        </ul>
         <CodeExample
-          title="Gängige Attribute im Einsatz"
+          title="Ein Link"
           language="html"
           filename="beispiel.html"
-          :code="gaengigeAttribute"
+          :code="linkBeispiel"
         />
       </LessonStep>
 
-      <LessonStep slug="saubere-attribute" title="Knapp und sinnvoll einsetzen">
+      <LessonStep slug="bilder" title="Bilder: das src-Attribut">
         <p>
-          Gute Attribute sind kurz, sprechend und werden nur dort verwendet, wo
-          sie nötig sind.
+          Das <code>src</code>-Attribut (source) gibt die Adresse eines Bildes
+          an. Du hast zwei Möglichkeiten: Entweder kopierst du die Adresse
+          eines Bildes aus dem Internet, oder du speicherst die Bilddatei
+          selbst in deinem Projektordner und trägst nur den Dateinamen ein.
         </p>
+        <p>So sieht das Ergebnis im Browser aus:</p>
+        <img
+          class="attribute-beispiel-bild"
+          src="https://www.gym-muttenz.ch/fileadmin/gymnasiummuttenz/img/logo-gym-muttenz.png"
+          alt="Logo des Gymnasiums Muttenz"
+        />
+        <CodeExample
+          title="Ein Bild einbinden"
+          language="html"
+          filename="beispiel.html"
+          :code="bildBeispiel"
+        />
+      </LessonStep>
+
+      <LessonStep slug="beschreibungen" title="Beschreibungen: das alt-Attribut">
+        <p>
+          Das <code>alt</code>-Attribut beschreibt ein Bild für alle, die es
+          nicht sehen können – etwa wenn das Bild nicht lädt oder wenn es mit
+          einem Screenreader vorgelesen wird.
+        </p>
+        <CodeExample
+          title="Mit und ohne Beschreibung"
+          language="html"
+          filename="beispiel.html"
+          :code="beschreibungBeispiel"
+        />
         <ul class="lesson-list">
-          <li>Saubere Attribute verbessern Lesbarkeit und Zugänglichkeit.</li>
+          <li>Der <code>alt</code>-Text beschreibt kurz, was auf dem Bild zu sehen ist.</li>
+          <li>Ein leerer <code>alt=""</code> kennzeichnet rein dekorative Bilder.</li>
         </ul>
       </LessonStep>
+
     </template>
 
     <template #recap>
@@ -94,7 +133,7 @@ const deineUebung = `<p class="einfuehrung">
       <p>
         Erstelle einen Absatz mit einem Link und einem Bild. Füge dem Bild einen
         aussagekräftigen <code>alt</code>-Text und dem Absatz eine
-        <code>class</code> hinzu.
+        <code>class</code> hinzu. Ein Beispiel wäre:
       </p>
       <CodeExample
         title="Deine Übung"

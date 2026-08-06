@@ -929,6 +929,15 @@ html {
   font-weight: 600;
 }
 
+.attribute-beispiel-bild {
+  width: 100%;
+  max-width: 14rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
 .lesson-disclaimer {
   padding: 1rem 1.2rem;
   border: 1px dashed var(--border);
