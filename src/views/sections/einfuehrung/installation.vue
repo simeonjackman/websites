@@ -59,10 +59,10 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
             </p>
           </template>
         </OsBlock>
-        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
       </LessonStep>
 
       <LessonStep slug="paketverwaltung" title="Paketverwaltung einrichten">
+        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           Ein Paketmanager lädt Programme für dich herunter und installiert sie.
           Windows nutzt
@@ -72,8 +72,16 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         </p>
         <OsBlock>
           <template #windows>
-            <p>winget ist auf neueren Windows-Versionen bereits enthalten. Prüfe das im Administrator-Terminal:</p>
-            <CodeExample title="winget prüfen" language="bash" filename="PowerShell" :code="`winget --version`" />
+            <p>
+              Falls winget noch nicht installiert ist, führst du im
+              Administrator-Terminal diesen Befehl aus:
+            </p>
+            <CodeExample
+              title="winget installieren"
+              language="bash"
+              filename="PowerShell"
+              :code="`Add-AppxPackage -Path 'https://github.com/microsoft/winget-cli/releases/download/v1.8.1911/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' -ForceApplicationShutdown`"
+            />
           </template>
           <template #mac>
             <p>Falls du Homebrew noch nicht hast, installiere es mit diesem Befehl:</p>
@@ -83,6 +91,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="vscode-installieren" title="VS Code installieren">
+        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           VS Code ist unser
           <Term term="Editor" def="Ein Programm, in dem du Code schreibst und bearbeitest." />,
@@ -101,6 +110,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="git-installieren" title="Git installieren">
+        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           <Term term="Git"
             def="Ein Werkzeug, um Versionen deiner Dateien zu speichern und Änderungen nachzuvollziehen." />
@@ -118,6 +128,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="git-einrichten" title="Git mit Name und E-Mail einrichten">
+        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           Bevor du Git verwendest, musst du deinen Benutzernamen und deine
           E-Mail-Adresse setzen. So werden deine Änderungen eindeutig zugeordnet.
@@ -127,6 +138,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="chrome-installieren" title="Chrome installieren">
+        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           Für die Webentwicklung brauchen wir einen
           <Term term="Browser" def="Ein Programm, um Webseiten anzusehen, z. B. Chrome." /> mit
@@ -146,6 +158,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="live-server" title="Die Live-Server-Erweiterung installieren">
+        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           Moderne Webseiten brauchen einen
           <Term term="Webserver" def="Ein Programm, das deine Webseite an den Browser ausliefert." />.
