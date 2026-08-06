@@ -15,7 +15,7 @@ import Term from '../../../components/Term.vue'
     <template #objectives>
       <ul class="lesson-list">
         <li>Du erkennst häufige Git-Fehler frühzeitig.</li>
-        <li>Du weisst, wie du sie vermeidest.</li>
+        <li>Du weisst, wie du sie in VS Code vermeidest.</li>
         <li>Du entwickelst eine ruhige Arbeitsweise mit Git.</li>
       </ul>
     </template>
@@ -24,53 +24,89 @@ import Term from '../../../components/Term.vue'
       <p>
         Git wirkt auf den ersten Blick kompliziert – die meisten Probleme
         entstehen aber durch fehlende Ordnung oder unklare Abläufe. Dieses
-        Kapitel zeigt die typischen Stolpersteine und wie du sie umgehst.
+        Kapitel zeigt die typischen Stolpersteine und wie du sie in VS Code
+        umgehst.
       </p>
     </template>
 
     <template #steps>
-      <LessonStep slug="grosse-commits" title="Zu grosse Änderungen in einem Commit">
+      <LessonStep slug="zu-grosse-commits" title="Zu grosse Änderungen in einem Commit">
         <p>
           Wenn ein <Term term="Commit" def="Ein gespeicherter Zwischenstand deines Projekts mit einer erklärenden Nachricht." /> viele unzusammenhängende Änderungen enthält, ist die
           <Term term="Versionsgeschichte" def="Der vollständige Verlauf aller gespeicherten Änderungen und Versionen eines Projekts." /> schwer zu lesen und Fehler sind kaum noch zu finden.
         </p>
-        <ul class="lesson-list">
-          <li>Zu grosse Änderungen in einem Commit machen die Suche schwer.</li>
-        </ul>
-        <p>Besser ist es, logisch zusammengehörige Schritte einzeln zu speichern.</p>
-      </LessonStep>
-
-      <LessonStep slug="branch-wechsel" title="Unbedachte Branch-Wechsel">
         <p>
-          Der Wechsel zwischen <Term term="Branches" def="Abzweigungen vom Hauptprojekt, in denen du eigene Änderungen unabhängig entwickeln kannst." /> gehört zu Git. Wer ihn unüberlegt
-          ausführt, riskiert, lokale Arbeiten durcheinanderzubringen.
+          In der Versionskontrolle von VS Code bereitest du deshalb nur die
+          Dateien vor, die zusammengehören – mit dem <strong>+</strong>-Symbol
+          neben der jeweiligen Datei. So bleibt jeder Commit klein und
+          übersichtlich.
         </p>
         <ul class="lesson-list">
-          <li>Unbedachte Branch-Wechsel können lokale Arbeiten durcheinanderbringen.</li>
+          <li>Zu grosse Commits machen die Suche nach Änderungen schwer.</li>
+          <li>Bereite nur zusammengehörige Dateien vor.</li>
+        </ul>
+      </LessonStep>
+
+      <LessonStep slug="commit-ohne-nachricht" title="Ein Commit ohne Nachricht">
+        <p>
+          In VS Code kannst du einen Commit nicht ohne Nachricht bestätigen –
+          das Feld bleibt leer und der Commit-Button zeigt dir, dass du zuerst
+          etwas schreiben musst. Das ist Absicht: Ein
+          <Term term="Commit" def="Ein gespeicherter Zwischenstand deines Projekts mit einer erklärenden Nachricht." /> ohne Beschreibung erzählt später niemandem, was passiert ist.
+        </p>
+        <ul class="lesson-list">
+          <li>Schreibe immer eine kurze, klare Commit-Nachricht.</li>
+          <li>Beschreibe, was du gemacht hast – und warum.</li>
+        </ul>
+      </LessonStep>
+
+      <LessonStep slug="leerer-commit" title="Was passiert bei einem leeren Commit?">
+        <p>
+          Hast du vergessen, Änderungen vorzubereiten, und versuchst trotzdem zu
+          committen, antwortet Git: Es gibt nichts zu speichern. In VS Code siehst
+          du im Quellcode-Bereich, dass keine Änderungen bereitgestellt sind –
+          im Terminal erscheint eine Meldung wie diese:
+        </p>
+        <CodeExample
+          title="Git hat nichts zu speichern"
+          language="bash"
+          filename="Terminal"
+          :code="`git commit\n# nothing to commit, working tree clean`"
+        />
+        <p>
+          Prüfe deshalb vor jedem Commit, welche Dateien bereitgestellt sind.
+          Erscheint eine Datei unerwartet nicht in der Liste, hast du sie
+          vermutlich nicht mit <strong>+</strong> vorbereitet.
+        </p>
+        <ul class="lesson-list">
+          <li>Ohne vorbereitete Änderungen gibt es keinen Commit.</li>
+          <li>Kontrolliere die Liste der bereitgestellten Dateien.</li>
         </ul>
       </LessonStep>
 
       <LessonStep slug="vergessene-dateien" title="Vergessene Dateien">
         <p>
-          Dateien, die nicht mit `git add` bereitgestellt werden, fehlen im
-          Commit. Das führt schnell zu inkonsistenten Ständen.
+          Dateien, die du nicht mit dem <strong>+</strong>-Symbol vorbereitest,
+          fehlen im Commit. Das führt schnell zu inkonsistenten Ständen – die
+          eine Hälfte der Änderung ist gespeichert, die andere nicht.
         </p>
-        <ul class="lesson-list">
-          <li>Vergessene Dateien führen oft zu inkonsistenten Ständen.</li>
-        </ul>
         <CodeExample
           title="Vor dem Commit: aktuellen Stand prüfen"
           language="bash"
           filename="Terminal"
           :code="`git status\n# zeigt, welche Dateien bereitgestellt sind`"
         />
+        <p>
+          Tipp: Nach dem Vorbereiten zählt die Versionskontrolle in VS Code die
+          bereitgestellten Dateien. Stimmt die Zahl nicht, fehlt etwas.
+        </p>
       </LessonStep>
     </template>
 
     <template #recap>
       <ul class="lesson-list">
         <li>Halte Commits klein und überschaubar.</li>
-        <li>Wechsle Branches nur bewusst.</li>
+        <li>Eine Commit-Nachricht ist Pflicht und hilft später.</li>
         <li>Prüfe mit `git status`, ob alle Dateien dabei sind.</li>
       </ul>
       <p class="lesson-tip">Regelmässiges Speichern und Committen reduziert Stress.</p>
