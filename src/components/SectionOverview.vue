@@ -24,7 +24,7 @@ const section = computed(() => findSectionBySlug(props.sectionSlug))
 <template>
   <section v-if="section" class="page stack">
     <section class="hero">
-      <div class="hero-grid">
+      <div class="">
         <div>
           <p class="kicker">{{ section.label }}</p>
           <h1 v-if="title">{{ title }}</h1>

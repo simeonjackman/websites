@@ -52,9 +52,8 @@ git pull`
           In VS Code zeigt dir die
           <Term term="Versionskontrolle" def="Das System, das alle Änderungen an deinen Dateien aufzeichnet, z. B. Git." />
           alle Änderungen deines Projekts auf einen Blick. Öffne sie mit dem
-          Quellcode-Symbol links in der Leiste oder mit
-          <Shortcut label="Versionskontrolle öffnen" :keys="['mod', 'shift', 'G']" />
-          .
+          Quellcode-Symbol links in der Leiste oder mit:
+          <Shortcut label="Versionskontrolle öffnen" :keys="['ctrl', 'shift', 'G']" />
         </p>
         <p>
           Im oberen Bereich siehst du alle geänderten Dateien. Das ist dein
