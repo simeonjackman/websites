@@ -55,7 +55,7 @@ p {
     </template>
 
     <template #steps>
-      <LessonStep slug="zwei-dateien" title="Ein Projekt braucht zwei Dateien">
+      <LessonStep slug="zwei-dateien" title="Datei für CSS (Design) erstellen">
         <p>
           Erstelle im selben Ordner zusätzlich zur <code>index.html</code> eine
           zweite Datei <code>style.css</code>. Sie sind Geschwister – beide liegen
@@ -95,7 +95,7 @@ p {
           :code="styleCss"
         />
         <p>
-          Nach dem Speichern (<Shortcut label="Speichern" :keys="['mod', 'S']" />) lädt der
+          Nach dem Speichern <Shortcut label="Speichern" :keys="['mod', 'S']" /> lädt der
           Browser die Gestaltung und wendet sie an.
         </p>
       </LessonStep>

@@ -1,5 +1,5 @@
 <script setup>
-import { onBeforeUnmount, ref } from 'vue'
+import { computed, onBeforeUnmount, ref } from 'vue'
 
 const props = defineProps({
   title: {
@@ -21,6 +21,13 @@ const props = defineProps({
     type: String,
     required: true,
   },
+})
+
+const codeLines = computed(() => {
+  return props.code
+    .replace(/^\s*\n/, '')
+    .replace(/\n\s*$/, '')
+    .split('\n')
 })
 
 const copied = ref(false)
@@ -74,7 +81,7 @@ onBeforeUnmount(() => {
       </div>
     </div>
 
-    <pre class="code-example__block"><code>{{ code }}</code></pre>
+    <pre class="code-example__block"><span v-for="(line, index) in codeLines" :key="index" class="code-example__line"><span class="code-example__gutter" aria-hidden="true">{{ index + 1 }}</span><span class="code-example__text">{{ line }}</span></span></pre>
   </section>
 </template>
 
@@ -161,7 +168,7 @@ onBeforeUnmount(() => {
 
 .code-example__block {
   margin: 0;
-  padding: 1rem;
+  padding: 0.5rem 0;
   border-radius: 0.95rem;
   overflow: auto;
   background: rgba(1, 7, 18, 0.82);
@@ -169,9 +176,35 @@ onBeforeUnmount(() => {
   color: #dfe7f5;
   font-size: 0.92rem;
   line-height: 1.55;
+  white-space: normal;
 }
 
-.code-example__block code {
+.code-example__line {
+  display: flex;
+  align-items: stretch;
+}
+
+.code-example__line + .code-example__line {
+  margin-top: 0;
+}
+
+.code-example__gutter {
+  flex: 0 0 auto;
+  min-width: 2.6rem;
+  padding: 0 0.85rem;
+  text-align: right;
+  white-space: nowrap;
+  color: var(--muted);
+  opacity: 0.55;
+  user-select: none;
+  border-right: 1px solid rgba(200, 220, 255, 0.12);
+  font-family: 'SFMono-Regular', 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.code-example__text {
+  flex: 1;
+  padding: 0 0.85rem;
+  white-space: pre;
   font-family: 'SFMono-Regular', 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
 }
 
