@@ -1134,7 +1134,7 @@ html {
 
 .shortcut {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: 0.7rem;
   padding: 0.55rem 0.8rem;
@@ -1171,22 +1171,6 @@ html {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
-.shortcut__copy {
-  padding: 0.35rem 0.65rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text);
-  font: inherit;
-  font-size: 0.78rem;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.shortcut__copy:hover {
-  background: rgba(255, 255, 255, 0.16);
-}
-
 .term {
   color: var(--accent-cool);
   border-bottom: 1px dotted rgba(127, 209, 255, 0.7);
@@ -1197,11 +1181,6 @@ html {
 @media (max-width: 640px) {
   .topbar-tools {
     gap: 0.5rem;
-  }
-
-  .os-toggle--header .os-toggle__btn {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.8rem;
   }
 
   .shortcut {
