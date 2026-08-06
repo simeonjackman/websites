@@ -6,118 +6,121 @@ import Shortcut from '../../../components/Shortcut.vue'
 import Term from '../../../components/Term.vue'
 import OsToggle from '../../../components/OsToggle.vue'
 
-const ersterCommit = `git init
-# eine Datei anlegen und speichern
-git add .
-git commit -m "Erste Datei im Projekt"`
+const commitNachrichten = `Gut: beschreibt klar, was und warum
+Füge Kontaktformular mit Validierung hinzu
 
-const indexHtml = `<!doctype html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>Mein erstes Git-Projekt</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Hallo Git</h1>
-    <p>Diese Datei wurde in einem leeren Repository erstellt.</p>
-</body>
-</html>`
+Nicht so gut: zu vage
+fix
+aenderungen
+sachen`
 
-const styleCss = `h1 {
-    color: #2f6fdb;
-}`
+const syncBefehl = `# lokale Commits hochladen
+git push
+
+# entfernte Änderungen holen und übernehmen
+git pull`
 </script>
 
 <template>
   <LessonScaffold
     section-slug="git"
     lesson-slug="commits"
-    title="Commits"
-    summary="Ein Commit beschreibt einen klaren Zustand mit einer passenden Nachricht – von der leeren Datei bis zur gespeicherten Version."
+    title="Commits erstellen und synchronisieren"
+    summary="Lerne, wie du in VS Code einen guten Commit erstellst und deine Änderungen hoch- und herunterlädst."
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kannst ein leeres Repository anlegen.</li>
-        <li>Du kannst von Hand eine HTML-Datei darin erstellen.</li>
-        <li>Du kannst Dateien mit <code>git add</code> und <code>git commit</code> speichern.</li>
+        <li>Du kannst in VS Code Änderungen vorbereiten.</li>
+        <li>Du kannst einen Commit mit einer guten Nachricht erstellen.</li>
+        <li>Du kannst deine Commits mit Push und Sync teilen.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
         Ein <Term term="Commit" def="Ein gespeicherter Zwischenstand deines Projekts mit einer erklärenden Nachricht." /> ist
-        ein gespeicherter Zwischenstand deines Projekts. In diesem Kapitel baust du
-        ein Projekt von ganz vorne auf: vom leeren Ordner bis zum ersten Commit.
+        ein gespeicherter Zwischenstand deines Projekts. In diesem Kapitel lernst
+        du, wie du Commits direkt in VS Code erstellst, was eine gute
+        Commit-Nachricht ausmacht und wie du deine Arbeit auf GitHub bringst.
       </p>
       <OsToggle class="os-toggle--page" />
     </template>
 
     <template #steps>
-      <LessonStep slug="leeres-repository" title="Ein leeres Repository anlegen">
+      <LessonStep slug="versionskontrolle-oeffnen" title="Die Versionskontrolle in VS Code öffnen">
         <p>
-          Erstelle einen neuen Ordner für dein Projekt und initialisiere ihn als
-          <Term term="Repository" def="Der verwaltete Projektordner, in dem Git deine Versionsgeschichte speichert." />.
-          Danach ist dein Projekt bereit, Dateien zu übernehmen.
+          In VS Code zeigt dir die
+          <Term term="Versionskontrolle" def="Das System, das alle Änderungen an deinen Dateien aufzeichnet, z. B. Git." />
+          alle Änderungen deines Projekts auf einen Blick. Öffne sie mit dem
+          Quellcode-Symbol links in der Leiste oder mit
+          <Shortcut label="Versionskontrolle öffnen" :keys="['mod', 'shift', 'G']" />
+          .
         </p>
-        <CodeExample
-          title="Repository starten"
-          language="bash"
-          filename="Terminal"
-          :code="`mkdir mein-projekt\ncd mein-projekt\ngit init`"
-        />
-      </LessonStep>
-
-      <LessonStep slug="dateien-anlegen" title="Dateien von Hand erstellen">
         <p>
-          Ein Projekt besteht aus gewöhnlichen Dateien. Erstelle im Ordner eine
-          <code>index.html</code> und eine <code>style.css</code> – genau wie im
-          Kapitel <em>CSS mit HTML verknüpfen</em>.
-        </p>
-        <CodeExample
-          title="index.html im leeren Repository"
-          language="html"
-          filename="index.html"
-          :code="indexHtml"
-        />
-        <CodeExample
-          title="style.css dazu"
-          language="css"
-          filename="style.css"
-          :code="styleCss"
-        />
-        <p>
-          Mit <Shortcut label="Speichern" :keys="['mod', 'S']" /> sicherst du jede
-          Datei. Git merkt sich zunächst nur, dass neue Dateien vorhanden sind –
-          noch sind sie nicht Teil der Versionsgeschichte.
+          Im oberen Bereich siehst du alle geänderten Dateien. Das ist dein
+          Ausgangspunkt für einen neuen Commit.
         </p>
       </LessonStep>
 
       <LessonStep slug="aenderungen-vorbereiten" title="Änderungen vorbereiten">
         <p>
-          Mit <code>git status</code> siehst du, welche Dateien neu oder verändert
-          sind. Mit <code>git add .</code> nimmst du alle Änderungen in den
-          nächsten Commit auf. Kleine, zusammenhängende Änderungen machen die
-          Historie leicht lesbar.
+          Bevor du committest, wählst du aus, welche Änderungen aufgenommen
+          werden. Klicke bei einer Datei auf das <strong>+</strong>-Symbol, um sie
+          vorzubereiten. Vorbereitete Dateien landen in der
+          <Term term="Bereitstellung (Staging)" def="Der Zwischenschritt, in dem du festlegst, welche Änderungen in den nächsten Commit kommen." />.
         </p>
-        <CodeExample
-          title="Dateien bereitstellen"
-          language="bash"
-          filename="Terminal"
-          :code="`git status\ngit add .`"
-        />
+        <ul class="lesson-list">
+          <li>Nimm nur Änderungen auf, die zusammengehören.</li>
+          <li>Kleine Commits sind leichter zu lesen und zu überprüfen.</li>
+          <li>Ein Commit ist kein Sammelbecken für unklare Zwischenstände.</li>
+        </ul>
       </LessonStep>
 
-      <LessonStep slug="commit-abschliessen" title="Den Commit abschliessen">
+      <LessonStep slug="guten-commit-erstellen" title="Einen guten Commit erstellen">
         <p>
-          Jetzt wird der Stand mit einer Nachricht gespeichert. Die Nachricht
-          sollte erklären, was und warum geändert wurde – nicht wie.
+          Schreibe oben eine Nachricht, die beschreibt, was du gemacht hast – und
+          warum. Bestätige den Commit mit
+          <Shortcut label="Commit bestätigen" :keys="['mod', 'Enter']" />
+          .
+        </p>
+        <p>
+          Eine gute Nachricht ist kurz, klar und sagt nicht nur <em>was</em>,
+          sondern auch <em>warum</em> etwas geändert wurde.
         </p>
         <CodeExample
-          title="Einen Commit erstellen"
+          title="Gute und weniger gute Commit-Nachrichten"
+          language="text"
+          filename="commit-nachricht"
+          :code="commitNachrichten"
+        />
+        <p class="lesson-tip">Beschreibe Commit-Nachrichten so, dass du sie später noch verstehst.</p>
+      </LessonStep>
+
+      <LessonStep slug="pushen-und-synchronisieren" title="Commits pushen und synchronisieren">
+        <p>
+          Deine Commits liegen zuerst nur auf deinem Computer. Um sie mit deinem
+          <Term term="GitHub" def="Eine Plattform im Internet, auf der du Git-Projekte speicherst und teilst." />
+          -Repository zu teilen, klickst du auf <strong>Push</strong> bzw.
+          <strong>Sync</strong> in der Versionskontrolle.
+        </p>
+        <ul class="lesson-list">
+          <li>
+            <Term term="Push" def="Deine lokalen Commits auf eine entfernte Plattform wie GitHub hochladen." />
+            lädt deine Commits hoch.
+          </li>
+          <li>
+            <Term term="Sync" def="Lokale und entfernte Änderungen abgleichen – also pushen und pullen in einem Schritt." />
+            holt zugleich fremde Änderungen und gleicht alles ab.
+          </li>
+        </ul>
+        <p>
+          Falls du lieber im Terminal arbeitest, bewirkt das Folgende dasselbe:
+        </p>
+        <CodeExample
+          title="Pushen und Pull im Terminal"
           language="bash"
           filename="Terminal"
-          :code="ersterCommit"
+          :code="syncBefehl"
         />
       </LessonStep>
     </template>
@@ -125,18 +128,11 @@ const styleCss = `h1 {
     <template #recap>
       <ul class="lesson-list">
         <li>Ein Commit beschreibt einen klaren, nachvollziehbaren Zustand.</li>
-        <li>Kleine Commits sind leichter zu lesen.</li>
         <li>Die Nachricht erklärt, was und warum geändert wurde.</li>
+        <li>Mit Push lädst du Commits hoch, mit Sync gleicht du alles ab.</li>
       </ul>
-      <p class="lesson-tip">Beschreibe Commit-Nachrichten so, dass du sie später noch verstehst.</p>
+      <p class="lesson-tip">Commite oft und in kleinen Schritten – so bleibt deine Geschichte verständlich.</p>
     </template>
 
-    <template #exercise>
-      <p>
-        Lege ein neues Repository an, erstelle eine <code>index.html</code> und
-        eine <code>style.css</code> von Hand, binde das CSS ein und mache deinen
-        ersten Commit mit einer passenden Nachricht.
-      </p>
-    </template>
   </LessonScaffold>
 </template>

@@ -42,7 +42,7 @@ import OsToggle from '../../../components/OsToggle.vue'
         <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
         <Shortcut label="Suchen im Projekt" :keys="['mod', 'shift', 'F']" />
         <p>Auch die integrierte Konsole lässt sich direkt öffnen:</p>
-        <Shortcut label="Integriertes Terminal öffnen" :keys="['mod', 'ö']" />
+        <Shortcut label="Integriertes Terminal öffnen" :keys="['ctrl', 'ö']" />
       </LessonStep>
 
       <LessonStep slug="formatierung-aktivieren" title="Automatische Formatierung">
@@ -77,12 +77,5 @@ import OsToggle from '../../../components/OsToggle.vue'
       <p class="lesson-tip">Eine aufgeräumte Entwicklungsumgebung erhöht die Produktivität.</p>
     </template>
 
-    <template #exercise>
-      <p>
-        Öffne über die Schnellsuche eine Datei, formatiere sie mit
-        <Shortcut label="Dokument formatieren" :keys="['shift', 'alt', 'F']" />
-        und überprüfe, ob <em>Format On Save</em> in den Einstellungen aktiviert ist.
-      </p>
-    </template>
   </LessonScaffold>
 </template>

@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue'
-import { modifierKey } from '../composables/useOs'
+import { modifierKey, useOs } from '../composables/useOs'
 
 const props = defineProps({
   label: {
@@ -17,8 +17,16 @@ const props = defineProps({
   },
 })
 
+const { os } = useOs()
+
+const modifierLabel = (key) => {
+  if (key === 'mod') return modifierKey()
+  if (key === 'ctrl') return os.value === 'mac' ? '^' : 'ctrl'
+  return key
+}
+
 const resolvedKeys = computed(() => {
-  return props.keys.map((key) => (key === 'mod' ? modifierKey() : key))
+  return props.keys.map(modifierLabel)
 })
 
 const displayText = computed(() => {

@@ -69,12 +69,5 @@ import Term from '../../../components/Term.vue'
       <p class="lesson-tip">Git ist ein Sicherheitsnetz für Code.</p>
     </template>
 
-    <template #exercise>
-      <p>
-        Überlege dir ein kleines Projekt, bei dem du gerne auf einen früheren
-        Stand zurückkönntest. Notiere, welche Schritte du speichern würdest,
-        bevor du mit Git arbeitest.
-      </p>
-    </template>
   </LessonScaffold>
 </template>
