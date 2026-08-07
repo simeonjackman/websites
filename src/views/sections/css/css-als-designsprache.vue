@@ -14,16 +14,16 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du verstehst, was eine CSS-Regel ausmacht.</li>
-        <li>Du kannst ein konsistentes Farbsystem mit Variablen aufbauen.</li>
-        <li>Du weisst, warum <Term term="Designsysteme" def="Ein Designsystem ist eine Sammlung einheitlicher Regeln für Farben, Schriften und Abstände." /> einfach bleiben dürfen.</li>
+        <li>Sie verstehen, was eine CSS-Regel ausmacht.</li>
+        <li>Sie können ein konsistentes Farbsystem mit Variablen aufbauen.</li>
+        <li>Sie wissen, warum <Term term="Designsysteme" def="Ein Designsystem ist eine Sammlung einheitlicher Regeln für Farben, Schriften und Abstände." /> einfach bleiben dürfen.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
         <Term term="CSS" def="CSS (Cascading Style Sheets) steuert Aussehen und Layout von Webseiten, etwa Farbe, Abstand und Schrift." /> ist mehr als das «Verschönern» einer Seite. Es ist die Sprache, mit
-        der du entscheidest, wie etwas wirkt – welche Farbe, welcher Abstand,
+        der Sie entscheiden, wie etwas wirkt – welche Farbe, welcher Abstand,
         welcher Rhythmus. Dieses Kapitel legt das Fundament für all das.
       </p>
     </template>
@@ -45,8 +45,8 @@ import Term from '../../../components/Term.vue'
 
       <LessonStep slug="farben-zentralisieren" title="Farben zentralisieren mit Variablen">
         <p>
-          Statt dieselbe Farbe überall von Hand zu tippen, legst du sie einmal
-          in einer <Term term="Variable" def="Eine Variable ist ein benannter Wert, den du einmal anlegst und an vielen Stellen wiederverwendest." /> ab. So sorgst du für ein konsistentes Farbsystem
+          Statt dieselbe Farbe überall von Hand zu tippen, legen Sie sie einmal
+          in einer <Term term="Variable" def="Eine Variable ist ein benannter Wert, den Sie einmal anlegen und an vielen Stellen wiederverwenden." /> ab. So sorgen Sie für ein konsistentes Farbsystem
           und kannst Werte an einer einzigen Stelle ändern.
         </p>
         <CodeExample
@@ -82,9 +82,9 @@ import Term from '../../../components/Term.vue'
 
     <template #exercise>
       <p>
-        Lege in einer <code>styles.css</code> drei Farbvariablen an und verwende
-        sie für eine Box und eine Schaltfläche. Ändere danach nur den
-        Variablenwert und beobachte, wie beide Elemente reagieren.
+        Legen Sie in einer <code>styles.css</code> drei Farbvariablen an und verwenden
+        Sie sie für eine Box und eine Schaltfläche. Ändern Sie danach nur den
+        Variablenwert und beobachten Sie, wie beide Elemente reagieren.
       </p>
       <CodeExample
         title="Farbvariablen anwenden"

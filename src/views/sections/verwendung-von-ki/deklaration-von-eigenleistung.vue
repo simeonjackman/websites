@@ -14,24 +14,24 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kennzeichnest fremde Hilfe transparent.</li>
-        <li>Du dokumentierst, welche Teile du angepasst hast.</li>
-        <li>Du kannst Ergebnisse aus KI-Vorschlägen erklären.</li>
+        <li>Sie kennzeichnen fremde Hilfe transparent.</li>
+        <li>Sie dokumentieren, welche Teile Sie angepasst haben.</li>
+        <li>Sie können Ergebnisse aus KI-Vorschlägen erklären.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
-        <Term term="KI" def="Künstliche Intelligenz, ein Programm, das dir Texte und Code-Vorschläge liefert." /> gehört zu den Werkzeugen, die du in deinem Projekt einsetzen darfst –
-        vorausgesetzt, es bleibt klar, was du selbst geleistet hast. Eine
-        ehrliche Kennzeichnung schützt dich und deine Arbeit.
+        <Term term="KI" def="Künstliche Intelligenz, ein Programm, das Ihnen Texte und Code-Vorschläge liefert." /> gehört zu den Werkzeugen, die Sie in Ihrem Projekt einsetzen dürfen –
+        vorausgesetzt, es bleibt klar, was Sie selbst geleistet haben. Eine
+        ehrliche Kennzeichnung schützt Sie und Ihre Arbeit.
       </p>
     </template>
 
     <template #steps>
       <LessonStep slug="fremdes-kennzeichnen" title="Fremdes klar kennzeichnen">
         <p>
-          Jeder Teil, der nicht vollständig von dir stammt, sollte erkennbar
+          Jeder Teil, der nicht vollständig von Ihnen stammt, sollte erkennbar
           sein. Dafür reicht eine kurze Notiz an der richtigen Stelle – etwa als <Term term="Kommentar" def="Eine kurze Notiz im Code zum Erklären, die das Programm selbst nicht ausführt." /> in der Datei.
         </p>
         <CodeExample
@@ -42,10 +42,10 @@ import Term from '../../../components/Term.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="eigene-leistung-dokumentieren" title="Deine eigene Leistung sichtbar machen">
+      <LessonStep slug="eigene-leistung-dokumentieren" title="Ihre eigene Leistung sichtbar machen">
         <p>
-          Dokumentiere, welche Teile du verändert hast und warum. So zeigt dein
-          Projekt nicht nur das Ergebnis, sondern auch dein Verständnis.
+          Dokumentieren Sie, welche Teile Sie verändert haben und warum. So zeigt Ihr
+          Projekt nicht nur das Ergebnis, sondern auch Ihr Verständnis.
         </p>
         <CodeExample
           title="Eigene Anpassungen notieren"
@@ -57,22 +57,22 @@ import Term from '../../../components/Term.vue'
 
       <LessonStep slug="ergebnisse-erklaeren" title="Ergebnisse erklären können">
         <p>
-          <Term term="Eigenleistung" def="Der Anteil deiner Arbeit, den du selbst erstellt und wirklich verstanden hast." /> heisst auch, dass du deine Abgabe erklären kannst. Ein
-          guter Test: Beschreibe deiner Lehrperson, wie ein schwieriger Teil
-          deiner Lösung funktioniert – ganz ohne Hilfsmittel.
+          <Term term="Eigenleistung" def="Der Anteil Ihrer Arbeit, den Sie selbst erstellt und wirklich verstanden haben." /> heisst auch, dass Sie Ihre Abgabe erklären können. Ein
+          guter Test: Beschreiben Sie Ihrer Lehrperson, wie ein schwieriger Teil
+          Ihrer Lösung funktioniert – ganz ohne Hilfsmittel.
         </p>
         <ul class="lesson-list">
-          <li>Warum hast du diese Lösung gewählt?</li>
-          <li>Welchen Teil hast du selbst geschrieben?</li>
-          <li>Was hast du aus dem KI-Vorschlag gelernt?</li>
+          <li>Warum haben Sie diese Lösung gewählt?</li>
+          <li>Welchen Teil haben Sie selbst geschrieben?</li>
+          <li>Was haben Sie aus dem KI-Vorschlag gelernt?</li>
         </ul>
       </LessonStep>
     </template>
 
     <template #recap>
       <ul class="lesson-list">
-        <li>Kennzeichne fremde Hilfe transparent.</li>
-        <li>Dokumentiere, welche Teile du angepasst hast.</li>
+        <li>Kennzeichnen Sie fremde Hilfe transparent.</li>
+        <li>Dokumentieren Sie, welche Teile Sie angepasst haben.</li>
         <li>Eigenleistung bedeutet auch, Ergebnisse erklären zu können.</li>
       </ul>
       <p class="lesson-tip">Saubere Kennzeichnung schützt vor Missverständnissen.</p>
@@ -80,8 +80,8 @@ import Term from '../../../components/Term.vue'
 
     <template #exercise>
       <p>
-        Lege für dein aktuelles Projekt eine Datei <code>deklaration.txt</code> an und
-        halte darin fest, welche Teile du selbst erarbeitet hast und welche aus
+        Legen Sie für Ihr aktuelles Projekt eine Datei <code>deklaration.txt</code> an und
+        halten Sie darin fest, welche Teile Sie selbst erarbeitet haben und welche aus
         KI-Vorschlägen stammen.
       </p>
     </template>

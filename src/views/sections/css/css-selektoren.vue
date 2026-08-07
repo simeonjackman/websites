@@ -14,9 +14,9 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kennst die wichtigsten Selektortypen.</li>
-        <li>Du unterscheidest Element-, Klassen- und ID-Selektoren.</li>
-        <li>Du kannst Nachfahren- von Kind-Selektoren abgrenzen.</li>
+        <li>Sie kennen die wichtigsten Selektortypen.</li>
+        <li>Sie unterscheiden Element-, Klassen- und ID-Selektoren.</li>
+        <li>Sie können Nachfahren- von Kind-Selektoren abgrenzen.</li>
       </ul>
     </template>
 
@@ -45,8 +45,8 @@ import Term from '../../../components/Term.vue'
 
       <LessonStep slug="nachfahren-vs-kind" title="Nachfahren und direkte Kinder">
         <p>
-          Mit zwei Leerzeichen triffst du jeden Nachfahren, egal wie tief er
-          verschachtelt ist. Mit <code>></code> wählst du nur direkte <Term term="Kind" def="Ein Kind ist ein Element, das direkt in einem anderen Element liegt, ohne Zwischenelemente." />.
+          Mit zwei Leerzeichen treffen Sie jeden Nachfahren, egal wie tief er
+          verschachtelt ist. Mit <code>></code> wählen Sie nur direkte <Term term="Kind" def="Ein Kind ist ein Element, das direkt in einem anderen Element liegt, ohne Zwischenelemente." />.
           Das erste ist flexibel, das zweite präziser.
         </p>
         <CodeExample
@@ -66,7 +66,7 @@ import Term from '../../../components/Term.vue'
         <ul class="lesson-list">
           <li>Klassen sind meist klarer als tiefe Verschachtelungen.</li>
           <li>Direkte Selektoren halten Regeln übersichtlich.</li>
-          <li>Wähle die einfachste Lösung, die den Zweck erfüllt.</li>
+          <li>Wählen Sie die einfachste Lösung, die den Zweck erfüllt.</li>
         </ul>
       </LessonStep>
     </template>
@@ -75,7 +75,7 @@ import Term from '../../../components/Term.vue'
       <ul class="lesson-list">
         <li>Klassen sind meist klarer als tiefe Verschachtelungen.</li>
         <li>Direkte Selektoren halten Regeln übersichtlich.</li>
-        <li>Wähle die einfachste Lösung, die den Zweck erfüllt.</li>
+        <li>Wählen Sie die einfachste Lösung, die den Zweck erfüllt.</li>
       </ul>
       <p class="lesson-tip">Selektoren sollten präzise, aber nicht überladen sein.</p>
     </template>

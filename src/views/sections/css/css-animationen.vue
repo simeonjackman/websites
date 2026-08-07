@@ -14,9 +14,9 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kennst die Grundlagen von <Term term="Übergang" def="Ein Übergang, auch Transition genannt, lässt eine Eigenschaft weich zwischen zwei Zuständen wechseln." /> und <Term term="Keyframe" def="Ein Keyframe gibt den Zustand einer Animation zu einem bestimmten Zeitpunkt vor." />.</li>
-        <li>Du kannst eine Transition auf eine Zustandsänderung anwenden.</li>
-        <li>Du weisst, wie du Bewegung dezent und sinnvoll einsetzt.</li>
+        <li>Sie kennen die Grundlagen von <Term term="Übergang" def="Ein Übergang, auch Transition genannt, lässt eine Eigenschaft weich zwischen zwei Zuständen wechseln." /> und <Term term="Keyframe" def="Ein Keyframe gibt den Zustand einer Animation zu einem bestimmten Zeitpunkt vor." />.</li>
+        <li>Sie können eine Transition auf eine Zustandsänderung anwenden.</li>
+        <li>Sie wissen, wie Sie Bewegung dezent und sinnvoll einsetzen.</li>
       </ul>
     </template>
 
@@ -82,8 +82,8 @@ import Term from '../../../components/Term.vue'
 
     <template #exercise>
       <p>
-        Baue eine Schaltfläche, die beim Hovern ihre Farbe wechselt, und füge
-        dazu ein Element mit einem dezenten Einblende-Effekt beim Laden der
+        Bauen Sie eine Schaltfläche, die beim Hovern ihre Farbe wechselt, und fügen
+        Sie dazu ein Element mit einem dezenten Einblende-Effekt beim Laden der
         Seite hinzu.
       </p>
       <CodeExample

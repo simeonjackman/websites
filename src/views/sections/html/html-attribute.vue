@@ -34,9 +34,9 @@ const deineUebung = `<p class="einfuehrung">
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du weisst, wie <Term term="Attribute" def="Zusätzliche Angaben an einem Element, die dieses genauer beschreiben oder steuern." /> aufgebaut sind.</li>
-        <li>Du kennst die wichtigsten Attribute für Links und Bilder.</li>
-        <li>Du kannst mit <code>class</code> und <code>id</code> arbeiten.</li>
+        <li>Sie wissen, wie <Term term="Attribute" def="Zusätzliche Angaben an einem Element, die dieses genauer beschreiben oder steuern." /> aufgebaut sind.</li>
+        <li>Sie kennen die wichtigsten Attribute für Links und Bilder.</li>
+        <li>Sie können mit <code>class</code> und <code>id</code> arbeiten.</li>
       </ul>
     </template>
 
@@ -82,9 +82,9 @@ const deineUebung = `<p class="einfuehrung">
       <LessonStep slug="bilder" title="Bilder: das src-Attribut">
         <p>
           Das <code>src</code>-Attribut (source) gibt die Adresse eines Bildes
-          an. Du hast zwei Möglichkeiten: Entweder kopierst du die Adresse
-          eines Bildes aus dem Internet, oder du speicherst die Bilddatei
-          selbst in deinem Projektordner und trägst nur den Dateinamen ein.
+          an. Sie haben zwei Möglichkeiten: Entweder kopieren Sie die Adresse
+          eines Bildes aus dem Internet, oder Sie speichern die Bilddatei
+          selbst in Ihrem Projektordner und tragen nur den Dateinamen ein.
         </p>
         <p>So sieht das Ergebnis im Browser aus:</p>
         <img
@@ -131,12 +131,12 @@ const deineUebung = `<p class="einfuehrung">
 
     <template #exercise>
       <p>
-        Erstelle einen Absatz mit einem Link und einem Bild. Füge dem Bild einen
+        Erstellen Sie einen Absatz mit einem Link und einem Bild. Fügen Sie dem Bild einen
         aussagekräftigen <code>alt</code>-Text und dem Absatz eine
         <code>class</code> hinzu. Ein Beispiel wäre:
       </p>
       <CodeExample
-        title="Deine Übung"
+        title="Ihre Übung"
         language="html"
         filename="uebung.html"
         :code="deineUebung"

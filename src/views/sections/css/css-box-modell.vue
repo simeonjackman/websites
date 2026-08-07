@@ -14,9 +14,9 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kennst die vier Bestandteile des Box-Modells.</li>
-        <li>Du unterscheidest <Term term="Padding" def="Padding ist der Innenabstand zwischen dem Inhalt und dem Rand eines Elements." /> von <Term term="Margin" def="Margin ist der Aussenabstand, der ein Element von seinen Nachbarn trennt." />.</li>
-        <li>Du weisst, was <code>box-sizing</code> bewirkt.</li>
+        <li>Sie kennen die vier Bestandteile des Box-Modells.</li>
+        <li>Sie unterscheiden <Term term="Padding" def="Padding ist der Innenabstand zwischen dem Inhalt und dem Rand eines Elements." /> von <Term term="Margin" def="Margin ist der Aussenabstand, der ein Element von seinen Nachbarn trennt." />.</li>
+        <li>Sie wissen, was <code>box-sizing</code> bewirkt.</li>
       </ul>
     </template>
 
@@ -46,7 +46,7 @@ import Term from '../../../components/Term.vue'
       <LessonStep slug="rahmen-und-breite" title="Rahmen und die Gesamtbreite">
         <p>
           Ein <code>border</code> liegt um den Innenabstand herum und vergrössert
-          die Box. Ohne Beachtung des Box-Modells wirst du beim Setzen von Breite
+          die Box. Ohne Beachtung des Box-Modells werden Sie beim Setzen von Breite
           und Höhe überrascht.
         </p>
         <CodeExample
@@ -83,8 +83,8 @@ import Term from '../../../components/Term.vue'
 
     <template #exercise>
       <p>
-        Erstelle zwei Karten mit <code>box-sizing: border-box</code> und baue dir
-        selbst eine Variante ohne diese Regel, um den Unterschied der
+        Erstellen Sie zwei Karten mit <code>box-sizing: border-box</code> und bauen
+        Sie sich selbst eine Variante ohne diese Regel, um den Unterschied der
         Gesamtbreite zu sehen.
       </p>
       <CodeExample

@@ -47,8 +47,8 @@ import { sections } from '../data/siteNavigation'
 
       <div class="panel-note" style="margin-top: 1rem">
         <p>
-          Die Inhalte bauen aufeinander auf und führen durch die Grundlagen, damit du eine einfache
-          Webseite mit HTML, CSS und JavaScript erstellen kannst.
+          Die Inhalte bauen aufeinander auf und führen durch die Grundlagen, damit Sie eine einfache
+          Webseite mit HTML, CSS und JavaScript erstellen können.
         </p>
       </div>
     </section>

@@ -63,9 +63,9 @@ const seitenstruktur = `<header>
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kennst die wichtigsten Strukturbereiche einer Seite.</li>
-        <li>Du kannst Inhalte in <Term term="Semantik" def="Die Bedeutung und der Aufbau von Inhalten, vorgegeben durch passende strukturelle Elemente." />-Blöcke gruppieren.</li>
-        <li>Du verstehst, dass eine gute Struktur spätere Gestaltung mit CSS erleichtert.</li>
+        <li>Sie kennen die wichtigsten Strukturbereiche einer Seite.</li>
+        <li>Sie können Inhalte in <Term term="Semantik" def="Die Bedeutung und der Aufbau von Inhalten, vorgegeben durch passende strukturelle Elemente." />-Blöcke gruppieren.</li>
+        <li>Sie verstehen, dass eine gute Struktur spätere Gestaltung mit CSS erleichtert.</li>
       </ul>
     </template>
 
@@ -81,7 +81,7 @@ const seitenstruktur = `<header>
       <LessonStep slug="der-header" title="Der Header – der Kopf der Seite">
         <p>
           Der <Term term="Header" def="Der Kopfbereich einer Webseite, der Titel und Navigation enthält." /> steht oben auf der Seite. Er enthält
-          meist den Titel deiner Seite und die
+          meist den Titel Ihrer Seite und die
           <Term term="Navigation" def="Die Menülinks, mit denen Besucher die wichtigsten Bereiche einer Seite erreichen." />. Alles, was überall gleich
           wiederkehrt, gehört in den Header.
         </p>
@@ -96,7 +96,7 @@ const seitenstruktur = `<header>
       <LessonStep slug="main-section" title="Main, Section und Article">
         <p>
           Im Bereich <Term term="Main" def="Der Hauptbereich einer Webseite, in dem der eigentliche Inhalt steht." />
-          steht der eigentliche Inhalt der Seite. Ihn kannst du in
+          steht der eigentliche Inhalt der Seite. Ihn können Sie in
           <Term term="Sektionen" def="Bereiche, die inhaltlich zusammengehörige Elemente einer Seite zusammenfassen." />
           unterteilen, wenn die Inhalte thematisch zusammengehören.
         </p>
@@ -135,14 +135,14 @@ const seitenstruktur = `<header>
 
       <LessonStep slug="eltern-und-kinder-erkennen" title="Eltern und Kinder im Code erkennen">
         <p>
-          Damit du siehst, welches Element <strong>welches andere enthält</strong>,
-          ordnest du deinen Code mit Einrückungen. Kind-Elemente beginnen weiter
+          Damit Sie sehen, welches Element <strong>welches andere enthält</strong>,
+          ordnen Sie Ihren Code mit Einrückungen. Kind-Elemente beginnen weiter
           rechts als ihr Eltern-Element – so liest sich die Struktur auf einen
           Blick.
         </p>
         <p>
           In VS Code bringt <Shortcut label="Dokument formatieren" :keys="['shift', 'alt', 'F']" />
-          die Einrückung automatisch in Ordnung. Formatierst du nach der Arbeit
+          die Einrückung automatisch in Ordnung. Formatieren Sie nach der Arbeit
           an der Struktur, wird sofort sichtbar, welches Element zu welchem
           Eltern-Element gehört.
         </p>
@@ -161,10 +161,10 @@ const seitenstruktur = `<header>
       <LessonStep slug="struktur-erleichtert-design" title="Gute Struktur erleichtert spätere Gestaltung">
         <p>
           Sauber strukturierte Webseiten lassen sich später mit
-          <Term term="CSS" def="Die Sprache, mit der du Farben, Abstände und Layout einer Webseite festlegst." />
-          viel einfacher gestalten. Mit CSS sprichst du genau die Elemente an,
-          die du kennst – etwa <code>header</code> oder <code>section</code>.
-          Ist die Struktur klar, weisst du sofort, wo du im CSS ansetzen musst.
+          <Term term="CSS" def="Die Sprache, mit der Sie Farben, Abstände und Layout einer Webseite festlegen." />
+          viel einfacher gestalten. Mit CSS sprechen Sie genau die Elemente an,
+          die Sie kennen – etwa <code>header</code> oder <code>section</code>.
+          Ist die Struktur klar, wissen Sie sofort, wo Sie im CSS ansetzen müssen.
         </p>
         <ul class="lesson-list">
           <li>Eine klare Struktur macht spätere Design-Schritte schneller.</li>
@@ -185,24 +185,24 @@ const seitenstruktur = `<header>
 
     <template #exercise>
       <p>
-        Erweitere dein <code>index.html</code>. Gruppiere deine bestehenden Inhalte:
+        Erweitern Sie Ihr <code>index.html</code>. Gruppieren Sie Ihre bestehenden Inhalte:
       </p>
       <ul class="lesson-list">
         <li>
-          Packe deine Absätze in ein <code>main</code> mit einer
+          Packen Sie Ihre Absätze in ein <code>main</code> mit einer
           <code>section</code>.
         </li>
         <li>
-          Ergänze einen <code>footer</code> mit zum Beispiel „Kontakt“.
+          Ergänzen Sie einen <code>footer</code> mit zum Beispiel „Kontakt“.
         </li>
       </ul>
       <p>
-        Formatiere am Ende mit
+        Formatieren Sie am Ende mit
         <Shortcut label="Dokument formatieren" :keys="['shift', 'alt', 'F']" />
-        und prüfe im Browser, ob alles noch richtig angezeigt wird.
+        und prüfen Sie im Browser, ob alles noch richtig angezeigt wird.
       </p>
       <p class="lesson-tip">
-        Funktioniert alles? Dann committe und pushe deine Änderung – zum
+        Funktioniert alles? Dann committen und pushen Sie Ihre Änderung – zum
         Beispiel mit der Nachricht „Strukturiere die Seite“.
       </p>
     </template>

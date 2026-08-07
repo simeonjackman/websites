@@ -34,22 +34,22 @@ p {
     section-slug="html"
     lesson-slug="css-verknuepfen"
     title="CSS mit HTML verknüpfen"
-    summary="Lerne, wie du eine separate CSS-Datei erstellst und in deiner HTML-Datei einbindest."
+    summary="Lernen Sie, wie Sie eine separate CSS-Datei erstellen und in Ihrer HTML-Datei einbinden."
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du weisst, welche Dateien zu einer Webseite gehören.</li>
-        <li>Du kannst eine CSS-Datei erstellen.</li>
-        <li>Du kannst CSS mit <code>&lt;link&gt;</code> in HTML einbinden.</li>
+        <li>Sie wissen, welche Dateien zu einer Webseite gehören.</li>
+        <li>Sie können eine CSS-Datei erstellen.</li>
+        <li>Sie können CSS mit <code>&lt;link&gt;</code> in HTML einbinden.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
-        Eine Webseite besteht meist aus mehreren Dateien. Damit dein
+        Eine Webseite besteht meist aus mehreren Dateien. Damit Ihr
         <Term term="CSS" def="Die Sprache, die das Aussehen einer Webseite bestimmt – Farben, Abstände, Schrift." /> die
-        HTML-Struktur gestalten kann, musst du die CSS-Datei erstellen und in der
-        HTML-Datei einbinden. Genau das zeigst du hier Schritt für Schritt.
+        HTML-Struktur gestalten kann, müssen Sie die CSS-Datei erstellen und in der
+        HTML-Datei einbinden. Genau das zeigen Sie hier Schritt für Schritt.
       </p>
       <OsToggle class="os-toggle--page" />
     </template>
@@ -57,9 +57,9 @@ p {
     <template #steps>
       <LessonStep slug="zwei-dateien" title="Datei für CSS (Design) erstellen">
         <p>
-          Erstelle im selben Ordner zusätzlich zur <code>index.html</code> eine
+          Erstellen Sie im selben Ordner zusätzlich zur <code>index.html</code> eine
           zweite Datei <code>style.css</code>. Sie sind Geschwister – beide liegen
-          nebeneinander im Hauptverzeichnis deines Projekts.
+          nebeneinander im Hauptverzeichnis Ihres Projekts.
         </p>
         <CodeExample
           title="Dateiübersicht im Projekt"
@@ -85,11 +85,11 @@ p {
 
       <LessonStep slug="css-schreiben" title="CSS-Regeln schreiben">
         <p>
-          Jetzt kannst du in <code>style.css</code> Regeln schreiben. Jede Regel
+          Jetzt können Sie in <code>style.css</code> Regeln schreiben. Jede Regel
           sagt: «Auf dieses Element wende diese Gestaltung an.»
         </p>
         <CodeExample
-          title="Deine erste style.css"
+          title="Ihre erste style.css"
           language="css"
           filename="style.css"
           :code="styleCss"
@@ -104,17 +104,17 @@ p {
     <template #recap>
       <ul class="lesson-list">
         <li>Webseiten bestehen aus mehreren Dateien in einem Ordner.</li>
-        <li>Mit <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> bindest du CSS ein.</li>
-        <li>Die <code>href</code> muss genau deinem Dateinamen entsprechen.</li>
+        <li>Mit <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> binden Sie CSS ein.</li>
+        <li>Die <code>href</code> muss genau Ihrem Dateinamen entsprechen.</li>
       </ul>
-      <p class="lesson-tip">Stimmt der Dateiname im <code>href</code> nicht, passiert nichts – prüfe die Schreibweise.</p>
+      <p class="lesson-tip">Stimmt der Dateiname im <code>href</code> nicht, passiert nichts – prüfen Sie die Schreibweise.</p>
     </template>
 
     <template #exercise>
       <p>
-        Verknüpfe deine <code>index.html</code> mit einer eigenen
-        <code>style.css</code>. Gib deiner Überschrift eine Farbe und deinen
-        Absätzen eine andere Schriftgrösse. Öffne die Seite und prüfe das Ergebnis.
+        Verknüpfen Sie Ihre <code>index.html</code> mit einer eigenen
+        <code>style.css</code>. Geben Sie Ihrer Überschrift eine Farbe und Ihren
+        Absätzen eine andere Schriftgrösse. Öffnen Sie die Seite und prüfen Sie das Ergebnis.
       </p>
     </template>
   </LessonScaffold>

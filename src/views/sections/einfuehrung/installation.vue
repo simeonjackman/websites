@@ -16,7 +16,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
 
 <template>
   <LessonScaffold section-slug="einfuehrung" lesson-slug="installation" title="Installation"
-    summary="Richte deine Entwicklungsumgebung ein, damit du eine eigene Webseite bauen kannst.">
+    summary="Richten Sie Ihre Entwicklungsumgebung ein, damit Sie eine eigene Webseite bauen können.">
     <template #objectives>
       <ul class="lesson-list">
         <li>Der Editor, Chrome und Git sind installiert.</li>
@@ -27,9 +27,9 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
 
     <template #intro>
       <p>
-        In der Informatik braucht es viele verschiedene Werkzeuge. Diese musst du
-        zuerst installieren. Wähle unten dein
-        <Term term="Betriebssystem" def="Das Grundprogramm deines Computers, z. B. Windows oder macOS." />
+        In der Informatik braucht es viele verschiedene Werkzeuge. Diese müssen Sie
+        zuerst installieren. Wählen Sie unten Ihr
+        <Term term="Betriebssystem" def="Das Grundprogramm Ihres Computers, z. B. Windows oder macOS." />
         (Windows oder Mac) – die Befehle unterscheiden sich je nach System.
       </p>
       <OsToggle class="os-toggle--page" />
@@ -39,23 +39,23 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       <LessonStep slug="terminal-oeffnen" title="Ein Terminal öffnen">
         <p>
           Ein
-          <Term term="Terminal" def="Ein Fenster, in dem du Befehle an deinen Computer schreibst." />
-          ist der Ort, an dem du die Installationsbefehle eintippst. Öffne es je
+          <Term term="Terminal" def="Ein Fenster, in dem Sie Befehle an Ihren Computer schreiben." />
+          ist der Ort, an dem Sie die Installationsbefehle eintippen. Öffnen Sie es je
           nach Betriebssystem so:
         </p>
         <OsBlock>
           <template #windows>
             <p>
-              Suche im Startmenü nach <strong>PowerShell</strong>. Starte es mit
+              Suchen Sie im Startmenü nach <strong>PowerShell</strong>. Starten Sie es mit
               einem Rechtsklick über <strong>Als Administrator ausführen</strong>,
               damit Installationen erlaubt sind.
             </p>
           </template>
           <template #mac>
             <p>
-              Öffne die Suche <strong>Spotlight</strong> mit
+              Öffnen Sie die Suche <strong>Spotlight</strong> mit
               <Shortcut label="Spotlight öffnen" :keys="['mod', 'Space']" />
-              und suche nach dem Programm <strong>Terminal</strong>. Drücke
+              und suchen Sie nach dem Programm <strong>Terminal</strong>. Drücken Sie
               <Shortcut label="Befehl ausführen" :keys="['Enter']" />
               , um es zu öffnen.
             </p>
@@ -65,17 +65,17 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
 
       <LessonStep slug="paketverwaltung" title="Paketverwaltung einrichten">
         <p>
-          Ein Paketmanager lädt Programme für dich herunter und installiert sie.
+          Ein Paketmanager lädt Programme für Sie herunter und installiert sie.
           Windows nutzt
           <Term term="winget" def="Der Paketmanager von Windows zum Installieren von Programmen." /> und
           Mac nutzt
-          <Term term="homebrew" def="Ein Paketmanager für macOS, mit dem du Programme per Befehl installierst." />.
+          <Term term="homebrew" def="Ein Paketmanager für macOS, mit dem Sie Programme per Befehl installieren." />.
         </p>
         <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
         <OsBlock>
           <template #windows>
             <p>
-              Falls winget noch nicht installiert ist, führst du im
+              Falls winget noch nicht installiert ist, führen Sie im
               Administrator-Terminal diesen Befehl aus:
             </p>
             <CodeExample
@@ -86,7 +86,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
             />
           </template>
           <template #mac>
-            <p>Falls du Homebrew noch nicht hast, installiere es mit diesem Befehl:</p>
+            <p>Falls Sie Homebrew noch nicht haben, installieren Sie es mit diesem Befehl:</p>
             <CodeExample title="Homebrew installieren" language="bash" filename="Terminal" :code="homebrewCmd" />
           </template>
         </OsBlock>
@@ -95,7 +95,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       <LessonStep slug="vscode-installieren" title="VS Code installieren">
         <p>
           VS Code ist unser
-          <Term term="Editor" def="Ein Programm, in dem du Code schreibst und bearbeitest." />,
+          <Term term="Editor" def="Ein Programm, in dem Sie Code schreiben und bearbeiten." />,
           in dem wir den Code schreiben und bearbeiten.
         </p>
         <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
@@ -114,7 +114,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       <LessonStep slug="git-installieren" title="Git installieren">
         <p>
           <Term term="Git"
-            def="Ein Werkzeug, um Versionen deiner Dateien zu speichern und Änderungen nachzuvollziehen." />
+            def="Ein Werkzeug, um Versionen Ihrer Dateien zu speichern und Änderungen nachzuvollziehen." />
           brauchen wir, um Projektvorlagen herunterzuladen und unsere Projekte abzugeben.
         </p>
         <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
@@ -131,8 +131,8 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
 
       <LessonStep slug="git-einrichten" title="Git mit Name und E-Mail einrichten">
         <p>
-          Bevor du Git verwendest, musst du deinen Benutzernamen und deine
-          E-Mail-Adresse setzen. So werden deine Änderungen eindeutig zugeordnet.
+          Bevor Sie Git verwenden, müssen Sie Ihren Benutzernamen und Ihre
+          E-Mail-Adresse setzen. So werden Ihre Änderungen eindeutig zugeordnet.
         </p>
         <p class="lesson-tip">Bei diesem Schritt müssen Sie den Befehl anpassen bevor Sie ihn ausführen.
           Setzen Sie in der Vorlage Ihrem Namen und Ihre E-Mailadresse ein.
@@ -166,13 +166,13 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
         <p>
           Moderne Webseiten brauchen einen
-          <Term term="Webserver" def="Ein Programm, das deine Webseite an den Browser ausliefert." />.
+          <Term term="Webserver" def="Ein Programm, das Ihre Webseite an den Browser ausliefert." />.
           Dafür installieren wir die Erweiterung <strong>Live Server</strong> in VS Code.
         </p>
         <p>
-          Drücke in VS Code
+          Drücken Sie in VS Code
           <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
-          , tippe <code>ext install</code> und gib diesen Befehl ein:
+          , tippen Sie <code>ext install</code> und geben Sie diesen Befehl ein:
         </p>
         <CodeExample title="Live Server installieren" language="bash" filename="VS Code"
           :code="`ext install ritwickdey.liveserver`" />
@@ -180,18 +180,18 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
 
       <LessonStep slug="github-konto" title="Ein GitHub-Konto erstellen">
         <p>
-          <Term term="GitHub" def="Eine Plattform im Internet, auf der du Git-Projekte speicherst und teilst." />
-          ist eine Plattform zur Versionsverwaltung. Erstelle dort mit deiner
-          Schul-E-Mail-Adresse einen Account – das Konto brauchst du später, um
+          <Term term="GitHub" def="Eine Plattform im Internet, auf der Sie Git-Projekte speichern und teilen." />
+          ist eine Plattform zur Versionsverwaltung. Erstellen Sie dort mit Ihrer
+          Schul-E-Mail-Adresse einen Account – das Konto brauchen Sie später, um
           Projekte hoch- und herunterzuladen.
         </p>
-        <p>Öffne <a href="https://github.com" target="_blank" rel="noopener">github.com</a> und klicke auf <strong>Sign
+        <p>Öffnen Sie <a href="https://github.com" target="_blank" rel="noopener">github.com</a> und klicken Sie auf <strong>Sign
             up</strong>.</p>
       </LessonStep>
     </template>
 
     <template #recap>
-      <p>Deine Entwicklungsumgebung sollte jetzt diese Werkzeuge enthalten:</p>
+      <p>Ihre Entwicklungsumgebung sollte jetzt diese Werkzeuge enthalten:</p>
       <ul class="lesson-list">
         <li>VS Code (Editor)</li>
         <li>Chrome (Browser)</li>
@@ -199,17 +199,17 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         <li>Live-Server-Erweiterung in VS Code</li>
         <li>Ein GitHub-Konto</li>
       </ul>
-      <p class="lesson-tip">Helfe deinen Klassenkameradinnen und -kameraden weiter, wenn alle fertig installiert haben.
+      <p class="lesson-tip">Helfen Sie Ihren Klassenkameradinnen und -kameraden weiter, wenn alle fertig installiert haben.
       </p>
     </template>
 
     <template #exercise>
       <p>
-        Öffne VS Code und teste deine Installation: Drücke
+        Öffnen Sie VS Code und testen Sie Ihre Installation: Drücken Sie
         <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
-        , tippe <code>Git: Clone</code> und klone dein Projekt. Den Projektlink erhältst du von der Lehrperson.
-        Starte anschliessend
-        mit <code>Live Server</code> einen lokalen Server und öffne die Seite in
+        , tippen Sie <code>Git: Clone</code> und klonen Sie Ihr Projekt. Den Projektlink erhalten Sie von der Lehrperson.
+        Starten Sie anschliesslich
+        mit <code>Live Server</code> einen lokalen Server und öffnen Sie die Seite in
         Chrome.
       </p>
     </template>

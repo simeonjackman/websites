@@ -14,16 +14,16 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kannst ein Bild als Hintergrund setzen.</li>
-        <li>Du hältst die Lesbarkeit von Text über dem Bild aufrecht.</li>
-        <li>Du ergänzt fliessende <Term term="Farbverläufe" def="Farbverläufe sind weiche Übergänge zwischen zwei oder mehr Farben." /> als Übergänge.</li>
+        <li>Sie können ein Bild als Hintergrund setzen.</li>
+        <li>Sie halten die Lesbarkeit von Text über dem Bild aufrecht.</li>
+        <li>Sie ergänzen fliessende <Term term="Farbverläufe" def="Farbverläufe sind weiche Übergänge zwischen zwei oder mehr Farben." /> als Übergänge.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
         <Term term="Hintergrundbilder" def="Hintergrundbilder liegen hinter dem Inhalt eines Elements und füllen den verfügbaren Raum." /> verleihen einer Seite Atmosphäre. Gerade weil sie den
-        Inhalt nicht tragen, brauchst du ein paar Regeln, damit deine Texte gut
+        Inhalt nicht tragen, brauchen Sie ein paar Regeln, damit Ihre Texte gut
         lesbar bleiben.
       </p>
     </template>
@@ -57,7 +57,7 @@ import Term from '../../../components/Term.vue'
 
       <LessonStep slug="verlauf-fuer-uebergange" title="Farbverläufe für harmonische Übergänge">
         <p>
-          Statt eines festen Bildes kannst du mit Farbverläufen weiche
+          Statt eines festen Bildes können Sie mit Farbverläufen weiche
           Übergänge erzeugen – etwa, um einen Hintergrund sanft auslaufen zu
           lassen oder nach unten zu dunkeln.
         </p>
@@ -72,8 +72,8 @@ import Term from '../../../components/Term.vue'
 
     <template #recap>
       <ul class="lesson-list">
-        <li>Achte auf Lesbarkeit und Kontrast.</li>
-        <li>Nutze Hintergrundbilder sparsam auf wichtigen Inhaltsbereichen.</li>
+        <li>Achten Sie auf Lesbarkeit und Kontrast.</li>
+        <li>Nutzen Sie Hintergrundbilder sparsam auf wichtigen Inhaltsbereichen.</li>
         <li>Ein Farbverlauf kann Übergänge harmonischer machen.</li>
       </ul>
       <p class="lesson-tip">Der Hintergrund unterstützt den Inhalt, nicht umgekehrt.</p>
@@ -81,7 +81,7 @@ import Term from '../../../components/Term.vue'
 
     <template #exercise>
       <p>
-        Wähle ein passendes Bild und setze es als Hintergrund eines Bereichs.
+        Wählen Sie ein passendes Bild und setzen Sie es als Hintergrund eines Bereichs.
         Stelle Text darüber sichtbar und ergänze an einer Kante einen
         Farbverlauf als Übergang.
       </p>

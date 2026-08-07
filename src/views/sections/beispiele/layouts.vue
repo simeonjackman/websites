@@ -14,25 +14,25 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du weisst, wann Grid und wann Flexbox die bessere Wahl ist.</li>
-        <li>Du kannst ein einfaches Spaltenraster aufbauen.</li>
-        <li>Du gestaltest dein Layout mobilfreundlich.</li>
+        <li>Sie wissen, wann Grid und wann Flexbox die bessere Wahl ist.</li>
+        <li>Sie können ein einfaches Spaltenraster aufbauen.</li>
+        <li>Sie gestalten Ihr Layout mobilfreundlich.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
-        Ein Layout entscheidet darüber, wie deine Inhalte angeordnet sind und
-        wie sie wirken. Mit CSS <Term term="Grid" def="Grid ist ein CSS-System, um Elemente in Zeilen und Spalten anzuordnen." /> und <Term term="Flexbox" def="Flexbox ist eine CSS-Methode, um Elemente in einer Reihe flexibel anzuordnen." /> hast du zwei starke Werkzeuge,
-        um Struktur in deine Seite zu bringen.
+        Ein Layout entscheidet darüber, wie Ihre Inhalte angeordnet sind und
+        wie sie wirken. Mit CSS <Term term="Grid" def="Grid ist ein CSS-System, um Elemente in Zeilen und Spalten anzuordnen." /> und <Term term="Flexbox" def="Flexbox ist eine CSS-Methode, um Elemente in einer Reihe flexibel anzuordnen." /> haben Sie zwei starke Werkzeuge,
+        um Struktur in Ihre Seite zu bringen.
       </p>
     </template>
 
     <template #steps>
       <LessonStep slug="grid-mehrdimensionale-strukturen" title="Grid für mehrdimensionale Strukturen">
         <p>
-          CSS Grid eignet sich, wenn du Zeilen und Spalten gleichzeitig
-          kontrollieren möchtest – etwa für ein Kartenraster.
+          CSS Grid eignet sich, wenn Sie Zeilen und Spalten gleichzeitig
+          kontrollieren möchten – etwa für ein Kartenraster.
         </p>
         <CodeExample
           title="Ein einfaches Grid"
@@ -45,7 +45,7 @@ import Term from '../../../components/Term.vue'
       <LessonStep slug="flexbox-fuer-eine-richtung" title="Flexbox für eine Richtung">
         <p>
           Stellst du nur eine Richtung in den Vordergrund, ist Flexbox oft die
-          flexiblere Wahl. Deine Elemente verteilen sich dabei ohne feste
+          flexiblere Wahl. Ihre Elemente verteilen sich dabei ohne feste
           Spaltenangabe.
         </p>
         <CodeExample

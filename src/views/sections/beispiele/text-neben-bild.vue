@@ -22,15 +22,15 @@ const karteHtml = `<section class="karte">
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kombinierst Bild und Text in einem Raster oder mit Flexbox.</li>
-        <li>Du sorgst für eine gute Reihenfolge auf kleinen Bildschirmen.</li>
-        <li>Du gestaltest Abstände statt starrer Aufteilungen.</li>
+        <li>Sie kombinieren Bild und Text in einem Raster oder mit Flexbox.</li>
+        <li>Sie sorgen für eine gute Reihenfolge auf kleinen Bildschirmen.</li>
+        <li>Sie gestalten Abstände statt starrer Aufteilungen.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
-        Achte auf die <Term term="Reihenfolge" def="Die Reihenfolge bestimmt, in welcher Anordnung Elemente im Layout erscheinen." /> der Elemente und die Abstände. Eine saubere
+        Achten Sie auf die <Term term="Reihenfolge" def="Die Reihenfolge bestimmt, in welcher Anordnung Elemente im Layout erscheinen." /> der Elemente und die Abstände. Eine saubere
         Grundstruktur bleibt auf grossen wie kleinen Bildschirmen lesbar.
       </p>
     </template>
@@ -38,7 +38,7 @@ const karteHtml = `<section class="karte">
     <template #steps>
       <LessonStep slug="html-grundstruktur" title="Die HTML-Grundstruktur">
         <p>
-          Bild und Text gehören in einen gemeinsamen <Term term="Container" def="Ein Container ist ein Element, das andere Elemente als Gruppe zusammenfasst und anordnet." />. So kannst du
+          Bild und Text gehören in einen gemeinsamen <Term term="Container" def="Ein Container ist ein Element, das andere Elemente als Gruppe zusammenfasst und anordnet." />. So können Sie
           ihre Aufteilung in einem einzigen Schritt steuern.
         </p>
         <CodeExample
@@ -51,7 +51,7 @@ const karteHtml = `<section class="karte">
 
       <LessonStep slug="css-zweispaltig" title="Die Aufteilung im CSS">
         <p>
-          Im CSS legst du fest, wie breit Bild und Text nebeneinander Platz
+          Im CSS legen Sie fest, wie breit Bild und Text nebeneinander Platz
           haben und welcher Abstand sie trennt.
         </p>
         <CodeExample
@@ -88,8 +88,8 @@ const karteHtml = `<section class="karte">
 
     <template #exercise>
       <p>
-        Erstelle eine Karte mit Bild und Text nebeneinander. Teste, wie sie sich
-        auf einem Handy verhält, und passe die Abstände so an, dass beide
+        Erstellen Sie eine Karte mit Bild und Text nebeneinander. Testen Sie, wie sie sich
+        auf einem Handy verhält, und passen Sie die Abstände so an, dass beide
         Bereiche gut lesbar bleiben.
       </p>
     </template>

@@ -50,9 +50,9 @@ const deinGrundgeruest = `<!doctype html>
     summary="HTML strukturiert Inhalte und gibt dem Browser eine klare Bedeutungsebene.">
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kannst eine neue HTML-Datei anlegen und speichern.</li>
-        <li>Du kennst die wichtigsten Grundbausteine.</li>
-        <li>Du kannst ein HTML-Grundgerüst schreiben und im Browser öffnen.</li>
+        <li>Sie können eine neue HTML-Datei anlegen und speichern.</li>
+        <li>Sie kennen die wichtigsten Grundbausteine.</li>
+        <li>Sie können ein HTML-Grundgerüst schreiben und im Browser öffnen.</li>
       </ul>
     </template>
 
@@ -71,11 +71,11 @@ const deinGrundgeruest = `<!doctype html>
     <template #steps>
       <LessonStep slug="datei-anlegen" title="Eine neue HTML-Datei anlegen">
         <p>
-          Öffne deinen Ordner in VS Code und erstelle eine neue Datei
+          Öffnen Sie Ihren Ordner in VS Code und erstellen Sie eine neue Datei
           <Shortcut label="Neue Datei" :keys="['mod', 'N']" />
-          Speichere sie. Wichtig ist die Endung .html:
+          Speichern Sie sie. Wichtig ist die Endung .html:
         </p>
-        <CodeExample title="Dateiname für deine Webseite" language="text" filename="Name der Datei"
+        <CodeExample title="Dateiname für Ihre Webseite" language="text" filename="Name der Datei"
           :code="`index.html`" />
         <p>
           Der Dateiname <code>index.html</code> ist eine Konvention: Browser
@@ -86,8 +86,8 @@ const deinGrundgeruest = `<!doctype html>
 
       <LessonStep slug="grundgeruest-eingeben" title="Das Grundgerüst eintippen">
         <p>
-          Jede HTML-Datei beginnt mit demselben Grundgerüst. Kopiere es in deine
-          <code>index.html</code> und speichere mit
+          Jede HTML-Datei beginnt mit demselben Grundgerüst. Kopieren Sie es in Ihre
+          <code>index.html</code> und speichern Sie mit
           <Shortcut label="Speichern" :keys="['mod', 'S']" />
         </p>
         <CodeExample title="Ein vollständiges HTML-Grundgerüst" language="html" filename="index.html"
@@ -104,7 +104,7 @@ const deinGrundgeruest = `<!doctype html>
           <Term term="Metadaten" def="Informationen über die Seite selbst, die im Browser nicht sichtbar sind." />,
           die dem Browser mitteilen, wie er die Seite behandeln soll.
         </p>
-        <CodeExample title="Der Kopf deines Grundgerüsts" language="html" filename="index.html" :code="kopfDerSeite" />
+        <CodeExample title="Der Kopf Ihres Grundgerüsts" language="html" filename="index.html" :code="kopfDerSeite" />
         <ul class="lesson-list">
           <li>
             <code>meta charset="UTF-8"</code> sorgt dafür, dass Umlaute und
@@ -134,8 +134,8 @@ const deinGrundgeruest = `<!doctype html>
         <p>
           Öffnender Tag, <strong>Inhalt</strong> und schliessender Tag zusammen
           ergeben ein
-          <Term term="Element" def="Ein Baustein aus öffnendem Tag, Inhalt und schliessendem Tag." />. Nimm diesen
-          Absatz aus deinem
+          <Term term="Element" def="Ein Baustein aus öffnendem Tag, Inhalt und schliessendem Tag." />. Nehmen Sie diesen
+          Absatz aus Ihrem
           Grundgerüst:
         </p>
         <CodeExample title="Inhalt eines Elements" language="text" filename="index.html" :code="beispielAbsatz" />
@@ -161,7 +161,7 @@ const deinGrundgeruest = `<!doctype html>
           <li>Der Wert steht in Anführungszeichen.</li>
         </ul>
         <p>
-          Auch im Kopf hast du schon Attribute gesehen, etwa
+          Auch im Kopf haben Sie schon Attribute gesehen, etwa
           <code>charset="UTF-8"</code> oder <code>content="width=device-width"</code>.
         </p>
       </LessonStep>
@@ -171,7 +171,7 @@ const deinGrundgeruest = `<!doctype html>
           HTML-Elemente dürfen ineinander liegen. Man nennt das äussere Element
           <Term term="Eltern-Element" def="Ein Element, das andere Elemente enthält." /> und die inneren
           Elemente
-          <Term term="Kind-Elemente" def="Elemente, die innerhalb eines anderen Elements liegen." />. In deinem
+          <Term term="Kind-Elemente" def="Elemente, die innerhalb eines anderen Elements liegen." />. In Ihrem
           Grundgerüst ist zum
           Beispiel <code>html</code> das Eltern-Element von <code>head</code> und
           <code>body</code>. Das <code>body</code>-Element wiederum enthält
@@ -181,7 +181,7 @@ const deinGrundgeruest = `<!doctype html>
           :code="vollstaendigesGrundgeruest" />
         <p>
           Die Einrückung macht die Verschachtelung sichtbar: Kind-Elemente
-          beginnen weiter rechts als ihr Eltern-Element. Formatierst du den Code
+          beginnen weiter rechts als ihr Eltern-Element. Formatieren Sie den Code
           mit
           <Shortcut label="Dokument formatieren" :keys="['shift', 'alt', 'F']" />, ordnet VS Code die Einrückung
           automatisch und
@@ -191,8 +191,8 @@ const deinGrundgeruest = `<!doctype html>
 
       <LessonStep slug="im-browser-oeffnen" title="Die Seite im Browser öffnen">
         <p>
-          Wähle im Kontextmenü (unten rechts in VSCode) <strong>Open with Live Server</strong>. Deine
-          Seite erscheint jetzt in Chrome. Ändere den Text und speichere, der
+          Wählen Sie im Kontextmenü (unten rechts in VSCode) <strong>Open with Live Server</strong>. Ihre
+          Seite erscheint jetzt in Chrome. Ändern Sie den Text und speichern Sie, der
           Browser aktualisiert die Ansicht automatisch.
         </p>
       </LessonStep>
@@ -200,7 +200,7 @@ const deinGrundgeruest = `<!doctype html>
 
     <template #recap>
       <ul class="lesson-list">
-        <li>Erstelle eine Datei und speichere sie als <code>index.html</code>.</li>
+        <li>Erstellen Sie eine Datei und speichern Sie sie als <code>index.html</code>.</li>
         <li>HTML hat ein festes Grundgerüst mit <code>head</code> und <code>body</code>.</li>
         <li>Ein Element besteht aus öffnendem Tag, Inhalt und schliessendem Tag.</li>
         <li>Attribute stehen im öffnenden Tag und geben Zusatzinfos.</li>
@@ -210,18 +210,18 @@ const deinGrundgeruest = `<!doctype html>
 
     <template #exercise>
       <p>
-        Öffne deine <code>index.html</code> – das Gerüst hast du bereits auf
-        dieser Seite eingegeben. Ergänze im <code>body</code> noch einen
-        weiteren <code>p</code>-Absatz mit etwas über dich, zum Beispiel dein
-        Lieblingssport. So sieht dein <code>body</code> danach aus:
+        Öffnen Sie Ihre <code>index.html</code> – das Gerüst haben Sie bereits auf
+        dieser Seite eingegeben. Ergänzen Sie im <code>body</code> noch einen
+        weiteren <code>p</code>-Absatz mit etwas über Sie, zum Beispiel Ihr
+        Lieblingssport. So sieht Ihr <code>body</code> danach aus:
       </p>
-      <CodeExample title="Dein Grundgerüst mit einem neuen Absatz" language="html" filename="index.html"
+      <CodeExample title="Ihr Grundgerüst mit einem neuen Absatz" language="html" filename="index.html"
         :code="deinGrundgeruest" />
       <p>
-        Speichere und prüfe im Browser, ob der neue Absatz erscheint.
+        Speichern Sie und prüfen Sie im Browser, ob der neue Absatz erscheint.
       </p>
       <p class="lesson-tip">
-        Funktioniert die Änderung? Dann committe und pushe sie – zum Beispiel
+        Funktioniert die Änderung? Dann committen und pushen Sie sie – zum Beispiel
         mit der Nachricht „Füge neuen Absatz hinzu“.
       </p>
     </template>

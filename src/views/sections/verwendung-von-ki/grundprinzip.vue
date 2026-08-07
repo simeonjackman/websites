@@ -14,59 +14,59 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du formulierst klare Fragen an ein <Term term="KI" def="Künstliche Intelligenz, ein Programm, das dir Texte und Code-Vorschläge liefert." />-Tool.</li>
-        <li>Du prüfst und passt Vorschläge an.</li>
-        <li>Du behältst das Ziel eines verständlichen eigenen Codes im Blick.</li>
+        <li>Sie formulieren klare Fragen an ein <Term term="KI" def="Künstliche Intelligenz, ein Programm, das Ihnen Texte und Code-Vorschläge liefert." />-Tool.</li>
+        <li>Sie prüfen und passen Vorschläge an.</li>
+        <li>Sie behalten das Ziel eines verständlichen eigenen Codes im Blick.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
         KI-Chattools antworten schnell – aber nicht immer genau. Deshalb gilt
-        für den Einsatz in deinem Projekt ein einfaches Grundprinzip: Du gibst
-        den Rahmen vor, die KI schlägt vor, und du entscheidest.
+        für den Einsatz in Ihrem Projekt ein einfaches Grundprinzip: Sie geben
+        den Rahmen vor, die KI schlägt vor, und Sie entscheiden.
       </p>
     </template>
 
     <template #steps>
       <LessonStep slug="klar-fragen-stellen" title="Klare Fragen stellen">
         <p>
-          Je konkreter deine Frage ist, desto brauchbarer ist die Antwort.
-          Erwähne Sprache, Ziel und Kontext – so bleibt der Vorschlag klein
-          genug, damit du ihn wirklich verstehst.
+          Je konkreter Ihre Frage ist, desto brauchbarer ist die Antwort.
+          Erwähnen Sie Sprache, Ziel und Kontext – so bleibt der Vorschlag klein
+          genug, damit Sie ihn wirklich verstehen.
         </p>
         <CodeExample
           title="Eine gut formulierte Anfrage"
           language="text"
           filename="prompt.txt"
-          :code="`Ich lerne gerade HTML und CSS.\nErkläre mir kurz, was der Unterschied zwischen\npadding und margin ist.\nNenne ein Beispiel, das ich in ein Stylesheet\nkopieren kann.`"
+          :code="`Ich lerne gerade HTML und CSS.\nErklären Sie mir kurz, was der Unterschied zwischen\npadding und margin ist.\nNennen Sie ein Beispiel, das ich in ein Stylesheet\nkopieren kann.`"
         />
       </LessonStep>
 
       <LessonStep slug="nachfragen-statt-akzeptieren" title="Nachfragen statt einfach übernehmen">
         <p>
-          Eine einzelne Antwort reicht selten. Stelle eine Rückfrage, wenn dir
-          etwas unklar ist – so entsteht ein Gespräch, aus dem du tatsächlich
-          etwas lernst.
+          Eine einzelne Antwort reicht selten. Stellen Sie eine Rückfrage, wenn Ihnen
+          etwas unklar ist – so entsteht ein Gespräch, aus dem Sie tatsächlich
+          etwas lernen.
         </p>
         <CodeExample
           title="Eine klärende Rückfrage"
           language="text"
           filename="prompt.txt"
-          :code="`Ich habe den Vorschlag mit padding und margin\nnoch nicht ganz verstanden.\nZeig mir denselben Effekt einmal mit nur\nmargin und einmal mit nur padding,\ndamit ich den Unterschied sehe.`"
+          :code="`Ich habe den Vorschlag mit padding und margin\nnoch nicht ganz verstanden.\nZeigen Sie mir denselben Effekt einmal mit nur\nmargin und einmal mit nur padding,\ndamit ich den Unterschied sehe.`"
         />
       </LessonStep>
 
       <LessonStep slug="vorschlaege-pruefen" title="Vorschläge prüfen und anpassen">
         <p>
-          Prüfe jede Antwort auf Verständlichkeit und Richtigkeit. Passe die
-          Vorschläge an deinen eigenen Stil an und ersetze nichts, was du nicht
-          erklären kannst.
+          Prüfen Sie jede Antwort auf Verständlichkeit und Richtigkeit. Passen Sie die
+          Vorschläge an Ihren eigenen Stil an und ersetzen Sie nichts, was Sie nicht
+          erklären können.
         </p>
         <ul class="lesson-list">
-          <li>Verstehst du jede Zeile des Vorschlags?</li>
-          <li>Passt der Vorschlag zu deinem Projekt?</li>
-          <li>Kannst du die Antwort in eigenen Worten wiedergeben?</li>
+          <li>Verstehen Sie jede Zeile des Vorschlags?</li>
+          <li>Passt der Vorschlag zu Ihrem Projekt?</li>
+          <li>Können Sie die Antwort in eigenen Worten wiedergeben?</li>
         </ul>
       </LessonStep>
     </template>
@@ -82,9 +82,9 @@ import Term from '../../../components/Term.vue'
 
     <template #exercise>
       <p>
-        Schreibe eine Anfrage zu einem Thema aus deinem aktuellen Projekt und
-        formuliere dazu eine klärende Rückfrage. Übernimm nichts aus der
-        Antwort, bevor du es nicht selbst nachvollzogen hast.
+        Schreiben Sie eine Anfrage zu einem Thema aus Ihrem aktuellen Projekt und
+        formulieren Sie dazu eine klärende Rückfrage. Übernehmen Sie nichts aus der
+        Antwort, bevor Sie es nicht selbst nachvollzogen haben.
       </p>
     </template>
   </LessonScaffold>

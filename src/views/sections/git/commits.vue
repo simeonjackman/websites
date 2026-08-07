@@ -26,7 +26,7 @@ git pull`
     section-slug="git"
     lesson-slug="commits"
     title="Commits erstellen und synchronisieren"
-    summary="Lerne, wie du in VS Code einen guten Commit erstellst und deine Änderungen hoch- und herunterlädst."
+    summary="Lernen Sie, wie Sie in VS Code einen guten Commit erstellen und Ihre Änderungen hoch- und herunterladen."
   >
     <template #objectives>
       <ul class="lesson-list">

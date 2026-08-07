@@ -14,9 +14,9 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kannst ein Bild mit Auto-Margins zentrieren.</li>
-        <li>Du kennst die Flexbox-Variante für variable Layouts.</li>
-        <li>Du sorgst dafür, dass die Bildgrösse zum Raum passt.</li>
+        <li>Sie können ein Bild mit Auto-Margins zentrieren.</li>
+        <li>Sie kennen die Flexbox-Variante für variable Layouts.</li>
+        <li>Sie sorgen dafür, dass die Bildgrösse zum Raum passt.</li>
       </ul>
     </template>
 
@@ -59,7 +59,7 @@ import Term from '../../../components/Term.vue'
       <LessonStep slug="groesse-anpassen" title="Bildgrösse an den Raum anpassen">
         <p>
           Ein zentriertes Bild ist nur dann schön, wenn es nicht überläuft.
-          Mit <code>max-width</code> kannst du verhindern, dass das Bild grösser
+          Mit <code>max-width</code> können Sie verhindern, dass das Bild grösser
           als sein Container wird.
         </p>
         <CodeExample
@@ -77,12 +77,12 @@ import Term from '../../../components/Term.vue'
         <li>Flexbox ist hilfreich für variable Layouts.</li>
         <li>Die Grösse des Bildes sollte zum verfügbaren Raum passen.</li>
       </ul>
-      <p class="lesson-tip">Zentrierung ist oft einfacher, wenn du den umgebenden Container kontrollierst.</p>
+      <p class="lesson-tip">Zentrierung ist oft einfacher, wenn Sie den umgebenden Container kontrollieren.</p>
     </template>
 
     <template #exercise>
       <p>
-        Erstelle eine Seite mit einem Bild und richte es zuerst mit
+        Erstellen Sie eine Seite mit einem Bild und richten Sie es zuerst mit
         Auto-Margins, dann mit Flexbox aus. Beobachte, wie sich die Ausrichtung
         auf verschiedenen Breiten verhält.
       </p>

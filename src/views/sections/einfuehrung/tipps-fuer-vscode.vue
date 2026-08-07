@@ -15,17 +15,17 @@ import OsToggle from '../../../components/OsToggle.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du kannst in VS Code schnell Dateien finden und wechseln.</li>
-        <li>Du hast die automatische Formatierung aktiviert.</li>
-        <li>Du kennst die wichtigsten Tastenkombinationen.</li>
+        <li>Sie können in VS Code schnell Dateien finden und wechseln.</li>
+        <li>Sie haben die automatische Formatierung aktiviert.</li>
+        <li>Sie kennen die wichtigsten Tastenkombinationen.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
         Visual Studio Code gehört zu den beliebtesten
-        <Term term="Editoren" def="Programme, in denen du Code schreibst und bearbeitest." />.
-        Wähle unten dein Betriebssystem – die Tastenkombinationen passen sich
+        <Term term="Editoren" def="Programme, in denen Sie Code schreiben und bearbeiten." />.
+        Wählen Sie unten Ihr Betriebssystem – die Tastenkombinationen passen sich
         automatisch an: Auf dem Mac erscheint <strong>cmd</strong>, auf Windows
         <strong>ctrl</strong>.
       </p>
@@ -35,7 +35,7 @@ import OsToggle from '../../../components/OsToggle.vue'
     <template #steps>
       <LessonStep slug="suchen-und-springen" title="Suchen und Springen">
         <p>
-          Mit einer Tastenkombination öffnest du jede Datei im Projekt sofort –
+          Mit einer Tastenkombination öffnen Sie jede Datei im Projekt sofort –
           ohne durch Ordner zu klicken.
         </p>
         <Shortcut label="Datei öffnen" :keys="['mod', 'P']" />
@@ -47,9 +47,9 @@ import OsToggle from '../../../components/OsToggle.vue'
 
       <LessonStep slug="formatierung-aktivieren" title="Automatische Formatierung">
         <p>
-          Besonders hilfreich sind automatische Formatierungen. Damit dein Code
-          beim Speichern sauber ausgerichtet wird, öffnest du die Einstellungen
-          und aktivierst <strong>Format On Save</strong>.
+          Besonders hilfreich sind automatische Formatierungen. Damit Ihr Code
+          beim Speichern sauber ausgerichtet wird, öffnen Sie die Einstellungen
+          und aktivieren Sie <strong>Format On Save</strong>.
         </p>
         <Shortcut label="Einstellungen öffnen" :keys="['mod', ',']" />
         <Shortcut label="Dokument manuell formatieren" :keys="['shift', 'alt', 'F']" />
@@ -57,8 +57,8 @@ import OsToggle from '../../../components/OsToggle.vue'
 
       <LessonStep slug="tastenkombinationen" title="Die wichtigsten Befehle">
         <p>
-          Jede Tastenkombination zeigt dir die passenden Tasten für dein
-          <Term term="Betriebssystem" def="Das Grundprogramm deines Computers, z. B. Windows oder macOS." /> –
+          Jede Tastenkombination zeigt Ihnen die passenden Tasten für Ihr
+          <Term term="Betriebssystem" def="Das Grundprogramm Ihres Computers, z. B. Windows oder macOS." /> –
           mit <strong>cmd</strong> auf dem Mac und <strong>ctrl</strong> auf Windows.
         </p>
         <Shortcut label="Speichern" :keys="['mod', 'S']" />
@@ -69,9 +69,9 @@ import OsToggle from '../../../components/OsToggle.vue'
 
     <template #recap>
       <ul class="lesson-list">
-        <li>Aktiviere die automatische Formatierung.</li>
-        <li>Lerne die wichtigsten Tastenkombinationen.</li>
-        <li>Nutze die integrierte Konsole.</li>
+        <li>Aktivieren Sie die automatische Formatierung.</li>
+        <li>Lernen Sie die wichtigsten Tastenkombinationen.</li>
+        <li>Nutzen Sie die integrierte Konsole.</li>
         <li>Arbeite mit mehreren geöffneten Dateien.</li>
       </ul>
       <p class="lesson-tip">Eine aufgeräumte Entwicklungsumgebung erhöht die Produktivität.</p>
