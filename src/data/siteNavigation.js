@@ -46,6 +46,15 @@ export const sections = [
     ],
   },
   {
+    slug: 'javascript',
+    label: 'JavaScript',
+    path: '/javascript',
+    summary: 'JavaScript macht Webseiten interaktiv und reagiert auf das Verhalten der Besucher.',
+    lessons: [
+      { slug: 'javascript-einbinden', title: 'JavaScript einbinden' },
+    ],
+  },
+  {
     slug: 'beispiele',
     label: 'Beispiele',
     path: '/beispiele',
