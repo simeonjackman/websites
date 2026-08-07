@@ -43,7 +43,7 @@ const deinGrundgeruest = `<!doctype html>
 <body>
     <h1>Meine Seite</h1>
     <p>Ich starte gerade mit HTML.</p>
-    <!-- Hier fügst du einen neuen Absatz hinzu -->
+    <!-- Hier fügen Sie einen neuen Absatz hinzu -->
 </body>
 </html>`
 </script>
@@ -232,7 +232,7 @@ const deinGrundgeruest = `<!doctype html>
         Öffnen Sie Ihre <code>index.html</code> – das Gerüst haben Sie bereits auf
         dieser Seite eingegeben. Ergänzen Sie im <code>body</code> noch einen
         weiteren <code>p</code>-Absatz mit etwas über Sie, zum Beispiel Ihr
-        Lieblingssport. So sieht Ihr <code>body</code> danach aus:
+        Lieblingssport. Ungefähr so könnte Ihr <code>body</code> danach aussehen:
       </p>
       <CodeExample title="Ihr Grundgerüst mit einem neuen Absatz" language="html" filename="index.html"
         :code="deinGrundgeruest" />

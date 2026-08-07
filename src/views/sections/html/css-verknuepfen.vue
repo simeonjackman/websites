@@ -19,9 +19,9 @@ const htmlMitLink = `<!doctype html>
 </body>
 </html>`
 
-const styleCss = `/* style.css – gestaltet die Seite */
+const styleCss = `
 h1 {
-    color: #2f6fdb;
+    color: red;
 }
 
 p {
@@ -98,6 +98,7 @@ p {
           Nach dem Speichern <Shortcut label="Speichern" :keys="['mod', 'S']" /> lädt der
           Browser die Gestaltung und wendet sie an.
         </p>
+        <p class="lesson-tip">Stimmt der Dateiname im <code>href</code> nicht, passiert nichts. Prüfen Sie die Schreibweise. Wenn Ihr Text rot wurde, hat alles geklappt.</p>
       </LessonStep>
     </template>
 
@@ -107,7 +108,6 @@ p {
         <li>Mit <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> binden Sie CSS ein.</li>
         <li>Die <code>href</code> muss genau Ihrem Dateinamen entsprechen.</li>
       </ul>
-      <p class="lesson-tip">Stimmt der Dateiname im <code>href</code> nicht, passiert nichts – prüfen Sie die Schreibweise.</p>
     </template>
 
     <template #exercise>

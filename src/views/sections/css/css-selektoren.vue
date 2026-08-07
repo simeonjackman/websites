@@ -36,11 +36,32 @@ import Term from '../../../components/Term.vue'
           der Seite.
         </p>
         <CodeExample
-          title="Die drei Grundtypen"
+          title="Element Selektor"
           language="css"
           filename="styles.css"
-          :code="`p {\n    color: #333;\n}\n\n.card {\n    padding: 1rem;\n}\n\n#header {\n    margin-bottom: 2rem;\n}`"
+          :code="`p {\n    color: #333;\n}`"
         />
+        <p>
+          Wählt in diesem Beispiel alle HTML p-Elemente aus.
+        </p>
+        <CodeExample
+          title="Klassen Selektor"
+          language="css"
+          filename="styles.css"
+          :code="`.card {\n    padding: 1rem;\n}`"
+        />
+        <p>
+          Wählt in diesem Beispiel alle HTML Elemente mit dem Attribut <code>class="card"</code> aus.
+        </p>
+        <CodeExample
+          title="ID Selektor"
+          language="css"
+          filename="styles.css"
+          :code="`#header {\n    margin-bottom: 2rem;\n}`"
+        />
+        <p>
+          Wählt in diesem Beispiel alle HTML Elemente mit dem Attribut <code>id="header"</code> aus.
+        </p>
       </LessonStep>
 
       <LessonStep slug="nachfahren-vs-kind" title="Nachfahren und direkte Kinder">

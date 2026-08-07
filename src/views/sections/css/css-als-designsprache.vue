@@ -22,9 +22,9 @@ import Term from '../../../components/Term.vue'
 
     <template #intro>
       <p>
-        <Term term="CSS" def="CSS (Cascading Style Sheets) steuert Aussehen und Layout von Webseiten, etwa Farbe, Abstand und Schrift." /> ist mehr als das «Verschönern» einer Seite. Es ist die Sprache, mit
-        der Sie entscheiden, wie etwas wirkt – welche Farbe, welcher Abstand,
-        welcher Rhythmus. Dieses Kapitel legt das Fundament für all das.
+        <Term term="CSS" def="CSS (Cascading Style Sheets) steuert Aussehen und Layout von Webseiten, etwa Farbe, Abstand und Schrift." /> dient dem «Verschönern» einer Seite. Es ist die Sprache, mit
+        der Sie entscheiden, wie etwas wirkt: welche Farbe, welcher Abstand,
+        welche Animationen. Dieses Kapitel legt das Fundament für all das.
       </p>
     </template>
 
@@ -36,11 +36,53 @@ import Term from '../../../components/Term.vue'
           passiert.
         </p>
         <CodeExample
-          title="Eine einzelne Regel"
+          title="CSS Einführungsbeispiel"
           language="css"
           filename="styles.css"
-          :code="`/* So sieht eine Grundregel aus */\nh1 {\n    color: #crimson;\n    font-size: 2rem;\n}`"
+          :code="`h1 {\n    color: red;\n    font-size: 2rem;\n}`"
         />
+        <p>
+          Alle h1-Elemente in Ihrem HTML-Dokument erhalten mit dieser Regel die Eigenschaft, dass der Text (color) rot wird und das die Schriftgrösse 2rem beträgt.
+        </p>
+        <p class="lesson-tip">In CSS steht rem für "Root em". Es ist eine relative Masseinheit für Schriftgrössen und Abstände. Standardmässig entspricht 1 rem genau 16 Pixeln in den meisten Browsern.</p>
+      </LessonStep>
+
+      <LessonStep slug="kommentare-im-css" title="Kommentare im CSS">
+        <p>
+          Mit einem
+          <Term term="Kommentar" def="Ein unsichtbarer Notiztext im Code, der im Browser nicht angezeigt wird." />
+          können Sie Erklärungen direkt in Ihre CSS-Datei schreiben. Der Browser
+          zeigt sie nicht an – sie helfen Ihnen und anderen, die Regeln zu
+          verstehen.
+        </p>
+        <CodeExample title="Kommentare in CSS" language="css" filename="styles.css" :code="`/* Überschrift gestalten */\nh1 {\n    color: #2f6fdb;\n}\n\n/* Abstände rund um die Karte */\n.card {\n    padding: 1rem;\n}`" />
+        <ul class="lesson-list">
+          <li>Ein Kommentar in CSS beginnt mit <code>/*</code> und endet mit <code>*/</code>.</li>
+          <li>Kommentare erklären, was eine Regel bewirkt oder warum sie da ist.</li>
+          <li>Sie können eine einzelne Zeile oder mehrere Zeilen umfassen.</li>
+        </ul>
+      </LessonStep>
+
+      <LessonStep slug="farben-festlegen" title="Farben festlegen mit Standardnamen und Hex-Codes">
+        <p>
+          Farben in CSS lassen Sie sich auf zwei Arten angeben: mit einem
+          <Term term="Standardfarbe" def="Ein vordefinierter Farbname wie red, blue oder white, den CSS direkt kennt." /> oder als
+          <Term term="Hex-Code" def="Eine Farbangabe im Format #RRGGBB, die eine Farbe exakt über Rot-, Grün- und Blauanteile festlegt." />.
+        </p>
+        <CodeExample title="Standardfarben" language="css" filename="styles.css" :code="`p {\n    color: red;\n}\n\nh1 {\n    color: navy;\n}`" />
+        <p>
+          Standardfarben wie <code>red</code>, <code>blue</code> oder
+          <code>gold</code> sind praktisch und sofort verständlich. Für präzise
+          Töne nutzen Sie einen Hex-Code mit einer Raute: Der Wert setzt sich
+          zusammen aus Rot, Grün und Blau im Hexadezimalsystem.
+        </p>
+        <CodeExample title="Hex-Codes für präzise Farben" language="css" filename="styles.css" :code="`.button {\n    background: #ff8c00;\n    color: #ffffff;\n}`" />
+        <p>
+          Schwebt der Mauszeiger in VS Code über einer Farbangabe, öffnet sich
+          ein
+          <Term term="Farbwähler" def="Ein kleines Werkzeug in VS Code, mit dem Sie eine Farbe visuell auswählen und anpassen können." />.
+          Dort können Sie den Ton bequem auswählen und sehen den Hex-Code sofort.
+        </p>
       </LessonStep>
 
       <LessonStep slug="farben-zentralisieren" title="Farben zentralisieren mit Variablen">
@@ -82,15 +124,16 @@ import Term from '../../../components/Term.vue'
 
     <template #exercise>
       <p>
-        Legen Sie in einer <code>styles.css</code> drei Farbvariablen an und verwenden
-        Sie sie für eine Box und eine Schaltfläche. Ändern Sie danach nur den
-        Variablenwert und beobachten Sie, wie beide Elemente reagieren.
+        Legen Sie in Ihrer <code>styles.css</code> eine Variable für eine
+        Hintergrundfarbe an und setzen Sie sie für die Seite um. Testen Sie
+        danach, wie sich die Seite verändert, wenn Sie nur den Variablenwert
+        ändern.
       </p>
       <CodeExample
-        title="Farbvariablen anwenden"
+        title="Eine Hintergrundfarbe umsetzen"
         language="css"
         filename="styles.css"
-        :code="`:root {\n    --color-accent: #16a34a;\n    --color-bg: #f9fafb;\n    --color-text: #111827;\n}\n\nbody {\n    background: var(--color-bg);\n    color: var(--color-text);\n}\n\n.cta {\n    background: var(--color-accent);\n    color: #ffffff;\n}`"
+        :code="`:root {\n    --color-bg: #f9fafb;\n}\n\nbody {\n    background: var(--color-bg);\n}`"
       />
     </template>
   </LessonScaffold>
