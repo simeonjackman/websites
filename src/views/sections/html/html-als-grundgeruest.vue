@@ -191,7 +191,7 @@ const deinGrundgeruest = `<!doctype html>
 
       <LessonStep slug="im-browser-oeffnen" title="Die Seite im Browser öffnen">
         <p>
-          Wählen Sie im Kontextmenü (unten rechts in VSCode) <strong>Open with Live Server</strong>. Ihre
+          Wählen Sie im Kontextmenü (unten rechts in VS Code) <strong>Open with Live Server</strong>. Ihre
           Seite erscheint jetzt in Chrome. Ändern Sie den Text und speichern Sie, der
           Browser aktualisiert die Ansicht automatisch.
         </p>

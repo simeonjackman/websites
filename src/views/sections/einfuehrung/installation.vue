@@ -109,6 +109,25 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
               :code="`brew install --cask visual-studio-code`" />
           </template>
         </OsBlock>
+        <p>
+          Wenn die Installation erfolgreich war, sollte im VS Code nun unten rechts der Knopf "Go Live" erscheinen.
+        </p>
+      </LessonStep>
+
+      <LessonStep slug="live-server" title="Die Live-Server-Erweiterung installieren">
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
+        <p>
+          Moderne Webseiten brauchen einen
+          <Term term="Webserver" def="Ein Programm, das Ihre Webseite an den Browser ausliefert." />.
+          Dafür installieren wir die Erweiterung <strong>Live Server</strong> in VS Code.
+        </p>
+        <p>
+          Drücken Sie in VS Code
+          <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
+          , tippen Sie <code>ext install</code> und geben Sie diesen Befehl ein:
+        </p>
+        <CodeExample title="Live Server installieren" language="bash" filename="VS Code"
+          :code="`ext install ritwickdey.liveserver`" />
       </LessonStep>
 
       <LessonStep slug="git-installieren" title="Git installieren">
@@ -160,22 +179,6 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
               :code="`brew install --cask google-chrome`" />
           </template>
         </OsBlock>
-      </LessonStep>
-
-      <LessonStep slug="live-server" title="Die Live-Server-Erweiterung installieren">
-        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
-        <p>
-          Moderne Webseiten brauchen einen
-          <Term term="Webserver" def="Ein Programm, das Ihre Webseite an den Browser ausliefert." />.
-          Dafür installieren wir die Erweiterung <strong>Live Server</strong> in VS Code.
-        </p>
-        <p>
-          Drücken Sie in VS Code
-          <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
-          , tippen Sie <code>ext install</code> und geben Sie diesen Befehl ein:
-        </p>
-        <CodeExample title="Live Server installieren" language="bash" filename="VS Code"
-          :code="`ext install ritwickdey.liveserver`" />
       </LessonStep>
 
       <LessonStep slug="github-konto" title="Ein GitHub-Konto erstellen">
