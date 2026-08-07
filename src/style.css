@@ -1198,6 +1198,45 @@ html {
   cursor: help;
 }
 
+.referenz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.referenz-karte {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 1.4rem;
+  background: linear-gradient(180deg, rgba(14, 24, 40, 0.92), rgba(10, 17, 30, 0.82));
+  box-shadow: var(--shadow);
+  align-content: start;
+}
+
+.referenz-karte__titel {
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.referenz-karte__titel code {
+  padding: 0.1rem 0.45rem;
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.08);
+  font-family: 'SFMono-Regular', 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.referenz-karte__text {
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  .referenz-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 640px) {
   .shortcut {
     grid-template-columns: 1fr;

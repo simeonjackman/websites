@@ -28,6 +28,8 @@ import BilderZentrieren from '../views/sections/beispiele/bilder-zentrieren.vue'
 import Layouts from '../views/sections/beispiele/layouts.vue'
 import BilderAlsHintergrund from '../views/sections/beispiele/bilder-als-hintergrund.vue'
 import TextNebenBild from '../views/sections/beispiele/text-neben-bild.vue'
+import HtmlReferenz from '../views/sections/beispiele/html-referenz.vue'
+import CssReferenz from '../views/sections/beispiele/css-referenz.vue'
 
 import VerwendungIndex from '../views/sections/verwendung-von-ki/index.vue'
 import Grundprinzip from '../views/sections/verwendung-von-ki/grundprinzip.vue'
@@ -64,6 +66,8 @@ const routes = [
   { path: '/beispiele/layouts', name: 'layouts', component: Layouts },
   { path: '/beispiele/bilder-als-hintergrund', name: 'bilder-als-hintergrund', component: BilderAlsHintergrund },
   { path: '/beispiele/text-neben-bild', name: 'text-neben-bild', component: TextNebenBild },
+  { path: '/beispiele/html-referenz', name: 'html-referenz', component: HtmlReferenz },
+  { path: '/beispiele/css-referenz', name: 'css-referenz', component: CssReferenz },
 
   { path: '/verwendung-von-ki', name: 'verwendung-von-ki', component: VerwendungIndex },
   { path: '/verwendung-von-ki/grundprinzip', name: 'grundprinzip', component: Grundprinzip },

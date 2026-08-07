@@ -55,6 +55,8 @@ export const sections = [
       { slug: 'layouts', title: 'Layouts' },
       { slug: 'bilder-als-hintergrund', title: 'Bilder als Hintergrund' },
       { slug: 'text-neben-bild', title: 'Text neben Bild' },
+      { slug: 'html-referenz', title: 'HTML Referenz' },
+      { slug: 'css-referenz', title: 'CSS Referenz' },
     ],
   },
   {
