@@ -19,9 +19,9 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
     summary="Richte deine Entwicklungsumgebung ein, damit du eine eigene Webseite bauen kannst.">
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du hast einen Editor, einen Browser und Git installiert.</li>
-        <li>Du hast Git mit deinem Namen und deiner E-Mail eingerichtet.</li>
-        <li>Du kannst ein Projekt klonen und im Browser anzeigen.</li>
+        <li>Der Editor, Chrome und Git sind installiert.</li>
+        <li>Git ist mit Ihrem Namen und E-Mail eingerichtet.</li>
+        <li>Sie können ein Projekt klonen und im Browser anzeigen.</li>
       </ul>
     </template>
 
@@ -64,7 +64,6 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="paketverwaltung" title="Paketverwaltung einrichten">
-        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           Ein Paketmanager lädt Programme für dich herunter und installiert sie.
           Windows nutzt
@@ -72,6 +71,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
           Mac nutzt
           <Term term="homebrew" def="Ein Paketmanager für macOS, mit dem du Programme per Befehl installierst." />.
         </p>
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
         <OsBlock>
           <template #windows>
             <p>
@@ -93,12 +93,12 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="vscode-installieren" title="VS Code installieren">
-        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           VS Code ist unser
           <Term term="Editor" def="Ein Programm, in dem du Code schreibst und bearbeitest." />,
           in dem wir den Code schreiben und bearbeiten.
         </p>
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
         <OsBlock>
           <template #windows>
             <CodeExample title="VS Code installieren" language="bash" filename="PowerShell"
@@ -112,12 +112,12 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="git-installieren" title="Git installieren">
-        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           <Term term="Git"
             def="Ein Werkzeug, um Versionen deiner Dateien zu speichern und Änderungen nachzuvollziehen." />
           brauchen wir, um Projektvorlagen herunterzuladen und unsere Projekte abzugeben.
         </p>
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
         <OsBlock>
           <template #windows>
             <CodeExample title="Git installieren" language="bash" filename="PowerShell"
@@ -130,23 +130,26 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="git-einrichten" title="Git mit Name und E-Mail einrichten">
-        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           Bevor du Git verwendest, musst du deinen Benutzernamen und deine
           E-Mail-Adresse setzen. So werden deine Änderungen eindeutig zugeordnet.
+        </p>
+        <p class="lesson-tip">Bei diesem Schritt müssen Sie den Befehl anpassen bevor Sie ihn ausführen.
+          Setzen Sie in der Vorlage Ihrem Namen und Ihre E-Mailadresse ein.
         </p>
         <CodeExample title="Git Namen konfigurieren" language="bash" filename="Terminal" :code="gitConfigName" />
         <CodeExample title="Git E-Mail konfigurieren" language="bash" filename="Terminal" :code="gitConfigEmail" />
       </LessonStep>
 
       <LessonStep slug="chrome-installieren" title="Chrome installieren">
-        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
         <p>
           Für die Webentwicklung brauchen wir einen
           <Term term="Browser" def="Ein Programm, um Webseiten anzusehen, z. B. Chrome." /> mit
           modernen Werkzeugen. Chrome hat sehr gute
           <Term term="Entwicklertools" def="Werkzeuge im Browser, um Code zu prüfen und Fehler zu finden." />.
+          Sie können diesen Schritt überspringen, falls die Chrome bereits installiert haben.
         </p>
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
         <OsBlock>
           <template #windows>
             <CodeExample title="Chrome installieren" language="bash" filename="PowerShell"
@@ -160,7 +163,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="live-server" title="Die Live-Server-Erweiterung installieren">
-        <p class="lesson-tip">Tippe Befehle nie selbst ab – kopiere sie einfach aus dieser Seite.</p>
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
         <p>
           Moderne Webseiten brauchen einen
           <Term term="Webserver" def="Ein Programm, das deine Webseite an den Browser ausliefert." />.
