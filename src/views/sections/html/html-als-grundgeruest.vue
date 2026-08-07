@@ -31,6 +31,9 @@ const beispielElement = `<p>Ich starte gerade mit HTML.</p>`
 
 const langAttribut = `<html lang="de">`
 
+const kommentarBeispiel = `<!-- Hier beginnt der sichtbare Inhalt -->
+<p>Ich starte gerade mit HTML.</p>`
+
 const deinGrundgeruest = `<!doctype html>
 <html lang="de">
 <head>
@@ -172,6 +175,21 @@ const deinGrundgeruest = `<!doctype html>
           Auch im Kopf haben Sie schon Attribute gesehen, etwa
           <code>charset="UTF-8"</code> oder <code>content="width=device-width"</code>.
         </p>
+      </LessonStep>
+
+      <LessonStep slug="kommentare" title="Kommentare im HTML">
+        <p>
+          Mit einem
+          <Term term="Kommentar" def="Ein unsichtbarer Notiztext im Code, der dem Browser nicht angezeigt wird." />
+          können Sie Notizen direkt in Ihren Code schreiben. Der Browser zeigt
+          sie nicht an – sie dienen nur Ihnen und anderen, die den Code lesen.
+        </p>
+        <CodeExample title="Ein Kommentar" language="html" filename="index.html" :code="kommentarBeispiel" />
+        <ul class="lesson-list">
+          <li>Ein Kommentar beginnt mit <code>&lt;!--</code> und endet mit <code>--&gt;</code>.</li>
+          <li>Kommentare helfen, den Aufbau der Seite zu erklären.</li>
+          <li>Im Grundgerüst steht bereits ein Beispiel: <code>&lt;!-- Hier beginnt der sichtbare Inhalt --&gt;</code>.</li>
+        </ul>
       </LessonStep>
 
       <LessonStep slug="eltern-und-kind-elemente" title="Eltern und Kind–Elemente">
