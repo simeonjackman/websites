@@ -23,6 +23,9 @@ import CssSelektoren from '../views/sections/css/css-selektoren.vue'
 import CssBoxModell from '../views/sections/css/css-box-modell.vue'
 import CssAnimationen from '../views/sections/css/css-animationen.vue'
 
+import JavascriptIndex from '../views/sections/javascript/index.vue'
+import JavascriptEinbinden from '../views/sections/javascript/javascript-einbinden.vue'
+
 import BeispieleIndex from '../views/sections/beispiele/index.vue'
 import BilderZentrieren from '../views/sections/beispiele/bilder-zentrieren.vue'
 import Layouts from '../views/sections/beispiele/layouts.vue'
@@ -60,6 +63,9 @@ const routes = [
   { path: '/css/css-selektoren', name: 'css-selektoren', component: CssSelektoren },
   { path: '/css/css-box-modell', name: 'css-box-modell', component: CssBoxModell },
   { path: '/css/css-animationen', name: 'css-animationen', component: CssAnimationen },
+
+  { path: '/javascript', name: 'javascript', component: JavascriptIndex },
+  { path: '/javascript/javascript-einbinden', name: 'javascript-einbinden', component: JavascriptEinbinden },
 
   { path: '/beispiele', name: 'beispiele', component: BeispieleIndex },
   { path: '/beispiele/bilder-zentrieren', name: 'bilder-zentrieren', component: BilderZentrieren },
