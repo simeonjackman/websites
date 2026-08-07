@@ -13,7 +13,7 @@ import { sections } from '../data/siteNavigation'
         </div>
         <div class="hero-aside">
           <div class="panel">
-            <h3>Diese Webseite enthält:</h3>
+            <h3>Dieser Webseitenkurs enthält:</h3>
             <div class="stats-grid" style="margin-top: 1rem">
               <div class="metric">
                 <span>Rubriken</span>
@@ -27,13 +27,40 @@ import { sections } from '../data/siteNavigation'
           </div>
         </div>
       </div>
+      <div class="summary-row">
+        <div>
+          <h2>Ziele des Projekts</h2>
+        </div>
+      </div>
+      <div class="panel-note">
+        <p>
+          Durch dieses Projekt entwickeln Sie Ihre Fähigkeiten in Webentwicklung, Projektplanung und
+          eigenständigem Arbeiten weiter. Sie erleben den gesamten Entstehungsprozess einer Webseite
+          und lernen, eigene Ideen strukturiert und technisch fundiert umzusetzen. Die kontinuierliche
+          Dokumentation schult Sie zudem in professioneller Arbeitsweise und Nachvollziehbarkeit
+          Ihrer Entwicklungsfortschritte.
+        </p>
+      </div>
+      <div class="summary-row">
+        <div>
+          <h2>Vorgehensweise</h2>
+        </div>
+      </div>
+      <div class="panel-note">
+        <p>
+          Im Rahmen dieses Projekts gestalten Sie eigenständig eine Webseite zu einem selbstgewählten
+          Thema. Dabei sollen Sie alle Phasen der Webentwicklung durchlaufen – von der Idee und
+          Planung über die Umsetzung bis zur Dokumentation und Abgabe. Die Webseite soll verschiedene
+          technische und gestalterische Anforderungen erfüllen, die Sie mit Eigeninitiative umsetzen.
+        </p>
+      </div>
     </section>
 
     <section class="panel">
       <div class="summary-row">
         <div>
           <p class="kicker">Themen</p>
-          <h2>Worum es auf dieser Seite geht</h2>
+          <h2>Was Sie lernen werden:</h2>
         </div>
         <RouterLink :to="sections[0].path" class="ghost">Erste Seite öffnen</RouterLink>
       </div>
