@@ -10,7 +10,7 @@ import Term from '../../../components/Term.vue'
     section-slug="css"
     lesson-slug="css-box-modell"
     title="CSS Box Modell"
-    summary="Jedes Element besteht aus Inhalt, Innenabstand, Rahmen und Aussenabstand."
+    summary="Jedes Element ist eine Box, die sich von innen nach aussen aus Inhalt, Padding, Rahmen und Margin zusammensetzt. Das Box-Modell erklärt, wie diese vier Teile zusammen die Grösse eines Elements bestimmen und warum Breite und Höhe erst im Zusammenspiel damit richtig wirken."
   >
     <template #objectives>
       <ul class="lesson-list">
@@ -43,6 +43,46 @@ import Term from '../../../components/Term.vue'
         />
       </LessonStep>
 
+      <LessonStep slug="rahmen-gestalten" title="Rahmen und ihre wichtigsten Eigenschaften">
+        <p>
+          Ein <Term term="Rahmen" def="Der Rahmen ist die sichtbare Linie am Rand eines Elements, direkt um den Inhalt." />
+          umschliesst ein Element. In CSS setzt sich ein Rahmen aus drei
+          Eigenschaften zusammen:
+        </p>
+        <ul class="lesson-list">
+          <li><code>border-width</code> bestimmt die Dicke des Rahmens.</li>
+          <li><code>border-style</code> legt fest, wie er aussieht – zum Beispiel <code>solid</code>, <code>dashed</code> oder <code>dotted</code>.</li>
+          <li><code>border-color</code> setzt die Farbe.</li>
+        </ul>
+        <CodeExample
+          title="Ein Rahmen aus drei Teilen"
+          language="css"
+          filename="styles.css"
+          :code="`.card {\n    border-width: 2px;\n    border-style: solid;\n    border-color: #2f6fdb;\n}`"
+        />
+        <p>
+          Weil diese drei Angaben so oft zusammen vorkommen, gibt es eine
+          Kurzform. Bei <code>border</code> zählen Sie Dicke, Stil und Farbe in
+          einer Zeile auf – die Reihenfolge spielt dabei keine Rolle.
+        </p>
+        <CodeExample
+          title="Die Kurzform border"
+          language="css"
+          filename="styles.css"
+          :code="`.card {\n    border: 2px solid #2f6fdb;\n}`"
+        />
+        <ul class="lesson-list">
+          <li>Mit <code>border-radius</code> runden Sie die Ecken des Rahmens.</li>
+          <li>Ohne <code>border-style</code> wird der Rahmen nicht angezeigt – die Stil-Angabe ist Pflicht.</li>
+        </ul>
+        <CodeExample
+          title="Ecken abrunden mit border-radius"
+          language="css"
+          filename="styles.css"
+          :code="`.card {\n    border: 2px solid #2f6fdb;\n    border-radius: 12px;\n}\n\n.button {\n    background: #2f6fdb;\n    border-radius: 999px;\n}`"
+        />
+      </LessonStep>
+
       <LessonStep slug="rahmen-und-breite" title="Rahmen und die Gesamtbreite">
         <p>
           Ein <code>border</code> liegt um den Innenabstand herum und vergrössert
@@ -57,7 +97,7 @@ import Term from '../../../components/Term.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="box-sizing" title="box-sizing beruhigt das Layout">
+      <LessonStep slug="box-sizing" title="box-sizing vereinfacht das Layout">
         <p>
           Mit <code>box-sizing: border-box</code> zählt die angegebene Breite
           Innenabstand und Rahmen bereits mit. Das erleichtert das Layouten
@@ -73,20 +113,34 @@ import Term from '../../../components/Term.vue'
     </template>
 
     <template #recap>
+      <p>
+        Jedes Element ist eine Box, die sich von innen nach aussen aus
+        <Term term="Inhalt" def="Der Inhalt ist das eigentliche Element einer Box, etwa Text oder ein Bild." />,
+        <Term term="Padding" def="Padding ist der Innenabstand zwischen dem Inhalt und dem Rand eines Elements." />,
+        <Term term="Rahmen" def="Der Rahmen ist die sichtbare Linie am Rand eines Elements, direkt um den Inhalt." />
+        und Aussenabstand zusammensetzt. Das
+        <Term term="Margin" def="Margin ist der Aussenabstand, der ein Element von seinen Nachbarn trennt." />
+        sitzt am äussersten Rand und trennt die Box von den Nachbarn. Ohne das
+        Box-Modell ist oft unklar, warum ein Element breiter oder höher wirkt als
+        angegeben.
+      </p>
       <ul class="lesson-list">
-        <li>Padding schafft Luft im Element.</li>
-        <li>Margin trennt Elemente voneinander.</li>
+        <li>Padding schafft Luft innerhalb der Box.</li>
+        <li>Der Rahmen grenzt die Box sichtbar ab – mit Stil, Farbe und Radius gestaltbar.</li>
+        <li>Margin trennt die Box von den Nachbarn.</li>
+        <li>Mit <code>box-sizing: border-box</code> bleibt die angegebene Breite, Innenabstand und Rahmen sind dann schon enthalten.</li>
         <li>Breite und Höhe wirken erst im Zusammenspiel mit dem Box-Modell richtig.</li>
       </ul>
-      <p class="lesson-tip">Das Box-Modell erklärt viele Layout-Effekte auf einen Blick.</p>
     </template>
 
     <template #exercise>
       <p>
-        Erstellen Sie zwei Karten mit <code>box-sizing: border-box</code> und bauen
+        Erstellen Sie zwei HTML Elemente und geben Sie Ihnen die Klasse <code>class="card"</code>.
+        Verwenden Sie dann <code>box-sizing: border-box</code> im CSS und bauen
         Sie sich selbst eine Variante ohne diese Regel, um den Unterschied der
         Gesamtbreite zu sehen.
       </p>
+      <p style="margin-bottom: 1rem" class="lesson-tip">Hier sind nur die Änderungen im CSS abgebildet. Es müssen aber auch Änderungen im HTML vorgenommen werden.</p>
       <CodeExample
         title="Zwei Karten"
         language="css"
