@@ -71,19 +71,17 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
           Mac nutzt
           <Term term="homebrew" def="Ein Paketmanager für macOS, mit dem Sie Programme per Befehl installieren." />.
         </p>
-        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den
+          kopieren-Knopf
+          drücken.</p>
         <OsBlock>
           <template #windows>
             <p>
               Falls winget noch nicht installiert ist, führen Sie im
               Administrator-Terminal diesen Befehl aus:
             </p>
-            <CodeExample
-              title="winget installieren"
-              language="bash"
-              filename="PowerShell"
-              :code="`Add-AppxPackage -Path 'https://github.com/microsoft/winget-cli/releases/download/v1.8.1911/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' -ForceApplicationShutdown`"
-            />
+            <CodeExample title="winget installieren" language="bash" filename="PowerShell"
+              :code="`Add-AppxPackage -Path 'https://github.com/microsoft/winget-cli/releases/download/v1.8.1911/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' -ForceApplicationShutdown`" />
           </template>
           <template #mac>
             <p>Falls Sie Homebrew noch nicht haben, installieren Sie es mit diesem Befehl:</p>
@@ -98,7 +96,9 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
           <Term term="Editor" def="Ein Programm, in dem Sie Code schreiben und bearbeiten." />,
           in dem wir den Code schreiben und bearbeiten.
         </p>
-        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den
+          kopieren-Knopf
+          drücken.</p>
         <OsBlock>
           <template #windows>
             <CodeExample title="VS Code installieren" language="bash" filename="PowerShell"
@@ -115,7 +115,9 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       </LessonStep>
 
       <LessonStep slug="live-server" title="Die Live-Server-Erweiterung installieren">
-        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den
+          kopieren-Knopf
+          drücken.</p>
         <p>
           Moderne Webseiten brauchen einen
           <Term term="Webserver" def="Ein Programm, das Ihre Webseite an den Browser ausliefert." />.
@@ -130,13 +132,38 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
           :code="`ext install ritwickdey.liveserver`" />
       </LessonStep>
 
+      <LessonStep slug="chrome-installieren" title="Chrome installieren">
+        <p>
+          Für die Webentwicklung brauchen wir einen
+          <Term term="Browser" def="Ein Programm, um Webseiten anzusehen, z. B. Chrome." /> mit
+          modernen Werkzeugen. Chrome hat sehr gute
+          <Term term="Entwicklertools" def="Werkzeuge im Browser, um Code zu prüfen und Fehler zu finden." />.
+          Sie können diesen Schritt überspringen, falls die Chrome bereits installiert haben.
+        </p>
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den
+          kopieren-Knopf
+          drücken.</p>
+        <OsBlock>
+          <template #windows>
+            <CodeExample title="Chrome installieren" language="bash" filename="PowerShell"
+              :code="`winget install -e --id Google.Chrome`" />
+          </template>
+          <template #mac>
+            <CodeExample title="Chrome installieren" language="bash" filename="Terminal"
+              :code="`brew install --cask google-chrome`" />
+          </template>
+        </OsBlock>
+      </LessonStep>
+
       <LessonStep slug="git-installieren" title="Git installieren">
         <p>
           <Term term="Git"
             def="Ein Werkzeug, um Versionen Ihrer Dateien zu speichern und Änderungen nachzuvollziehen." />
           brauchen wir, um Projektvorlagen herunterzuladen und unsere Projekte abzugeben.
         </p>
-        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
+        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den
+          kopieren-Knopf
+          drücken.</p>
         <OsBlock>
           <template #windows>
             <CodeExample title="Git installieren" language="bash" filename="PowerShell"
@@ -160,27 +187,6 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         <CodeExample title="Git E-Mail konfigurieren" language="bash" filename="Terminal" :code="gitConfigEmail" />
       </LessonStep>
 
-      <LessonStep slug="chrome-installieren" title="Chrome installieren">
-        <p>
-          Für die Webentwicklung brauchen wir einen
-          <Term term="Browser" def="Ein Programm, um Webseiten anzusehen, z. B. Chrome." /> mit
-          modernen Werkzeugen. Chrome hat sehr gute
-          <Term term="Entwicklertools" def="Werkzeuge im Browser, um Code zu prüfen und Fehler zu finden." />.
-          Sie können diesen Schritt überspringen, falls die Chrome bereits installiert haben.
-        </p>
-        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den kopieren-Knopf drücken.</p>
-        <OsBlock>
-          <template #windows>
-            <CodeExample title="Chrome installieren" language="bash" filename="PowerShell"
-              :code="`winget install -e --id Google.Chrome`" />
-          </template>
-          <template #mac>
-            <CodeExample title="Chrome installieren" language="bash" filename="Terminal"
-              :code="`brew install --cask google-chrome`" />
-          </template>
-        </OsBlock>
-      </LessonStep>
-
       <LessonStep slug="github-konto" title="Ein GitHub-Konto erstellen">
         <p>
           <Term term="GitHub" def="Eine Plattform im Internet, auf der Sie Git-Projekte speichern und teilen." />
@@ -188,8 +194,10 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
           Schul-E-Mail-Adresse einen Account – das Konto brauchen Sie später, um
           Projekte hoch- und herunterzuladen.
         </p>
-        <p>Öffnen Sie <a href="https://github.com" target="_blank" rel="noopener">github.com</a> und klicken Sie auf <strong>Sign
-            up</strong>.</p>
+        <p>Öffnen Sie <a href="https://github.com" target="_blank" rel="noopener">github.com</a> und klicken Sie auf
+          <strong>Sign
+            up</strong>.
+        </p>
       </LessonStep>
     </template>
 
@@ -202,7 +210,8 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         <li>Live-Server-Erweiterung in VS Code</li>
         <li>Ein GitHub-Konto</li>
       </ul>
-      <p class="lesson-tip">Helfen Sie Ihren Klassenkameradinnen und -kameraden weiter, wenn alle fertig installiert haben.
+      <p class="lesson-tip">Helfen Sie Ihren Klassenkameradinnen und -kameraden weiter, wenn alle fertig installiert
+        haben.
       </p>
     </template>
 
@@ -210,7 +219,8 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
       <p>
         Öffnen Sie VS Code und testen Sie Ihre Installation: Drücken Sie
         <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
-        , tippen Sie <code>Git: Clone</code> und klonen Sie Ihr Projekt. Den Projektlink erhalten Sie von der Lehrperson.
+        , tippen Sie <code>Git: Clone</code> und klonen Sie Ihr Projekt. Den Projektlink erhalten Sie von der
+        Lehrperson.
         Starten Sie anschliesslich
         mit <code>Live Server</code> einen lokalen Server und öffnen Sie die Seite in
         Chrome.

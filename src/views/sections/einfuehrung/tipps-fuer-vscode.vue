@@ -41,8 +41,6 @@ import OsToggle from '../../../components/OsToggle.vue'
         <Shortcut label="Datei öffnen" :keys="['mod', 'P']" />
         <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
         <Shortcut label="Suchen im Projekt" :keys="['mod', 'shift', 'F']" />
-        <p>Auch die integrierte Konsole lässt sich direkt öffnen:</p>
-        <Shortcut label="Integriertes Terminal öffnen" :keys="['ctrl', 'ö']" />
       </LessonStep>
 
       <LessonStep slug="formatierung-aktivieren" title="Automatische Formatierung">
