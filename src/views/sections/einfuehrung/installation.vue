@@ -210,7 +210,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         <li>Live-Server-Erweiterung in VS Code</li>
         <li>Ein GitHub-Konto</li>
       </ul>
-      <p class="lesson-tip">Helfen Sie Ihren Klassenkameradinnen und -kameraden weiter, wenn alle fertig installiert
+      <p class="lesson-tip">Helfen Sie Ihren Klassenkameradinnen und -kameraden weiter, bis alle fertig installiert
         haben.
       </p>
     </template>

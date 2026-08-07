@@ -86,7 +86,7 @@ const deinGrundgeruest = `<!doctype html>
 
       <LessonStep slug="grundgeruest-eingeben" title="Das Grundgerüst eintippen">
         <p>
-          Jede HTML-Datei beginnt mit demselben Grundgerüst. Kopieren Sie es in Ihre
+          Jede HTML-Datei beginnt mit einem ähnlichen Grundgerüst. Kopieren Sie es in Ihre
           <code>index.html</code> und speichern Sie mit
           <Shortcut label="Speichern" :keys="['mod', 'S']" />
         </p>
@@ -95,6 +95,14 @@ const deinGrundgeruest = `<!doctype html>
         <p>
           Dieser Ausschnitt wird
           in den nächsten Lektionen immer wieder auftauchen.
+        </p>
+      </LessonStep>
+
+      <LessonStep slug="im-browser-oeffnen" title="Die Seite im Browser öffnen">
+        <p>
+          Wählen Sie im Kontextmenü (unten rechts in VS Code) <strong>Open with Live Server</strong>. Ihre
+          Seite erscheint jetzt in Chrome. Ändern Sie den Text und speichern Sie, der
+          Browser aktualisiert die Ansicht automatisch.
         </p>
       </LessonStep>
 
@@ -189,13 +197,6 @@ const deinGrundgeruest = `<!doctype html>
         </p>
       </LessonStep>
 
-      <LessonStep slug="im-browser-oeffnen" title="Die Seite im Browser öffnen">
-        <p>
-          Wählen Sie im Kontextmenü (unten rechts in VS Code) <strong>Open with Live Server</strong>. Ihre
-          Seite erscheint jetzt in Chrome. Ändern Sie den Text und speichern Sie, der
-          Browser aktualisiert die Ansicht automatisch.
-        </p>
-      </LessonStep>
     </template>
 
     <template #recap>
