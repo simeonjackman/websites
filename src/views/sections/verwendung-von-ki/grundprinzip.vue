@@ -35,6 +35,11 @@ import Term from '../../../components/Term.vue'
           Erwähnen Sie Sprache, Ziel und Kontext – so bleibt der Vorschlag klein
           genug, damit Sie ihn wirklich verstehen.
         </p>
+         <ul class="lesson-list">
+          <li>Bereiten Sie eine <strong>kleine Auswahl</strong> Ihres Codes vor und fügen Sie sie in die Anfrage ein.</li>
+          <li>Stellen Sie eine konkrete Frage genau zu diesem Stück Code.</li>
+          <li>So bleibt die Antwort auf Ihren Ausschnitt bezogen und Sie können den Vorschlag sofort prüfen.</li>
+        </ul>
         <CodeExample
           title="Eine gut formulierte Anfrage"
           language="text"
