@@ -44,15 +44,23 @@ import Term from '../../../components/Term.vue'
 
       <LessonStep slug="eigene-leistung-dokumentieren" title="Ihre eigene Leistung sichtbar machen">
         <p>
-          Dokumentieren Sie, welche Teile Sie verändert haben und warum. So zeigt Ihr
-          Projekt nicht nur das Ergebnis, sondern auch Ihr Verständnis.
+          Dokumentieren Sie, welche Teile Sie verändert haben und warum. Halten Sie
+          dabei jeden verwendeten KI-Prompt in Ihrer Dokumentation fest und geben Sie
+          den Link zur geteilten Version an. So bleibt genau nachvollziehbar, welche
+          Hilfe Sie genutzt haben.
+        </p>
+        <p>
+          Das Teilen funktioniert nur, wenn Sie bei der KI eingeloggt sind. Die
+          Lehrperson kann dann auch nur den jeweils geteilten Prompt sehen, nicht Ihre
+          anderen Chatprotokolle.
         </p>
         <CodeExample
-          title="Eigene Anpassungen notieren"
+          title="Prompt-Link in der Dokumentation notieren"
           language="text"
           filename="deklaration.txt"
-          :code="`Dokumentation der Eigenleistung\n\n- Aufbau der Sektion selbst erstellt.\n- Grid-Layout selbst umgesetzt.\n- KI-Vorschlag für die Kartenabstände\n  übernommen und an meinen Stil angepasst.`"
+          :code="`Dokumentation der Eigenleistung\n\n- Prompt-Link: https://...\n- Verwendet für: Kartenabstände und Layout-Idee`"
         />
+        <p class="lesson-tip">Nicht funktionierende Links führen zu einem Notenabzug. Prüfen Sie Ihre KI-Links, bevor Sie abgeben!</p>
       </LessonStep>
 
       <LessonStep slug="ergebnisse-erklaeren" title="Ergebnisse erklären können">
@@ -75,7 +83,6 @@ import Term from '../../../components/Term.vue'
         <li>Dokumentieren Sie, welche Teile Sie angepasst haben.</li>
         <li>Eigenleistung bedeutet auch, Ergebnisse erklären zu können.</li>
       </ul>
-      <p class="lesson-tip">Saubere Kennzeichnung schützt vor Missverständnissen.</p>
     </template>
 
     <template #exercise>
