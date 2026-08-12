@@ -1,30 +1,16 @@
-# Website Blueprint
+# Websites
 
-Website Blueprint is a frontend-only Vue 3 + Vite starter for building a basic website.
+Webprojekt zum Erlernen von Webprogrammierung
 
-## What is included
+## Voraussetzungen
+- Node.js und npm installiert
 
-- A homepage that explains the purpose of the site
-- A structure page for layout and content planning
-- A content page for reusable sections and blocks
-- A launch page with a simple checklist-style summary
+## Installation
+1. git clone <repo-url>
+2. cd projektordner
+3. npm install
 
-## What is not included
-
-- No backend server
-- No API proxy
-- No upload flow
-- No domain-specific data model
-
-## Development
-
-```bash
-npm install
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-```
+## Nutzung
+- Entwicklung: npm run dev
+- Produktion bauen: npm run build
+- Starten: npm start
