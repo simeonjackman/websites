@@ -96,6 +96,12 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
           <Term term="Editor" def="Ein Programm, in dem Sie Code schreiben und bearbeiten." />,
           in dem wir den Code schreiben und bearbeiten.
         </p>
+        <p>
+          Sie können VS Code entweder mit dem Befehl unten installieren – oder
+          direkt von der Webseite herunterladen:
+          <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">code.visualstudio.com/download</a>.
+          Wählen Sie dort das Installationsprogramm für Ihr Betriebssystem.
+        </p>
         <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den
           kopieren-Knopf
           drücken.</p>
@@ -122,6 +128,13 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
           Moderne Webseiten brauchen einen
           <Term term="Webserver" def="Ein Programm, das Ihre Webseite an den Browser ausliefert." />.
           Dafür installieren wir die Erweiterung <strong>Live Server</strong> in VS Code.
+        </p>
+        <p>
+          Live Server ist eine
+          <Term term="Erweiterung" def="Ein Zusatzprogramm, das die Funktionen von VS Code erweitert." />
+          von VS Code. Deshalb muss VS Code beim Installieren geöffnet sein: Ohne
+          das Programm gibt es keinen Ort, in dem die Erweiterung installiert
+          werden kann. Starten Sie VS Code also zuerst.
         </p>
         <p>
           Drücken Sie in VS Code
