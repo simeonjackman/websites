@@ -12,7 +12,7 @@ const urlBeispiel = `https://www.example.com/startseite.html\n               └
     section-slug="einfuehrung"
     lesson-slug="wie-webseiten-funktionieren"
     title="Wie Webseiten funktionieren"
-    summary="Eine kurze Übersicht darüber, was beim Öffnen einer Webseite passiert und warum das für dich wichtig ist."
+    summary="Eine kurze Übersicht darüber, was beim Öffnen einer Webseite passiert und warum das für Sie wichtig ist."
   >
     <template #objectives>
       <ul class="lesson-list">

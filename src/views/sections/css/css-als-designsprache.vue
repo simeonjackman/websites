@@ -16,7 +16,6 @@ import Term from '../../../components/Term.vue'
       <ul class="lesson-list">
         <li>Sie verstehen, was eine CSS-Regel ausmacht.</li>
         <li>Sie können ein konsistentes Farbsystem mit Variablen aufbauen.</li>
-        <li>Sie wissen, warum <Term term="Designsysteme" def="Ein Designsystem ist eine Sammlung einheitlicher Regeln für Farben, Schriften und Abstände." /> einfach bleiben dürfen.</li>
       </ul>
     </template>
 
@@ -95,7 +94,7 @@ import Term from '../../../components/Term.vue'
           title="Ein kleines Farbsystem"
           language="css"
           filename="styles.css"
-          :code="`:root {\n    --color-accent: #2f6fdb;\n    --color-accent-dark: #1f4f9e;\n    --color-muted: #6b7280;\n    --space: 1rem;\n}\n\n.button {\n    background: var(--color-accent);\n    padding: var(--space);\n}`"
+          :code="`html {\n    --color-accent: #2f6fdb;\n    --color-accent-dark: #1f4f9e;\n    --color-muted: #6b7280;\n    --space: 1rem;\n}\n\n.button {\n    background: var(--color-accent);\n    padding: var(--space);\n}`"
         />
       </LessonStep>
 
@@ -133,7 +132,7 @@ import Term from '../../../components/Term.vue'
         title="Eine Hintergrundfarbe umsetzen"
         language="css"
         filename="styles.css"
-        :code="`:root {\n    --color-bg: #f9fafb;\n}\n\nbody {\n    background: var(--color-bg);\n}`"
+        :code="`html {\n    --color-bg: #f9fafb;\n}\n\nbody {\n    background: var(--color-bg);\n}`"
       />
     </template>
   </LessonScaffold>

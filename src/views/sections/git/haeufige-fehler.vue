@@ -14,9 +14,8 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du erkennst häufige Git-Fehler frühzeitig.</li>
-        <li>Du weisst, wie du sie in VS Code vermeidest.</li>
-        <li>Du entwickelst eine ruhige Arbeitsweise mit Git.</li>
+        <li>Sie erkennen häufige Git-Fehler frühzeitig.</li>
+        <li>Sie wissen, wie sie diese Fehler in VS Code vermeident.</li>
       </ul>
     </template>
 

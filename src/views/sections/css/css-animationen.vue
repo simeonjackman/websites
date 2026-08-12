@@ -72,8 +72,8 @@ import Term from '../../../components/Term.vue'
       <LessonStep slug="keyframes" title="Bewegungen mit @keyframes">
         <p>
           Soll etwas von allein laufen oder sich in mehr als zwei Zuständen
-          bewegen, beschreibst du mit <code>@keyframes</code> eine Abfolge und
-          startest sie mit <code>animation</code>.
+          bewegen, beschreiben Sie mit <code>@keyframes</code> eine Abfolge und
+          starten sie mit <code>animation</code>.
         </p>
         <CodeExample
           title="Ein sanftes Einblenden"

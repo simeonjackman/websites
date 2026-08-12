@@ -104,8 +104,8 @@ import Term from '../../../components/Term.vue'
     <template #exercise>
       <p>
         Schreibe eine kleine <code>styles.css</code>, die eine Überschrift, eine
-        Klasse und direkte Kinder einer Liste anspricht. Teste, wie sich die
-        Regel ändert, wenn du die Klasse durch einen Elementselektor ersetzt.
+        Klasse und direkte Kinder einer Liste anspricht. Testen Sie, wie sich die
+        Regel ändert, wenn Sie die Klasse durch einen Elementselektor ersetzen.
       </p>
       <CodeExample
         title="Selektoren üben"

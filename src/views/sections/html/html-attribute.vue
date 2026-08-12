@@ -20,7 +20,7 @@ const beschreibungBeispiel = `<!-- Ein Bild ohne Beschreibung -->
 <img src="logo.png" alt="Logo des Gymnasiums Muttenz">`
 
 const deineUebung = `<p class="einfuehrung">
-    Kennst du <a href="https://developer.mozilla.org">MDN</a>?
+    Kennen Sie <a href="https://developer.mozilla.org">MDN</a>?
 </p>
 <img src="logo.png" alt="Logo des Projekts">`
 </script>

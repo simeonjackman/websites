@@ -31,7 +31,7 @@ import Term from '../../../components/Term.vue'
       <LessonStep slug="aenderungen-nachvollziehen" title="Änderungen bleiben nachvollziehbar">
         <p>
           Jede wichtige Änderung wird in Git als Schritt gespeichert. Dadurch
-          kannst du jederzeit sehen, was du wann geändert hast.
+          können Sie jederzeit sehen, was Sie wann geändert haben.
         </p>
         <ul class="lesson-list">
           <li>Änderungen bleiben nachvollziehbar.</li>
@@ -50,7 +50,7 @@ import Term from '../../../components/Term.vue'
 
       <LessonStep slug="zurueckspringen-bei-fehlern" title="Frühere Stände wiederherstellen">
         <p>
-          Falls etwas schiefgeht, kannst du auf einen früheren Stand
+          Falls etwas schiefgeht, können Sie auf einen früheren Stand
           zurückgreifen. Das macht Experimentieren deutlich entspannter.
         </p>
         <ul class="lesson-list">

@@ -44,7 +44,7 @@ import Term from '../../../components/Term.vue'
 
       <LessonStep slug="flexbox-fuer-eine-richtung" title="Flexbox für eine Richtung">
         <p>
-          Stellst du nur eine Richtung in den Vordergrund, ist Flexbox oft die
+          Stellen Sie nur eine Richtung in den Vordergrund, ist Flexbox oft die
           flexiblere Wahl. Ihre Elemente verteilen sich dabei ohne feste
           Spaltenangabe.
         </p>
