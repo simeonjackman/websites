@@ -8,6 +8,7 @@ import TippsFuerVscode from '../views/sections/einfuehrung/tipps-fuer-vscode.vue
 
 import GitIndex from '../views/sections/git/index.vue'
 import WarumBrauchtEsVersionskontrolle from '../views/sections/git/warum-braucht-es-versionskontrolle.vue'
+import InstallationGit from '../views/sections/git/installation.vue'
 import Commits from '../views/sections/git/commits.vue'
 import HaeufigeFehler from '../views/sections/git/haeufige-fehler.vue'
 
@@ -49,6 +50,7 @@ const routes = [
 
   { path: '/git', name: 'git', component: GitIndex },
   { path: '/git/warum-braucht-es-versionskontrolle', name: 'warum-braucht-es-versionskontrolle', component: WarumBrauchtEsVersionskontrolle },
+  { path: '/git/installation-git', name: 'installation-git', component: InstallationGit },
   { path: '/git/commits', name: 'commits', component: Commits },
   { path: '/git/haeufige-fehler', name: 'haeufige-fehler', component: HaeufigeFehler },
 

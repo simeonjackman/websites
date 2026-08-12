@@ -69,8 +69,6 @@ import OsToggle from '../../../components/OsToggle.vue'
       <ul class="lesson-list">
         <li>Aktivieren Sie die automatische Formatierung.</li>
         <li>Lernen Sie die wichtigsten Tastenkombinationen.</li>
-        <li>Nutzen Sie die integrierte Konsole.</li>
-        <li>Arbeite mit mehreren geöffneten Dateien.</li>
       </ul>
       <p class="lesson-tip">Eine aufgeräumte Entwicklungsumgebung erhöht die Produktivität.</p>
     </template>

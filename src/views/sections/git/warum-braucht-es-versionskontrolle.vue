@@ -13,9 +13,8 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Du verstehst den Nutzen von <Term term="Versionskontrolle" def="Das systematische Speichern und Nachvollziehen von Änderungen an deinen Dateien im Laufe der Zeit." />.</li>
-        <li>Du kennst die Vorteile des Arbeitens mit <Term term="Git" def="Ein Werkzeug, das den Entwicklungsverlauf deines Projekts aufzeichnet." />.</li>
-        <li>Du kannst einfache Begriffe wie <Term term="Commit" def="Ein gespeicherter Zwischenstand deines Projekts mit einer erklärenden Nachricht." /> und Stand einordnen.</li>
+        <li>Sie verstehen den Nutzen von <Term term="Versionskontrolle" def="Das systematische Speichern und Nachvollziehen von Änderungen an Ihren Dateien im Laufe der Zeit." />.</li>
+        <li>Sie kennen die Vorteile des Arbeitens mit <Term term="Git" def="Ein Werkzeug, das den Entwicklungsverlauf Ihres Projekts aufzeichnet." />.</li>
       </ul>
     </template>
 
@@ -23,8 +22,8 @@ import Term from '../../../components/Term.vue'
       <p>
         Code wächst über viele Schritte. Ohne Versionskontrolle wird es schnell
         unübersichtlich: Änderungen gehen verloren, Abläufe sind nicht mehr
-        nachvollziehbar. Git löst genau dieses Problem – und schafft dir ein
-        Sicherheitsnetz für deine Arbeit.
+        nachvollziehbar. Git löst genau dieses Problem und schafft dir ein
+        Sicherheitsnetz für Ihre Arbeit.
       </p>
     </template>
 

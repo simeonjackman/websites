@@ -17,6 +17,7 @@ export const sections = [
     summary: 'Versionskontrolle hilft dabei, Änderungen nachvollziehbar und sicher zu speichern.',
     lessons: [
       { slug: 'warum-braucht-es-versionskontrolle', title: 'Warum braucht es Versionskontrolle?' },
+      { slug: 'installation-git', title: 'Installation' },
       { slug: 'commits', title: 'Commits' },
       { slug: 'haeufige-fehler', title: 'Häufige Fehler' },
     ],

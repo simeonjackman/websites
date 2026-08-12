@@ -236,12 +236,8 @@ const deinGrundgeruest = `<!doctype html>
       </p>
       <CodeExample title="Ihr Grundgerüst mit einem neuen Absatz" language="html" filename="index.html"
         :code="deinGrundgeruest" />
-      <p>
-        Speichern Sie und prüfen Sie im Browser, ob der neue Absatz erscheint.
-      </p>
       <p class="lesson-tip">
-        Funktioniert die Änderung? Dann committen und pushen Sie sie – zum Beispiel
-        mit der Nachricht „Füge neuen Absatz hinzu“.
+        Speichern Sie und prüfen Sie im Browser, ob der neue Absatz erscheint.
       </p>
     </template>
   </LessonScaffold>

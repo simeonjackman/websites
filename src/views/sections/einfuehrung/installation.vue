@@ -9,9 +9,6 @@ import OsToggle from '../../../components/OsToggle.vue'
 
 const homebrewCmd = `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-const gitConfigName = `git config --global user.name "Dein Name"`
-
-const gitConfigEmail = `git config --global user.email "deine@email.ch"`
 </script>
 
 <template>
@@ -19,9 +16,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
     summary="Richten Sie Ihre Entwicklungsumgebung ein, damit Sie eine eigene Webseite bauen können.">
     <template #objectives>
       <ul class="lesson-list">
-        <li>Der Editor, Chrome und Git sind installiert.</li>
-        <li>Git ist mit Ihrem Namen und E-Mail eingerichtet.</li>
-        <li>Sie können ein Projekt klonen und im Browser anzeigen.</li>
+        <li>Der Editor und Chrome sind installiert.</li>
       </ul>
     </template>
 
@@ -99,7 +94,8 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         <p>
           Sie können VS Code entweder mit dem Befehl unten installieren – oder
           direkt von der Webseite herunterladen:
-          <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">code.visualstudio.com/download</a>.
+          <a href="https://code.visualstudio.com/download" target="_blank"
+            rel="noopener">code.visualstudio.com/download</a>.
           Wählen Sie dort das Installationsprogramm für Ihr Betriebssystem.
         </p>
         <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den
@@ -168,76 +164,18 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         </OsBlock>
       </LessonStep>
 
-      <LessonStep slug="git-installieren" title="Git installieren">
-        <p>
-          <Term term="Git"
-            def="Ein Werkzeug, um Versionen Ihrer Dateien zu speichern und Änderungen nachzuvollziehen." />
-          brauchen wir, um Projektvorlagen herunterzuladen und unsere Projekte abzugeben.
-        </p>
-        <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den
-          kopieren-Knopf
-          drücken.</p>
-        <OsBlock>
-          <template #windows>
-            <CodeExample title="Git installieren" language="bash" filename="PowerShell"
-              :code="`winget install -e --id Git.Git`" />
-          </template>
-          <template #mac>
-            <CodeExample title="Git installieren" language="bash" filename="Terminal" :code="`brew install git`" />
-          </template>
-        </OsBlock>
-      </LessonStep>
-
-      <LessonStep slug="git-einrichten" title="Git mit Name und E-Mail einrichten">
-        <p>
-          Bevor Sie Git verwenden, müssen Sie Ihren Benutzernamen und Ihre
-          E-Mail-Adresse setzen. So werden Ihre Änderungen eindeutig zugeordnet.
-        </p>
-        <p class="lesson-tip">Bei diesem Schritt müssen Sie den Befehl anpassen bevor Sie ihn ausführen.
-          Setzen Sie in der Vorlage Ihrem Namen und Ihre E-Mailadresse ein.
-        </p>
-        <CodeExample title="Git Namen konfigurieren" language="bash" filename="Terminal" :code="gitConfigName" />
-        <CodeExample title="Git E-Mail konfigurieren" language="bash" filename="Terminal" :code="gitConfigEmail" />
-      </LessonStep>
-
-      <LessonStep slug="github-konto" title="Ein GitHub-Konto erstellen">
-        <p>
-          <Term term="GitHub" def="Eine Plattform im Internet, auf der Sie Git-Projekte speichern und teilen." />
-          ist eine Plattform zur Versionsverwaltung. Erstellen Sie dort mit Ihrer
-          Schul-E-Mail-Adresse einen Account – das Konto brauchen Sie später, um
-          Projekte hoch- und herunterzuladen.
-        </p>
-        <p>Öffnen Sie <a href="https://github.com" target="_blank" rel="noopener">github.com</a> und klicken Sie auf
-          <strong>Sign
-            up</strong>.
-        </p>
-      </LessonStep>
     </template>
 
     <template #recap>
-      <p>Ihre Entwicklungsumgebung sollte jetzt diese Werkzeuge enthalten:</p>
+      <p>Ihr Computer sollte jetzt diese Werkzeuge enthalten:</p>
       <ul class="lesson-list">
-        <li>VS Code (Editor)</li>
+        <li>VS Code (Editor) mit Live Server</li>
         <li>Chrome (Browser)</li>
-        <li>Git (Versionskontrolle), eingerichtet mit Name und E-Mail</li>
-        <li>Live-Server-Erweiterung in VS Code</li>
-        <li>Ein GitHub-Konto</li>
       </ul>
       <p class="lesson-tip">Helfen Sie Ihren Klassenkameradinnen und -kameraden weiter, bis alle fertig installiert
         haben.
       </p>
     </template>
 
-    <template #exercise>
-      <p>
-        Öffnen Sie VS Code und testen Sie Ihre Installation: Drücken Sie
-        <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
-        , tippen Sie <code>Git: Clone</code> und klonen Sie Ihr Projekt. Den Projektlink erhalten Sie von der
-        Lehrperson.
-        Starten Sie anschliesslich
-        mit <code>Live Server</code> einen lokalen Server und öffnen Sie die Seite in
-        Chrome.
-      </p>
-    </template>
   </LessonScaffold>
 </template>

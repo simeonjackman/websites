@@ -201,10 +201,6 @@ const seitenstruktur = `<header>
         <Shortcut label="Dokument formatieren" :keys="['shift', 'alt', 'F']" />
         und prüfen Sie im Browser, ob alles noch richtig angezeigt wird.
       </p>
-      <p class="lesson-tip">
-        Funktioniert alles? Dann committen und pushen Sie Ihre Änderung – zum
-        Beispiel mit der Nachricht „Strukturiere die Seite“.
-      </p>
     </template>
   </LessonScaffold>
 </template>
