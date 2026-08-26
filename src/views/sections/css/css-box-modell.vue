@@ -14,8 +14,8 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Sie kennen die vier Bestandteile des Box-Modells.</li>
         <li>Sie unterscheiden <Term term="Padding" def="Padding ist der Innenabstand zwischen dem Inhalt und dem Rand eines Elements." /> von <Term term="Margin" def="Margin ist der Aussenabstand, der ein Element von seinen Nachbarn trennt." />.</li>
+        <li>Sie kennen die Bestandteile der Border Eigenschaft.</li>
         <li>Sie wissen, was <code>box-sizing</code> bewirkt.</li>
       </ul>
     </template>
@@ -31,7 +31,7 @@ import Term from '../../../components/Term.vue'
     <template #steps>
       <LessonStep slug="innen-und-aussen" title="Padding und Margin verstehen">
         <p>
-          <code>padding</code> erzeugt Luft <em>innerhalb</em> des Elements,
+          <code>padding</code> erzeugt Abstand <em>innerhalb</em> des Elements,
           die <code>margin</code> trennt Elemente <em>voneinander</em>. Beide
           beeinflussen das Gesamtbild eines Layouts.
         </p>
@@ -39,7 +39,7 @@ import Term from '../../../components/Term.vue'
           title="Abstände setzen"
           language="css"
           filename="styles.css"
-          :code="`.card {\n    padding: 1.5rem;   /* innen: Luft zum Inhalt */\n    margin: 1rem 0;      /* aussen: Abstand nach oben und unten */\n}`"
+          :code="`.card {\n    padding: 1.5rem;   /* innen: Abstand zum Inhalt */\n    margin: 1rem 0;    /* aussen: Abstand nach oben und unten */\n}`"
         />
       </LessonStep>
 
@@ -73,7 +73,7 @@ import Term from '../../../components/Term.vue'
         />
         <ul class="lesson-list">
           <li>Mit <code>border-radius</code> runden Sie die Ecken des Rahmens.</li>
-          <li>Ohne <code>border-style</code> wird der Rahmen nicht angezeigt – die Stil-Angabe ist Pflicht.</li>
+          <li>Ohne <code>border-style</code> wird der Rahmen nicht angezeigt.</li>
         </ul>
         <CodeExample
           title="Ecken abrunden mit border-radius"
@@ -107,7 +107,7 @@ import Term from '../../../components/Term.vue'
           title="Gleiche Breite trotz Padding"
           language="css"
           filename="styles.css"
-          :code="`* {\n    box-sizing: border-box;\n}\n\n.box {\n    width: 200px;\n    padding: 20px;\n    /* bleibt 200px, nicht 244px */\n    border: 2px solid #cbd5e1;\n}`"
+          :code="`body {\n    box-sizing: border-box;\n}\n\n.box {\n    width: 200px;\n    padding: 20px;\n    /* bleibt 200px, nicht 244px */\n    border: 2px solid #cbd5e1;\n}`"
         />
       </LessonStep>
     </template>
@@ -125,7 +125,7 @@ import Term from '../../../components/Term.vue'
         angegeben.
       </p>
       <ul class="lesson-list">
-        <li>Padding schafft Luft innerhalb der Box.</li>
+        <li>Padding schafft Platz innerhalb der Box.</li>
         <li>Der Rahmen grenzt die Box sichtbar ab – mit Stil, Farbe und Radius gestaltbar.</li>
         <li>Margin trennt die Box von den Nachbarn.</li>
         <li>Mit <code>box-sizing: border-box</code> bleibt die angegebene Breite, Innenabstand und Rahmen sind dann schon enthalten.</li>
@@ -145,7 +145,7 @@ import Term from '../../../components/Term.vue'
         title="Zwei Karten"
         language="css"
         filename="styles.css"
-        :code="`* {\n    box-sizing: border-box;\n}\n\n.card {\n    width: 240px;\n    padding: 1rem;\n    border: 1px solid #e5e7eb;\n    margin: 0.5rem;\n}`"
+        :code="`body {\n    box-sizing: border-box;\n}\n\n.card {\n    width: 240px;\n    padding: 1rem;\n    border: 1px solid #e5e7eb;\n    margin: 0.5rem;\n}`"
       />
     </template>
   </LessonScaffold>
