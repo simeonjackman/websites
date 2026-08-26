@@ -37,7 +37,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="CSS Einführungsbeispiel"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`h1 {\n    color: red;\n    font-size: 2rem;\n}`"
         />
         <p>
@@ -54,7 +54,7 @@ import Term from '../../../components/Term.vue'
           zeigt sie nicht an – sie helfen Ihnen und anderen, die Regeln zu
           verstehen.
         </p>
-        <CodeExample title="Kommentare in CSS" language="css" filename="styles.css" :code="`/* Überschrift gestalten */\nh1 {\n    color: #2f6fdb;\n}\n\n/* Abstände rund um die Karte */\n.card {\n    padding: 1rem;\n}`" />
+        <CodeExample title="Kommentare in CSS" language="css" filename="style.css" :code="`/* Überschrift gestalten */\nh1 {\n    color: #2f6fdb;\n}\n\n/* Abstände rund um die Karte */\n.card {\n    padding: 1rem;\n}`" />
         <ul class="lesson-list">
           <li>Ein Kommentar in CSS beginnt mit <code>/*</code> und endet mit <code>*/</code>.</li>
           <li>Kommentare erklären, was eine Regel bewirkt oder warum sie da ist.</li>
@@ -68,14 +68,14 @@ import Term from '../../../components/Term.vue'
           <Term term="Standardfarbe" def="Ein vordefinierter Farbname wie red, blue oder white, den CSS direkt kennt." /> oder als
           <Term term="Hex-Code" def="Eine Farbangabe im Format #RRGGBB, die eine Farbe exakt über Rot-, Grün- und Blauanteile festlegt." />.
         </p>
-        <CodeExample title="Standardfarben" language="css" filename="styles.css" :code="`p {\n    color: red;\n}\n\nh1 {\n    color: navy;\n}`" />
+        <CodeExample title="Standardfarben" language="css" filename="style.css" :code="`p {\n    color: red;\n}\n\nh1 {\n    color: navy;\n}`" />
         <p>
           Standardfarben wie <code>red</code>, <code>blue</code> oder
           <code>gold</code> sind praktisch und sofort verständlich. Für präzise
           Töne nutzen Sie einen Hex-Code mit einer Raute: Der Wert setzt sich
           zusammen aus Rot, Grün und Blau im Hexadezimalsystem.
         </p>
-        <CodeExample title="Hex-Codes für präzise Farben" language="css" filename="styles.css" :code="`.button {\n    background: #ff8c00;\n    color: #ffffff;\n}`" />
+        <CodeExample title="Hex-Codes für präzise Farben" language="css" filename="style.css" :code="`.button {\n    background: #ff8c00;\n    color: #ffffff;\n}`" />
         <p>
           Schwebt der Mauszeiger in VS Code über einer Farbangabe, öffnet sich
           ein
@@ -93,7 +93,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Ein kleines Farbsystem"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`html {\n    --akzent-farbe: #2f6fdb;\n}\n\n.button {\n    background: var(--akzent-farbe);\n}`"
         />
       </LessonStep>
@@ -111,7 +111,7 @@ import Term from '../../../components/Term.vue'
 
     <template #exercise>
       <p>
-        Legen Sie in Ihrer <code>styles.css</code> eine Variable für eine
+        Legen Sie in Ihrer <code>style.css</code> eine Variable für eine
         Hintergrundfarbe an und setzen Sie sie für die Seite um. Testen Sie
         danach, wie sich die Seite verändert, wenn Sie nur den Variablenwert
         ändern.
@@ -119,7 +119,7 @@ import Term from '../../../components/Term.vue'
       <CodeExample
         title="Eine Hintergrundfarbe umsetzen"
         language="css"
-        filename="styles.css"
+        filename="style.css"
         :code="`html {\n    --hintergrund-farbe: #f9fafb;\n}\n\nbody {\n    background: var(--hintergrund-farbe);\n}`"
       />
     </template>

@@ -38,7 +38,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Ein Übergang beim Hovern"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`.button {\n    background: #475569;\n    transition: background 1.2s ease;\n}\n\n.button:hover {\n    background: #2f6fdb;\n}`"
         />
         <p>
@@ -58,13 +58,13 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Eine gewählte Schaltfläche fokussieren"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`.button {\n    transition: box-shadow 0.2s ease;\n}\n\n.button:focus {\n    box-shadow: 0 0 0 3px rgba(47, 111, 219, 0.5);\n}`"
         />
         <CodeExample
           title="Abheben mit :hover und transform"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`.card {\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n}\n\n.card:hover {\n    transform: translateY(-2px);\n    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);\n}`"
         />
       </LessonStep>
@@ -78,7 +78,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Ein sanftes Einblenden"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`@keyframes fade-in {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.hero {\n    animation: fade-in 1.8s ease-in-out infinite;\n}`"
         />
         <p>
@@ -107,7 +107,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Besser vermeiden: endloses Drehen"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`@keyframes spin {\n    to {\n        transform: rotate(360deg);\n    }\n}\n\n.badge {\n    animation: spin 1s linear infinite;\n}`"
         />
         <CodeExample
@@ -138,7 +138,7 @@ import Term from '../../../components/Term.vue'
       <CodeExample
         title="Akzent und Übergang"
         language="css"
-        filename="styles.css"
+        filename="style.css"
         :code="`.cta {\n    transition: 1.5s ease;\n}\n\n.cta:hover {\n    background: #16a34a;\n}\n\n@keyframes fade-in {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.cta {\n    animation: fade-in 1.0s ease-out;\n}`"
       />
     </template>

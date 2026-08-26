@@ -38,7 +38,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Abstände setzen"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`.card {\n    padding: 1.5rem;   /* innen: Abstand zum Inhalt */\n    margin: 1rem 0;    /* aussen: Abstand nach oben und unten */\n}`"
         />
       </LessonStep>
@@ -57,7 +57,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Ein Rahmen aus drei Teilen"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`.card {\n    border-width: 2px;\n    border-style: solid;\n    border-color: #2f6fdb;\n}`"
         />
         <p>
@@ -68,7 +68,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Die Kurzform border"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`.card {\n    border: 2px solid #2f6fdb;\n}`"
         />
         <ul class="lesson-list">
@@ -78,7 +78,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Ecken abrunden mit border-radius"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`.card {\n    border: 2px solid #2f6fdb;\n    border-radius: 12px;\n}\n\n.button {\n    background: #2f6fdb;\n    border-radius: 999px;\n}`"
         />
       </LessonStep>
@@ -92,7 +92,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Rahmen hinzufügen"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`.box {\n    width: 200px;\n    padding: 20px;\n    border: 2px solid #cbd5e1;\n}\n\n/* 200 + 40 + 4 = echte Gesamtbreite von 244px */`"
         />
       </LessonStep>
@@ -106,7 +106,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Gleiche Breite trotz Padding"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`body {\n    box-sizing: border-box;\n}\n\n.box {\n    width: 200px;\n    padding: 20px;\n    /* bleibt 200px, nicht 244px */\n    border: 2px solid #cbd5e1;\n}`"
         />
       </LessonStep>
@@ -144,7 +144,7 @@ import Term from '../../../components/Term.vue'
       <CodeExample
         title="Zwei Karten"
         language="css"
-        filename="styles.css"
+        filename="style.css"
         :code="`body {\n    box-sizing: border-box;\n}\n\n.card {\n    width: 240px;\n    padding: 1rem;\n    border: 1px solid #e5e7eb;\n    margin: 0.5rem;\n}`"
       />
     </template>

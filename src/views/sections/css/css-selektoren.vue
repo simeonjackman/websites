@@ -38,7 +38,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Element Selektor"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`p {\n    color: red;\n}`"
         />
         <p>
@@ -49,7 +49,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Klassen Selektor"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`.card {\n    padding: 1rem;\n}`"
         />
         <p>
@@ -58,7 +58,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="ID Selektor"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`#header {\n    margin-bottom: 2rem;\n}`"
         />
         <p>
@@ -75,7 +75,7 @@ import Term from '../../../components/Term.vue'
         <CodeExample
           title="Verschachtelung gezielt ansprechen"
           language="css"
-          filename="styles.css"
+          filename="style.css"
           :code="`/* jeder Nachfahr, auch tief verschachtelt */\nnav a {\n    text-decoration: none;\n}\n\n/* nur direkte Kinder */\n.menu > li {\n    list-style: none;\n}`"
         />
       </LessonStep>
@@ -100,7 +100,7 @@ import Term from '../../../components/Term.vue'
       <CodeExample
         title="CSS zum Üben von Selektoren"
         language="css"
-        filename="styles.css"
+        filename="style.css"
         :code="`.panel {\n    font-size: 1.25rem;\n}\n\n.panel > p {\n    color: green;\n}\n`"
       />
       <p>
