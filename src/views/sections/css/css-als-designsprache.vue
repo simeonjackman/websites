@@ -30,8 +30,8 @@ import Term from '../../../components/Term.vue'
     <template #steps>
       <LessonStep slug="eine-ccs-regel" title="Eine CSS-Regel zerlegen">
         <p>
-          Eine CSS-Regel besteht aus einem Selektoren, der bestimmt, <em>wo</em>
-          die Regel wirkt, und aus Eigenschaften, die festlegen, <em>was</em>
+          Eine CSS-Regel besteht aus einem <Term term="Selektor" def="Der Selektor bestimmt, auf welche HTML-Elemente eine Regel zutrifft." /> der bestimmt, <em>wo</em>
+          die Regel wirkt, und aus Eigenschaften die festlegen, <em>was</em>
           passiert.
         </p>
         <CodeExample
@@ -94,22 +94,10 @@ import Term from '../../../components/Term.vue'
           title="Ein kleines Farbsystem"
           language="css"
           filename="styles.css"
-          :code="`html {\n    --color-accent: #2f6fdb;\n    --color-accent-dark: #1f4f9e;\n    --color-muted: #6b7280;\n    --space: 1rem;\n}\n\n.button {\n    background: var(--color-accent);\n    padding: var(--space);\n}`"
+          :code="`html {\n    --akzent-farbe: #2f6fdb;\n}\n\n.button {\n    background: var(--akzent-farbe);\n}`"
         />
       </LessonStep>
 
-      <LessonStep slug="abstand-und-typografie" title="Abstand und Typografie prägen den Eindruck">
-        <p>
-          Farbe allein macht noch kein gutes Design. Abstände geben den
-          Elementen Luft, die Schriftgrösse trägt massgeblich zur Lesbarkeit
-          bei. Beide gehören zur Sprache von CSS dazu.
-        </p>
-        <ul class="lesson-list">
-          <li><strong>Abstände</strong> schaffen Ordnung und Hierarchie.</li>
-          <li><strong>Typografie</strong> bestimmt, wie angenehm Texte zu lesen sind.</li>
-          <li><strong>Layout</strong> setzt die Bausteine zueinander in Beziehung.</li>
-        </ul>
-      </LessonStep>
     </template>
 
     <template #recap>
@@ -132,7 +120,7 @@ import Term from '../../../components/Term.vue'
         title="Eine Hintergrundfarbe umsetzen"
         language="css"
         filename="styles.css"
-        :code="`html {\n    --color-bg: #f9fafb;\n}\n\nbody {\n    background: var(--color-bg);\n}`"
+        :code="`html {\n    --hintergrund-farbe: #f9fafb;\n}\n\nbody {\n    background: var(--hintergrund-farbe);\n}`"
       />
     </template>
   </LessonScaffold>
