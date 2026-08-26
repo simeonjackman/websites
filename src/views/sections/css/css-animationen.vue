@@ -14,7 +14,7 @@ import Term from '../../../components/Term.vue'
   >
     <template #objectives>
       <ul class="lesson-list">
-        <li>Sie kennen die Grundlagen von <Term term="Übergang" def="Ein Übergang, auch Transition genannt, lässt eine Eigenschaft weich zwischen zwei Zuständen wechseln." /> und <Term term="Keyframe" def="Ein Keyframe gibt den Zustand einer Animation zu einem bestimmten Zeitpunkt vor." />.</li>
+        <li>Sie kennen die Grundlagen von Animationen in CSS.</li>
         <li>Sie können eine Transition auf eine Zustandsänderung anwenden.</li>
         <li>Sie wissen, wie Sie Bewegung dezent und sinnvoll einsetzen.</li>
       </ul>
@@ -23,7 +23,7 @@ import Term from '../../../components/Term.vue'
     <template #intro>
       <p>
         Bewegung lenkt den Blick. Genutzt wird sie dort, wo ein Zustandwechsel
-        stattfindet – etwa wenn der Mauszeiger über eine Schaltfläche fährt. Der
+        stattfindet: etwa wenn der Mauszeiger über eine Schaltfläche fährt. Der
         Schlüssel liegt in der Zurückhaltung.
       </p>
     </template>
@@ -39,10 +39,10 @@ import Term from '../../../components/Term.vue'
           title="Ein Übergang beim Hovern"
           language="css"
           filename="styles.css"
-          :code="`.button {\n    background: #475569;\n    transition: background 0.2s ease;\n}\n\n.button:hover {\n    background: #2f6fdb;\n}`"
+          :code="`.button {\n    background: #475569;\n    transition: background 1.2s ease;\n}\n\n.button:hover {\n    background: #2f6fdb;\n}`"
         />
         <p>
-          So sieht der Übergang in der Praxis aus – fahren Sie mit der Maus über
+          So sieht der Übergang in der Praxis aus, fahren Sie mit der Maus über
           das Element:
         </p>
         <div class="demo-knopf">Über mich hovern</div>
@@ -90,7 +90,7 @@ import Term from '../../../components/Term.vue'
 
       <LessonStep slug="sparsam-einsetzen" title="Animation als Akzent einsetzen">
         <p>
-          Bewegung sollte eine Funktion haben – Orientierung, Aufmerksamkeit,
+          Bewegung sollte eine Funktion haben: Orientierung, Aufmerksamkeit,
           Bestätigung. Wer die ganze Seite animiert, lenkt den Blick von dem ab,
           was zählt: dem Inhalt.
         </p>
@@ -100,7 +100,7 @@ import Term from '../../../components/Term.vue'
           <li>Zu viel <Term term="Animation" def="Eine Animation bewegt ein Element automatisch, etwa durch Einblenden oder Verschieben." /> lenkt vom Inhalt ab.</li>
         </ul>
         <p>
-          Ein negatives Beispiel ist eine Endlosschleife ohne Ziel – etwa ein
+          Ein negatives Beispiel ist eine Endlosschleife ohne Ziel: etwa ein
           Element, das sich ohne Unterbrechung dreht. Solche Animationen wirken
           unruhig und lenken vom Inhalt ab.
         </p>
@@ -109,6 +109,12 @@ import Term from '../../../components/Term.vue'
           language="css"
           filename="styles.css"
           :code="`@keyframes spin {\n    to {\n        transform: rotate(360deg);\n    }\n}\n\n.badge {\n    animation: spin 1s linear infinite;\n}`"
+        />
+        <CodeExample
+          title="Besser vermeiden: endloses Drehen"
+          language="html"
+          filename="index.html"
+          :code='`<div class="badge">Es dreht sich endlos</div>`'
         />
         <div class="demo-dreh">Es dreht sich endlos</div>
       </LessonStep>
@@ -133,7 +139,7 @@ import Term from '../../../components/Term.vue'
         title="Akzent und Übergang"
         language="css"
         filename="styles.css"
-        :code="`.cta {\n    background: #16a34a;\n    transition: transform 0.2s ease;\n}\n\n.cta:hover {\n    transform: translateY(-2px);\n}\n\n@keyframes fade-in {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.cta {\n    animation: fade-in 0.6s ease-out;\n}`"
+        :code="`.cta {\n    transition: 1.5s ease;\n}\n\n.cta:hover {\n    background: #16a34a;\n}\n\n@keyframes fade-in {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.cta {\n    animation: fade-in 1.0s ease-out;\n}`"
       />
     </template>
   </LessonScaffold>
@@ -148,7 +154,7 @@ import Term from '../../../components/Term.vue'
   color: #ffffff;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 1.2s ease;
 }
 
 .demo-knopf:hover {
