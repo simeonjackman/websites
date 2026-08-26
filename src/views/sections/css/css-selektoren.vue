@@ -23,8 +23,8 @@ import Term from '../../../components/Term.vue'
     <template #intro>
       <p>
         Bevor eine <Term term="Regel" def="Eine CSS-Regel legt fest, wie bestimmte Elemente auf einer Webseite gestaltet werden." /> Wirkung zeigt, muss CSS wissen, welche Elemente
-          gemeint sind. Genau dafür gibt es <Term term="Selektoren" def="Ein Selektor bestimmt, auf welche Elemente eine CSS-Regel angewendet wird." /> – sie sind das Bindeglied
-        zwischen HTML und Gestaltung.
+          gemeint sind. Genau dafür gibt es <Term term="Selektoren" def="Ein Selektor bestimmt, auf welche Elemente eine CSS-Regel angewendet wird." />. Sie sind das Bindeglied
+        zwischen HTML und CSS.
       </p>
     </template>
 
@@ -39,10 +39,12 @@ import Term from '../../../components/Term.vue'
           title="Element Selektor"
           language="css"
           filename="styles.css"
-          :code="`p {\n    color: #333;\n}`"
+          :code="`p {\n    color: red;\n}`"
         />
         <p>
           Wählt in diesem Beispiel alle HTML p-Elemente aus.
+          Die oben definierte Regel wird also auf alle <code>p</code>-Elemente angewendet.
+          Der Text in wird als Folge rot erscheinen.
         </p>
         <CodeExample
           title="Klassen Selektor"
@@ -51,7 +53,7 @@ import Term from '../../../components/Term.vue'
           :code="`.card {\n    padding: 1rem;\n}`"
         />
         <p>
-          Wählt in diesem Beispiel alle HTML Elemente mit dem Attribut <code>class="card"</code> aus.
+          Wählt in diesem Beispiel alle HTML Elemente mit dem Attribut <code>class="card"</code> aus und wendet die CSS-Regel darauf an.
         </p>
         <CodeExample
           title="ID Selektor"
@@ -60,7 +62,7 @@ import Term from '../../../components/Term.vue'
           :code="`#header {\n    margin-bottom: 2rem;\n}`"
         />
         <p>
-          Wählt in diesem Beispiel alle HTML Elemente mit dem Attribut <code>id="header"</code> aus.
+          Wählt in diesem Beispiel alle HTML Elemente mit dem Attribut <code>id="header"</code> aus und wendet die CSS-Regel darauf an.
         </p>
       </LessonStep>
 
@@ -78,18 +80,6 @@ import Term from '../../../components/Term.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="einfach-wahl" title="Wähle die einfachste Lösung">
-        <p>
-          Lange <Term term="Verschachtelung" def="Verschachtelung bedeutet, dass Elemente ineinander liegen, ähnlich wie ineinander geschachtelte Schachteln." />en werden schnell unübersichtlich. Oft genügt
-          eine Klasse, die den Zweck klar benennt – das hält Regeln verständlich
-          und wartbar.
-        </p>
-        <ul class="lesson-list">
-          <li>Klassen sind meist klarer als tiefe Verschachtelungen.</li>
-          <li>Direkte Selektoren halten Regeln übersichtlich.</li>
-          <li>Wählen Sie die einfachste Lösung, die den Zweck erfüllt.</li>
-        </ul>
-      </LessonStep>
     </template>
 
     <template #recap>
@@ -103,15 +93,25 @@ import Term from '../../../components/Term.vue'
 
     <template #exercise>
       <p>
-        Schreibe eine kleine <code>styles.css</code>, die eine Überschrift, eine
-        Klasse und direkte Kinder einer Liste anspricht. Testen Sie, wie sich die
+        Ergänzen Sie Ihr <code>style.css</code> mit einer
+        Klasse (z.B. panel) und einem Selektor, welcher direkte Kinder dieser Klasse anspricht. Testen Sie, wie sich die
         Regel ändert, wenn Sie die Klasse durch einen Elementselektor ersetzen.
       </p>
       <CodeExample
-        title="Selektoren üben"
+        title="CSS zum Üben von Selektoren"
         language="css"
         filename="styles.css"
-        :code="`.teaser {\n    font-size: 1.25rem;\n}\n\n.list > li {\n    margin-bottom: 0.5rem;\n}\n\nstrong {\n    color: #2f6fdb;\n}`"
+        :code="`.panel {\n    font-size: 1.25rem;\n}\n\n.panel > p {\n    color: green;\n}\n`"
+      />
+      <p>
+        Damit diese Regeln funktionieren, müssen Sie auch Ihr HTML-Dokument anpassen.
+        Eine mögliche Änderung könnte folgendermassen aussehen:
+      </p>
+      <CodeExample
+        title="HTML zum Üben von Selektoren"
+        language="html"
+        filename="index.html"
+        :code='`<section class="panel">\n    <p>test text</p>\n</section>\n\n`'
       />
     </template>
   </LessonScaffold>
