@@ -51,7 +51,7 @@ git pull`
         <p>
           In VS Code zeigt dir die
           <Term term="Versionskontrolle" def="Das System, das alle Änderungen an deinen Dateien aufzeichnet, z. B. Git." />
-          alle Änderungen deines Projekts auf einen Blick. Öffne sie mit dem
+          alle Änderungen deines Projekts auf einen Blick. Öffnen Sie sie mit dem
           Quellcode-Symbol links in der Leiste oder mit:
           <Shortcut label="Versionskontrolle öffnen" :keys="['ctrl', 'shift', 'G']" />
         </p>
@@ -63,7 +63,7 @@ git pull`
 
       <LessonStep slug="aenderungen-vorbereiten" title="Änderungen vorbereiten">
         <p>
-          Bevor Sie committen, wählen Sie aus, welche Änderungen aufgenommen
+          Bevor Sie committen, wählen Sie aus, welche Änderungen in die neue Version aufgenommen
           werden. Klicken Sie bei einer Datei auf das <strong>+</strong>-Symbol, um sie
           vorzubereiten. Vorbereitete Dateien landen in der
           <Term term="Bereitstellung (Staging)" def="Der Zwischenschritt, in dem Sie festlegen, welche Änderungen in den nächsten Commit kommen." />.

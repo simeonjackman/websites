@@ -22,7 +22,7 @@ import Term from '../../../components/Term.vue'
       <p>
         Code wächst über viele Schritte. Ohne Versionskontrolle wird es schnell
         unübersichtlich: Änderungen gehen verloren, Abläufe sind nicht mehr
-        nachvollziehbar. Git löst genau dieses Problem und schafft dir ein
+        nachvollziehbar. Git löst genau dieses Problem und schafft Ihnen ein
         Sicherheitsnetz für Ihre Arbeit.
       </p>
     </template>
@@ -30,7 +30,7 @@ import Term from '../../../components/Term.vue'
     <template #steps>
       <LessonStep slug="aenderungen-nachvollziehen" title="Änderungen bleiben nachvollziehbar">
         <p>
-          Jede wichtige Änderung wird in Git als Schritt gespeichert. Dadurch
+          Jede wichtige Änderung wird in Git als Schritt (Version) gespeichert. Dadurch
           können Sie jederzeit sehen, was Sie wann geändert haben.
         </p>
         <ul class="lesson-list">

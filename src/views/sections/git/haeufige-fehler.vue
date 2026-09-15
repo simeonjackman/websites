@@ -15,16 +15,15 @@ import Term from '../../../components/Term.vue'
     <template #objectives>
       <ul class="lesson-list">
         <li>Sie erkennen häufige Git-Fehler frühzeitig.</li>
-        <li>Sie wissen, wie sie diese Fehler in VS Code vermeident.</li>
+        <li>Sie wissen, wie sie diese Fehler in VS Code vermeiden.</li>
       </ul>
     </template>
 
     <template #intro>
       <p>
-        Git wirkt auf den ersten Blick kompliziert – die meisten Probleme
-        entstehen aber durch fehlende Ordnung oder unklare Abläufe. Dieses
-        Kapitel zeigt die typischen Stolpersteine und wie du sie in VS Code
-        umgehst.
+        Git wirkt auf den ersten Blick kompliziert, in diesem
+        Kapitel werden typische Stolpersteine gezeigt und wie du sie in VS Code
+        damit umgehen können.
       </p>
     </template>
 
@@ -35,35 +34,35 @@ import Term from '../../../components/Term.vue'
           <Term term="Versionsgeschichte" def="Der vollständige Verlauf aller gespeicherten Änderungen und Versionen eines Projekts." /> schwer zu lesen und Fehler sind kaum noch zu finden.
         </p>
         <p>
-          In der Versionskontrolle von VS Code bereitest du deshalb nur die
-          Dateien vor, die zusammengehören – mit dem <strong>+</strong>-Symbol
-          neben der jeweiligen Datei. So bleibt jeder Commit klein und
+          In der Versionskontrolle von VS Code bereiten Sie deshalb nur die
+          Dateien vor, die zusammengehören. (Mit dem <strong>+</strong>-Symbol
+          neben der jeweiligen Datei.) So bleibt jeder Commit klein und
           übersichtlich.
         </p>
         <ul class="lesson-list">
           <li>Zu grosse Commits machen die Suche nach Änderungen schwer.</li>
-          <li>Bereite nur zusammengehörige Dateien vor.</li>
+          <li>Bereiten Sie nur zusammengehörige Dateien vor.</li>
         </ul>
       </LessonStep>
 
       <LessonStep slug="commit-ohne-nachricht" title="Ein Commit ohne Nachricht">
         <p>
-          In VS Code kannst du einen Commit nicht ohne Nachricht bestätigen –
-          das Feld bleibt leer und der Commit-Button zeigt dir, dass du zuerst
-          etwas schreiben musst. Das ist Absicht: Ein
+          In VS Code kann man einen Commit nicht ohne Nachricht bestätigen.
+          Das Feld bleibt leer und der Commit-Button zeigt Ihnen, dass Sie zuerst
+          etwas schreiben müssen. Das ist Absicht: Ein
           <Term term="Commit" def="Ein gespeicherter Zwischenstand deines Projekts mit einer erklärenden Nachricht." /> ohne Beschreibung erzählt später niemandem, was passiert ist.
         </p>
         <ul class="lesson-list">
-          <li>Schreibe immer eine kurze, klare Commit-Nachricht.</li>
-          <li>Beschreibe, was du gemacht hast – und warum.</li>
+          <li>Schreiben Sie immer eine kurze, klare Commit-Nachricht.</li>
+          <li>Beschreiben Sie, was Sie gemacht haben, und warum.</li>
         </ul>
       </LessonStep>
 
       <LessonStep slug="leerer-commit" title="Was passiert bei einem leeren Commit?">
         <p>
-          Hast du vergessen, Änderungen vorzubereiten, und versuchst trotzdem zu
-          committen, antwortet Git: Es gibt nichts zu speichern. In VS Code siehst
-          du im Quellcode-Bereich, dass keine Änderungen bereitgestellt sind –
+          Haben Sie vergessen, Änderungen vorzubereiten, und versuchen Sie trotzdem zu
+          committen, antwortet Git: Es gibt nichts zu speichern. In VS Code sieht
+          man im Quellcode-Bereich, dass keine Änderungen bereitgestellt sind.
           im Terminal erscheint eine Meldung wie diese:
         </p>
         <CodeExample
@@ -73,33 +72,16 @@ import Term from '../../../components/Term.vue'
           :code="`git commit\n# nothing to commit, working tree clean`"
         />
         <p>
-          Prüfe deshalb vor jedem Commit, welche Dateien bereitgestellt sind.
-          Erscheint eine Datei unerwartet nicht in der Liste, hast du sie
+          Prüfen Sie deshalb vor jedem Commit, welche Dateien bereitgestellt sind.
+          Erscheint eine Datei unerwartet nicht in der Liste, wurde sie
           vermutlich nicht mit <strong>+</strong> vorbereitet.
         </p>
         <ul class="lesson-list">
           <li>Ohne vorbereitete Änderungen gibt es keinen Commit.</li>
-          <li>Kontrolliere die Liste der bereitgestellten Dateien.</li>
+          <li>Kontrollieren Sie die Liste der bereitgestellten Dateien.</li>
         </ul>
       </LessonStep>
 
-      <LessonStep slug="vergessene-dateien" title="Vergessene Dateien">
-        <p>
-          Dateien, die du nicht mit dem <strong>+</strong>-Symbol vorbereitest,
-          fehlen im Commit. Das führt schnell zu inkonsistenten Ständen – die
-          eine Hälfte der Änderung ist gespeichert, die andere nicht.
-        </p>
-        <CodeExample
-          title="Vor dem Commit: aktuellen Stand prüfen"
-          language="bash"
-          filename="Terminal"
-          :code="`git status\n# zeigt, welche Dateien bereitgestellt sind`"
-        />
-        <p>
-          Tipp: Nach dem Vorbereiten zählt die Versionskontrolle in VS Code die
-          bereitgestellten Dateien. Stimmt die Zahl nicht, fehlt etwas.
-        </p>
-      </LessonStep>
     </template>
 
     <template #recap>
