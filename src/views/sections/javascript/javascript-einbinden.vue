@@ -43,7 +43,7 @@ const scriptJs = `console.log("Hallo von JavaScript");`
         Mit
         <Term term="JavaScript" def="Die Programmiersprache, die Webseiten interaktiv macht – sie reagiert auf Klicks, Eingaben und verändert Inhalte." />
         wird Ihre Seite lebendig. Während HTML die Struktur und CSS das Aussehen
-        festlegt, kümmert sich JavaScript um das Verhalten. Damit der Browser den
+        festlegt, kümmert sich JavaScript um Berechnungen und Dynamik auf Ihrer Webseite. Damit der Browser den
         Code ausführt, müssen Sie ihn in Ihr HTML einbinden.
       </p>
       <OsToggle class="os-toggle--page" />
