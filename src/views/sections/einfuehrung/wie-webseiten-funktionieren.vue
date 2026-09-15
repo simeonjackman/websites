@@ -24,7 +24,7 @@ const urlBeispiel = `https://www.example.com/startseite.html\n               └
 
     <template #intro>
       <p>
-        Fast alles im Internet basiert auf nur drei Technologien:
+        Fast alle Webseiten im Internet basieren auf drei Technologien:
         <Term term="HTML" def="Die (Auszeichnungs-)Sprache, die den Inhalt und die Struktur einer Webseite beschreibt." />,
         <Term term="CSS" def="Die Sprache, die das Aussehen einer Webseite bestimmt – Farben, Abstände, Schrift." /> und
         <Term term="JavaScript" def="Eine Programmiersprache, die Webseiten interaktiv macht." />.
@@ -32,7 +32,8 @@ const urlBeispiel = `https://www.example.com/startseite.html\n               └
       </p>
       <p>
         Beim <Term term="Browser" def="Ein Programm, um Webseiten anzusehen, z. B. Chrome." />,
-        in dem Sie diese Seite gerade lesen, laufen im Hintergrund mehrere Schritte ab. Sie zu verstehen
+        in dem Sie diese Seite gerade lesen, laufen im Hintergrund mehrere Schritte ab, damit diese Webseite angezeigt werden kann.
+         Sie zu verstehen
         hilft Ihnen, später zu wissen, <em>warum</em> etwas auf Ihrer eigenen Seite funktioniert oder nicht.
       </p>
     </template>
@@ -45,6 +46,7 @@ const urlBeispiel = `https://www.example.com/startseite.html\n               └
           liegt. Ihr Browser lädt diese Datei und zeigt sie an. Mehr ist es zuerst nicht.
         </p>
         <CodeExample title="Was in einer Adresse steckt" language="text" filename="beispiel.txt" :code="urlBeispiel" />
+        Weitere Dateien werden dann je nach Inhalt der ersten (.html) Datei geladen.
       </LessonStep>
 
       <LessonStep slug="drei-technologien" title="Drei Bausteine arbeiten zusammen">
