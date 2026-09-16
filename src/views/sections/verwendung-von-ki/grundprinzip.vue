@@ -22,9 +22,9 @@ import Term from '../../../components/Term.vue'
 
     <template #intro>
       <p>
-        KI-Chattools antworten schnell – aber nicht immer genau. Deshalb gilt
+        KI-Chattools antworten schnell aber nicht immer genau. Deshalb gilt
         für den Einsatz in Ihrem Projekt ein einfaches Grundprinzip: Sie geben
-        den Rahmen vor, die KI schlägt vor, und Sie entscheiden.
+        den genauen Rahmen vor. Die KI schlägt in diesem Rahmen Änderungen vor, und Sie entscheiden was Sie auf Ihrer Webseite übernehmen.
       </p>
     </template>
 
@@ -44,7 +44,7 @@ import Term from '../../../components/Term.vue'
           title="Eine gut formulierte Anfrage"
           language="text"
           filename="prompt.txt"
-          :code="`Ich lerne gerade HTML und CSS.\nErklären Sie mir kurz, was der Unterschied zwischen\npadding und margin ist.\nNennen Sie ein Beispiel, das ich in ein Stylesheet\nkopieren kann.`"
+          :code="`Ich lerne gerade HTML und CSS.\nErklären Sie mir kurz, was der Unterschied zwischen\npadding und margin ist anhand anhand von folgendem HTML-Element: \n<h1> Überschrift meiner Webseite</h1>.\nNennen Sie ein Beispiel, das ich in mein Stylesheet\nkopieren kann bei dem die Überschrift mehr Abstand hat zum Text\nwelcher unten kommt.`"
         />
       </LessonStep>
 
@@ -79,10 +79,9 @@ import Term from '../../../components/Term.vue'
     <template #recap>
       <ul class="lesson-list">
         <li>Gute Ergebnisse entstehen durch klare Fragen.</li>
-        <li>Vorschläge müssen geprüft und angepasst werden.</li>
+        <li>Vorschläge müssen geprüft, verstanden und angepasst werden.</li>
         <li>Das Ziel bleibt immer ein verständlicher eigener Code.</li>
       </ul>
-      <p class="lesson-tip">KI unterstützt, sie übernimmt nicht die Verantwortung.</p>
     </template>
 
     <template #exercise>

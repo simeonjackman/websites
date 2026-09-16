@@ -10,7 +10,7 @@ import GitIndex from '../views/sections/git/index.vue'
 import WarumBrauchtEsVersionskontrolle from '../views/sections/git/warum-braucht-es-versionskontrolle.vue'
 import InstallationGit from '../views/sections/git/installation.vue'
 import Commits from '../views/sections/git/commits.vue'
-import HaeufigeFehler from '../views/sections/git/haeufige-fehler.vue'
+// import HaeufigeFehler from '../views/sections/git/haeufige-fehler.vue'
 
 import HtmlIndex from '../views/sections/html/index.vue'
 import HtmlAlsGrundgeruest from '../views/sections/html/html-als-grundgeruest.vue'
@@ -52,7 +52,7 @@ const routes = [
   { path: '/git/warum-braucht-es-versionskontrolle', name: 'warum-braucht-es-versionskontrolle', component: WarumBrauchtEsVersionskontrolle },
   { path: '/git/installation-git', name: 'installation-git', component: InstallationGit },
   { path: '/git/commits', name: 'commits', component: Commits },
-  { path: '/git/haeufige-fehler', name: 'haeufige-fehler', component: HaeufigeFehler },
+  // { path: '/git/haeufige-fehler', name: 'haeufige-fehler', component: HaeufigeFehler },
 
   { path: '/html', name: 'html', component: HtmlIndex },
   { path: '/html/html-als-grundgeruest', name: 'html-als-grundgeruest', component: HtmlAlsGrundgeruest },
@@ -80,7 +80,7 @@ const routes = [
   { path: '/verwendung-von-ki', name: 'verwendung-von-ki', component: VerwendungIndex },
   { path: '/verwendung-von-ki/grundprinzip', name: 'grundprinzip', component: Grundprinzip },
   { path: '/verwendung-von-ki/deklaration-von-eigenleistung', name: 'deklaration-von-eigenleistung', component: DeklarationVonEigenleistung },
-  { path: '/verwendung-von-ki/umgang-mit-fehlern', name: 'umgang-mit-fehlern', component: UmgangMitFehlern },
+  // { path: '/verwendung-von-ki/umgang-mit-fehlern', name: 'umgang-mit-fehlern', component: UmgangMitFehlern },
 
   { path: '/:pathMatch(.*)*', redirect: '/' },
 ]

@@ -26,21 +26,10 @@ import Term from '../../../components/Term.vue'
         vorausgesetzt, es bleibt klar, was Sie selbst geleistet haben. Eine
         ehrliche Kennzeichnung schützt Sie und Ihre Arbeit.
       </p>
+      <p class="lesson-tip">Stellen Sie sicher, dass Sie bei Ihrem KI Anbieter einen Account haben und eingeloggt sind. So können Sie später Ihre Prompts teilen.</p>
     </template>
 
     <template #steps>
-      <LessonStep slug="fremdes-kennzeichnen" title="Fremdes klar kennzeichnen">
-        <p>
-          Jeder Teil, der nicht vollständig von Ihnen stammt, sollte erkennbar
-          sein. Dafür reicht eine kurze Notiz an der richtigen Stelle – etwa als <Term term="Kommentar" def="Eine kurze Notiz im Code zum Erklären, die das Programm selbst nicht ausführt." /> in der Datei.
-        </p>
-        <CodeExample
-          title="Kennzeichnung als Kommentar"
-          language="text"
-          filename="deklaration.txt"
-          :code="`// Dieses CSS-Grundgerüst stammt von einem KI-Chat.\n// Ich habe Abstände und Farben selbst angepasst.\n// Quelle: ChatGPT, Anfrage vom 12. April.`"
-        />
-      </LessonStep>
 
       <LessonStep slug="eigene-leistung-dokumentieren" title="Ihre eigene Leistung sichtbar machen">
         <p>
@@ -65,7 +54,7 @@ import Term from '../../../components/Term.vue'
 
       <LessonStep slug="ergebnisse-erklaeren" title="Ergebnisse erklären können">
         <p>
-          <Term term="Eigenleistung" def="Der Anteil Ihrer Arbeit, den Sie selbst erstellt und wirklich verstanden haben." /> heisst auch, dass Sie Ihre Abgabe erklären können. Ein
+          <Term term="Eigenleistung" def="Der Anteil Ihrer Arbeit, den Sie selbst erstellt und wirklich verstanden haben." /> nachweisen heisst auch, dass Sie Ihre Abgabe erklären können. Ein
           guter Test: Beschreiben Sie Ihrer Lehrperson, wie ein schwieriger Teil
           Ihrer Lösung funktioniert – ganz ohne Hilfsmittel.
         </p>
@@ -85,12 +74,5 @@ import Term from '../../../components/Term.vue'
       </ul>
     </template>
 
-    <template #exercise>
-      <p>
-        Legen Sie für Ihr aktuelles Projekt eine Datei <code>deklaration.txt</code> an und
-        halten Sie darin fest, welche Teile Sie selbst erarbeitet haben und welche aus
-        KI-Vorschlägen stammen.
-      </p>
-    </template>
   </LessonScaffold>
 </template>

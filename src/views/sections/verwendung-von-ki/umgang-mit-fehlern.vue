@@ -23,7 +23,7 @@ import Term from '../../../components/Term.vue'
     <template #intro>
       <p>
         Fehlermeldungen sind keine Niederlage, sondern Hinweise. Wer sie
-        systematisch angeht, findet Fehler schneller – und versteht dabei, wie
+        systematisch angeht, findet Fehler schneller und versteht dabei, wie
         der eigene Code eigentlich funktioniert.
       </p>
     </template>
@@ -32,14 +32,14 @@ import Term from '../../../components/Term.vue'
       <LessonStep slug="fehlermeldung-lesen" title="Die Fehlermeldung genau lesen">
         <p>
           Fast jede Meldung sagt Ihnen, wo das Problem liegt: Zeilennummer,
-          betroffene Datei und eine Beschreibung. Notieren Sie sich, was Sie sehen,
+          betroffene Datei und eine Beschreibung. Analysieren Sie zuerst, was Sie sehen,
           bevor Sie etwas ändern.
         </p>
         <CodeExample
           title="Eine Fehlermeldung im Blick"
           language="text"
           filename="fehler.txt"
-          :code="`style.css: Zeile 12, Spalte 5\nUnerwartetes Zeichen '}'\n→ Prüfe die Zeile vor der Meldung,\n  vermutlich fehlt eine geschweifte Klammer.`"
+          :code="`style.css: Zeile 12, Spalte 5\nUnerwartetes Zeichen '}'\n→ Prüfen Sie die Zeile vor der Meldung,\n  vermutlich fehlt eine geschweifte Klammer.`"
         />
       </LessonStep>
 
@@ -57,35 +57,20 @@ import Term from '../../../components/Term.vue'
         />
       </LessonStep>
 
-      <LessonStep slug="werkzeuge-nutzen" title="Tests und Entwicklertools nutzen">
-        <p>
-          Die Entwicklertools im Browser zeigen Ihnen zum Beispiel, welche Styles
-          auf ein Element wirken und welche Netzwerk-Anfragen fehlschlagen.
-          Automatische Tests prüfen Ihr Verhalten zusätzlich ab.
-        </p>
-        <ul class="lesson-list">
-          <li>Öffnen Sie die Entwicklertools mit der Taste <strong>F12</strong>.</li>
-          <li>Prüfen Sie Elemente, Konsole und Netzwerk-Tab.</li>
-          <li>Kleiner Test: Ändern Sie eine Style-Eigenschaft und beobachten Sie das Ergebnis.</li>
-        </ul>
-      </LessonStep>
     </template>
 
     <template #recap>
       <ul class="lesson-list">
         <li>Lesen Sie Fehlermeldungen Schritt für Schritt.</li>
         <li>Ändern Sie nur eine Sache pro Versuch.</li>
-        <li>Nutzen Sie Tests und Browser-Entwicklertools zum Prüfen.</li>
       </ul>
       <p class="lesson-tip">Probleme werden kleiner, wenn Sie sie systematisch eingrenzen.</p>
     </template>
 
     <template #exercise>
       <p>
-        Richten Sie in Ihrem Projekt einen bewussten Fehler ein – etwa eine offene
-        Klammer im CSS. Finden Sie ihn anschliessend mithilfe der Check-Liste und
-        der Entwicklertools wieder. Beschreiben Sie in einem Satz, was Ihnen beim
-        Auffinden geholfen hat.
+        Richten Sie in Ihrem Projekt einen bewussten Fehler ein, etwa eine offene
+        Klammer im CSS. Finden Sie ihn anschliessend mithilfe der Check-Liste wieder.
       </p>
     </template>
   </LessonScaffold>

@@ -77,7 +77,7 @@ export const sections = [
     lessons: [
       { slug: 'grundprinzip', title: 'Grundprinzip' },
       { slug: 'deklaration-von-eigenleistung', title: 'Deklaration von Eigenleistung' },
-      { slug: 'umgang-mit-fehlern', title: 'Umgang mit Fehlern' },
+      // { slug: 'umgang-mit-fehlern', title: 'Umgang mit Fehlern' },
     ],
   },
 ]
