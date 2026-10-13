@@ -65,7 +65,7 @@ const deinGrundgeruest = `<!doctype html>
         gibt. Mit
         <Term term="Tags"
           def="Markierungen in spitzen Klammern wie <h1> oder <p>, die Inhalten eine Bedeutung geben." /> beschreibt
-        es Inhalte wie Überschriften und Absätze – für den Browser, für
+        es Inhalte wie Überschriften und Absätze für den Browser, für
         Leserinnen und für Hilfstechnologien.
       </p>
       <OsToggle class="os-toggle--page" />
