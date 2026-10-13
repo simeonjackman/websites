@@ -86,9 +86,8 @@ import Term from '../../../components/Term.vue'
 
     <template #recap>
       <ul class="lesson-list">
-        <li>Halte Commits klein und überschaubar.</li>
-        <li>Eine Commit-Nachricht ist Pflicht und hilft später.</li>
-        <li>Prüfe mit `git status`, ob alle Dateien dabei sind.</li>
+        <li>Halten Sie Commits klein und überschaubar.</li>
+        <li>Eine Commit-Nachricht ist Pflicht um den Arbeitsprozess zu dokumentieren.</li>
       </ul>
       <p class="lesson-tip">Regelmässiges Speichern und Committen reduziert Stress.</p>
     </template>

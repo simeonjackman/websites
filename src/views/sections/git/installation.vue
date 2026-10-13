@@ -102,9 +102,6 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         <Shortcut label="Befehlspalette öffnen" :keys="['mod', 'shift', 'P']" />
         , tippen Sie <code>Git: Clone</code> und klonen Sie Ihr Projekt. Den Projektlink erhalten Sie von der
         Lehrperson.
-        Starten Sie anschliesslich
-        mit <code>Live Server</code> einen lokalen Server und öffnen Sie die Seite in
-        Chrome.
       </p>
     </template>
   </LessonScaffold>

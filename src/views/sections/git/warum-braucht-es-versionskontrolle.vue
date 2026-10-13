@@ -33,9 +33,6 @@ import Term from '../../../components/Term.vue'
           Jede wichtige Änderung wird in Git als Schritt (Version) gespeichert. Dadurch
           können Sie jederzeit sehen, was Sie wann geändert haben.
         </p>
-        <ul class="lesson-list">
-          <li>Änderungen bleiben nachvollziehbar.</li>
-        </ul>
       </LessonStep>
 
       <LessonStep slug="parallel-arbeiten" title="Mehrere Personen können parallel arbeiten">
@@ -43,9 +40,6 @@ import Term from '../../../components/Term.vue'
           Git erlaubt es, dass mehrere Personen am selben Projekt arbeiten,
           ohne dass ihre Änderungen sich gegenseitig überschreiben.
         </p>
-        <ul class="lesson-list">
-          <li>Mehrere Personen können parallel arbeiten.</li>
-        </ul>
       </LessonStep>
 
       <LessonStep slug="zurueckspringen-bei-fehlern" title="Frühere Stände wiederherstellen">
@@ -53,9 +47,6 @@ import Term from '../../../components/Term.vue'
           Falls etwas schiefgeht, können Sie auf einen früheren Stand
           zurückgreifen. Das macht Experimentieren deutlich entspannter.
         </p>
-        <ul class="lesson-list">
-          <li>Frühere Stände lassen sich vergleichen und wiederherstellen.</li>
-        </ul>
       </LessonStep>
     </template>
 
