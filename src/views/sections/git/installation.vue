@@ -34,7 +34,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
     </template>
 
     <template #steps>
-    
+
 
       <LessonStep slug="git-installieren" title="Git installieren">
         <p>
@@ -45,6 +45,12 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
         <p class="lesson-tip">Tippen Sie Befehle nie selbst ab. Kopieren Sie die Befehle, indem Sie auf den
           kopieren-Knopf
           drücken.</p>
+        <p>
+          Sie können Git entweder mit dem Befehl unten installieren, oder
+          direkt von der Webseite herunterladen:
+          <a href="https://git-scm.com/install/" target="_blank" rel="noopener">https://git-scm.com/install/</a>.
+          Wählen Sie dort Ihr Betriebssystem aus, bevor Sie die Installationsdatei herunterladen und ausführen.
+        </p>
         <OsBlock>
           <template #windows>
             <CodeExample title="Git installieren" language="bash" filename="PowerShell"
@@ -54,6 +60,7 @@ const gitConfigEmail = `git config --global user.email "deine@email.ch"`
             <CodeExample title="Git installieren" language="bash" filename="Terminal" :code="`brew install git`" />
           </template>
         </OsBlock>
+
       </LessonStep>
 
       <LessonStep slug="git-einrichten" title="Git mit Name und E-Mail einrichten">
