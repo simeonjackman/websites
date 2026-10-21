@@ -61,6 +61,7 @@ export const sections = [
     path: '/beispiele',
     summary: 'Praktische Muster helfen, wiederkehrende Aufgaben schneller umzusetzen.',
     lessons: [
+      { slug: 'bilder-einfuegen', title: 'Bilder einfügen' },
       { slug: 'bilder-zentrieren', title: 'Bilder zentrieren' },
       { slug: 'layouts', title: 'Layouts' },
       { slug: 'bilder-als-hintergrund', title: 'Bilder als Hintergrund' },

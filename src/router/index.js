@@ -28,6 +28,7 @@ import JavascriptIndex from '../views/sections/javascript/index.vue'
 import JavascriptEinbinden from '../views/sections/javascript/javascript-einbinden.vue'
 
 import BeispieleIndex from '../views/sections/beispiele/index.vue'
+import BilderEinfuegen from '../views/sections/beispiele/bilder-einfuegen.vue'
 import BilderZentrieren from '../views/sections/beispiele/bilder-zentrieren.vue'
 import Layouts from '../views/sections/beispiele/layouts.vue'
 import BilderAlsHintergrund from '../views/sections/beispiele/bilder-als-hintergrund.vue'
@@ -70,6 +71,7 @@ const routes = [
   { path: '/javascript/javascript-einbinden', name: 'javascript-einbinden', component: JavascriptEinbinden },
 
   { path: '/beispiele', name: 'beispiele', component: BeispieleIndex },
+  { path: '/beispiele/bilder-einfuegen', name: 'bilder-einfuegen', component: BilderEinfuegen },
   { path: '/beispiele/bilder-zentrieren', name: 'bilder-zentrieren', component: BilderZentrieren },
   { path: '/beispiele/layouts', name: 'layouts', component: Layouts },
   { path: '/beispiele/bilder-als-hintergrund', name: 'bilder-als-hintergrund', component: BilderAlsHintergrund },
