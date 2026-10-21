@@ -28,7 +28,7 @@ git pull`
       <ul class="lesson-list">
         <li>Sie können in VS Code Änderungen vorbereiten.</li>
         <li>Sie können einen Commit mit einer guten Nachricht erstellen.</li>
-        <li>Sie können deine Commits mit Push und Sync teilen.</li>
+        <li>Sie können Ihre Commits mit Push und Sync teilen.</li>
       </ul>
     </template>
 
@@ -46,13 +46,21 @@ git pull`
     <template #steps>
       <LessonStep slug="versionskontrolle-oeffnen" title="Die Versionskontrolle in VS Code öffnen">
         <p>
-          In VS Code zeigt dir die
+          In VS Code zeigt Ihnen die
           <Term term="Versionskontrolle"
-            def="Das System, das alle Änderungen an deinen Dateien aufzeichnet, z. B. Git." />
-          alle Änderungen deines Projekts auf einen Blick. Öffnen Sie sie mit dem
+            def="Das System, das alle Änderungen an Ihren Dateien aufzeichnet, z. B. Git." />
+          alle Änderungen Ihres Projekts auf einen Blick. Öffnen Sie sie mit dem
           Quellcode-Symbol links in der Leiste oder mit:
           <Shortcut label="Versionskontrolle öffnen" :keys="['ctrl', 'shift', 'G']" />
         </p>
+        <figure class="lesson-figure">
+          <img
+            class="lesson-figure__image"
+            src="/img/vscode-versionskontrolle.png"
+            alt="Symbol der Versionskontrolle in der VS-Code-Seitenleiste"
+          >
+          <figcaption>Das Symbol der Versionskontrolle in der linken Seitenleiste von VS Code.</figcaption>
+        </figure>
         <p>
           Im oberen Bereich sehen Sie alle geänderten Dateien. Das ist Ihr
           Ausgangspunkt für einen neuen Commit.
@@ -92,7 +100,7 @@ git pull`
 
       <LessonStep slug="pushen-und-synchronisieren" title="Commits pushen und synchronisieren">
         <p>
-          Deine Commits liegen zuerst nur auf deinem Computer. Um sie mit deinem
+          Ihre Commits liegen zuerst nur auf Ihrem Computer. Um sie mit Ihrem
           <Term term="GitHub" def="Eine Plattform im Internet, auf der Sie Git-Projekte speichern und teilen können." />
           -Repository zu teilen, klicken Sie auf <strong>Push</strong> bzw.
           <strong>Sync</strong> in der Versionskontrolle.
@@ -126,3 +134,25 @@ git pull`
 
   </LessonScaffold>
 </template>
+
+<style scoped>
+.lesson-figure {
+  display: grid;
+  justify-items: start;
+  gap: 0.6rem;
+  margin: 1.25rem 0;
+}
+
+.lesson-figure__image {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  image-rendering: pixelated;
+}
+
+.lesson-figure figcaption {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+</style>
