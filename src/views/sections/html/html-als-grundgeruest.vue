@@ -38,6 +38,7 @@ const deinGrundgeruest = `<!doctype html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Übung</title>
 </head>
 <body>
@@ -188,7 +189,8 @@ const deinGrundgeruest = `<!doctype html>
         <ul class="lesson-list">
           <li>Ein Kommentar beginnt mit <code>&lt;!--</code> und endet mit <code>--&gt;</code>.</li>
           <li>Kommentare helfen, den Aufbau der Seite zu erklären.</li>
-          <li>Im Grundgerüst steht bereits ein Beispiel: <code>&lt;!-- Hier beginnt der sichtbare Inhalt --&gt;</code>.</li>
+          <li>Im Grundgerüst steht bereits ein Beispiel: <code>&lt;!-- Hier beginnt der sichtbare Inhalt --&gt;</code>.
+          </li>
         </ul>
       </LessonStep>
 
@@ -213,6 +215,38 @@ const deinGrundgeruest = `<!doctype html>
           automatisch und
           die Struktur wird sofort lesbar.
         </p>
+      </LessonStep>
+
+      <LessonStep slug="doctype-html-und-meta-elemente" title="Doctype, Sprache und Meta-Elemente">
+        <p>
+          Die ersten Zeilen teilen dem Browser wichtige Informationen über das
+          Dokument mit. Sie gehören zum Grundgerüst jeder modernen HTML-Seite:
+        </p>
+        <CodeExample title="Die ersten Zeilen einer HTML-Datei" language="html" filename="index.html" :code="`<!doctype html>
+<html lang=&quot;de&quot;>
+<head>
+    <meta charset=&quot;UTF-8&quot;>
+    <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>`" />
+        <ul class="lesson-list">
+          <li>
+            <code>&lt;!doctype html&gt;</code> ist eine Dokumenttyp-Deklaration.
+            Sie teilt dem Browser mit, dass Sie modernes HTML verwenden.
+          </li>
+          <li>
+            <code>&lt;html lang="de"&gt;</code> öffnet das HTML-Element. Das
+            Attribut <code>lang="de"</code> gibt an, dass der Inhalt auf Deutsch
+            verfasst ist.
+          </li>
+          <li>
+            <code>&lt;meta charset="UTF-8"&gt;</code> legt die Zeichenkodierung
+            fest. Dadurch werden Umlaute und Sonderzeichen korrekt angezeigt.
+          </li>
+          <li>
+            <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+            sorgt dafür, dass die Seite auf verschiedenen Bildschirmgrössen,
+            besonders auf Mobilgeräten, passend skaliert wird.
+          </li>
+        </ul>
       </LessonStep>
 
     </template>
