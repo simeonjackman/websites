@@ -55,16 +55,16 @@ const seitenstruktur = `<header>
 </script>
 
 <template>
-  <LessonScaffold
-    section-slug="html"
-    lesson-slug="webseiten-strukturieren"
-    title="Webseiten Strukturieren"
-    summary="Bereiche wie Header, Main und Footer sorgen für eine klare Seitenlogik."
-  >
+  <LessonScaffold section-slug="html" lesson-slug="webseiten-strukturieren" title="Webseiten Strukturieren"
+    summary="Bereiche wie Header, Main und Footer sorgen für eine klare Seitenlogik.">
     <template #objectives>
       <ul class="lesson-list">
         <li>Sie kennen die wichtigsten Strukturbereiche einer Seite.</li>
-        <li>Sie können Inhalte in <Term term="Semantik" def="Die Bedeutung und der Aufbau von Inhalten, vorgegeben durch passende strukturelle Elemente." />-Blöcke gruppieren.</li>
+        <li>Sie können Inhalte in
+          <Term term="Semantik"
+            def="Die Bedeutung und der Aufbau von Inhalten, vorgegeben durch passende strukturelle Elemente." />-Blöcke
+          gruppieren.
+        </li>
         <li>Sie verstehen, dass eine gute Struktur spätere Gestaltung mit CSS erleichtert.</li>
       </ul>
     </template>
@@ -72,7 +72,11 @@ const seitenstruktur = `<header>
     <template #intro>
       <p>
         Eine Webseite wirkt nur dann klar, wenn ihre <strong>Struktur</strong>
-        stimmt. <Term term="Header" def="Der Kopfbereich einer Webseite, der Titel und Navigation enthält." />, <Term term="Main" def="Der Hauptbereich einer Webseite, in dem der eigentliche Inhalt steht." />, <Term term="Footer" def="Der Fussbereich einer Webseite mit Zusatzinfos wie Kontakt und Impressum." /> und weitere Bereiche geben der Seite eine
+        stimmt.
+        <Term term="Header" def="Der Kopfbereich einer Webseite, der Titel und Navigation enthält." />,
+        <Term term="Main" def="Der Hauptbereich einer Webseite, in dem der eigentliche Inhalt steht." />,
+        <Term term="Footer" def="Der Fussbereich einer Webseite mit Zusatzinfos wie Kontakt und Impressum." /> und
+        weitere Bereiche geben der Seite eine
         Logik, die Besucher und Entwickler gleichermassen schnell verstehen.
       </p>
     </template>
@@ -80,57 +84,70 @@ const seitenstruktur = `<header>
     <template #steps>
       <LessonStep slug="der-header" title="Der Header – der Kopf der Seite">
         <p>
-          Der <Term term="Header" def="Der Kopfbereich einer Webseite, der Titel und Navigation enthält." /> steht oben auf der Seite. Er enthält
+          Der
+          <Term term="Header" def="Der Kopfbereich einer Webseite, der Titel und Navigation enthält." /> steht oben auf
+          der Seite. Er enthält
           meist den Titel Ihrer Seite und die
-          <Term term="Navigation" def="Die Menülinks, mit denen Besucher die wichtigsten Bereiche einer Seite erreichen." />. Alles, was überall gleich
+          <Term term="Navigation"
+            def="Die Menülinks, mit denen Besucher die wichtigsten Bereiche einer Seite erreichen." />. Alles, was
+          überall gleich
           wiederkehrt, gehört in den Header.
         </p>
-        <CodeExample
-          title="Ein Header mit Titel und Navigation"
-          language="html"
-          filename="index.html"
-          :code="headerBeispiel"
-        />
+        <CodeExample title="Ein Header mit Titel und Navigation" language="html" filename="index.html"
+          :code="headerBeispiel" />
+      </LessonStep>
+
+      <LessonStep slug="head-und-header-unterscheiden" title="Head und Header unterscheiden">
+        <p>
+          <code>&lt;head&gt;</code> und <code>&lt;header&gt;</code> klingen
+          ähnlich, sind aber unterschiedliche Elemente:
+        </p>
+        <ul class="lesson-list">
+          <li>
+            <code>&lt;head&gt;</code> gehört zum unsichtbaren Dokumentkopf. Dort
+            stehen Metadaten, der Seitentitel und
+            weitere Informationen für den Browser.
+          </li>
+          <li>
+            <code>&lt;header&gt;</code> gehört zum sichtbaren Inhalt im
+            <code>&lt;body&gt;</code>. Dort stehen häufig eine Überschrift, ein
+            Logo oder die Navigation einer Seite beziehungsweise eines Bereichs.
+          </li>
+        </ul>
+        <p>
+          Merken Sie sich: <code>head</code> beschreibt Informationen <em>über</em>
+          die Seite, <code>header</code> ist ein sichtbarer Kopfbereich <em>auf</em>
+          der Seite.
+        </p>
       </LessonStep>
 
       <LessonStep slug="main-section" title="Main, Section und Article">
         <p>
-          Im Bereich <Term term="Main" def="Der Hauptbereich einer Webseite, in dem der eigentliche Inhalt steht." />
+          Im Bereich
+          <Term term="Main" def="Der Hauptbereich einer Webseite, in dem der eigentliche Inhalt steht." />
           steht der eigentliche Inhalt der Seite. Ihn können Sie in
           <Term term="Sektionen" def="Bereiche, die inhaltlich zusammengehörige Elemente einer Seite zusammenfassen." />
           unterteilen, wenn die Inhalte thematisch zusammengehören.
         </p>
-        <CodeExample
-          title="Ein Hauptbereich mit einer Sektion"
-          language="html"
-          filename="index.html"
-          :code="mainBeispiel"
-        />
+        <CodeExample title="Ein Hauptbereich mit einer Sektion" language="html" filename="index.html"
+          :code="mainBeispiel" />
         <p>
           Für einen in sich abgeschlossenen Textblock – etwa einen Blogbeitrag –
-          eignet sich ein <Term term="Artikel" def="Ein in sich abgeschlossener Inhaltsblock, der auch allein sinnvoll lesbar ist." />:
+          eignet sich ein
+          <Term term="Artikel" def="Ein in sich abgeschlossener Inhaltsblock, der auch allein sinnvoll lesbar ist." />:
         </p>
-        <CodeExample
-          title="Ein Artikel"
-          language="html"
-          filename="index.html"
-          :code="artikelBeispiel"
-        />
+        <CodeExample title="Ein Artikel" language="html" filename="index.html" :code="artikelBeispiel" />
       </LessonStep>
 
       <LessonStep slug="der-footer" title="Der Footer: Fuss der Seite">
         <p>
-          Der <Term term="Footer" def="Der Fussbereich einer Webseite mit Zusatzinfos wie Kontakt und Impressum." />
+          Der
+          <Term term="Footer" def="Der Fussbereich einer Webseite mit Zusatzinfos wie Kontakt und Impressum." />
           steht am Ende der Seite. Hier finden sich Angaben, die nicht zum
           Hauptinhalt gehören, aber jede Seite braucht – zum Beispiel Kontakt
           oder Impressum.
         </p>
-        <CodeExample
-          title="Ein Fussbereich"
-          language="html"
-          filename="index.html"
-          :code="footerBeispiel"
-        />
+        <CodeExample title="Ein Fussbereich" language="html" filename="index.html" :code="footerBeispiel" />
       </LessonStep>
 
       <LessonStep slug="eltern-und-kinder-erkennen" title="Eltern und Kinder im Code erkennen">
@@ -141,19 +158,17 @@ const seitenstruktur = `<header>
           Blick.
         </p>
         <p>
-          In VS Code bringt <Shortcut label="Dokument formatieren" :keys="['shift', 'alt', 'F']" />
+          In VS Code bringt
+          <Shortcut label="Dokument formatieren" :keys="['shift', 'alt', 'F']" />
           die Einrückung automatisch in Ordnung. Formatieren Sie nach der Arbeit
           an der Struktur, wird sofort sichtbar, welches Element zu welchem
           Eltern-Element gehört.
         </p>
-        <CodeExample
-          title="Deutlich eingerückte Seitenstruktur"
-          language="html"
-          filename="index.html"
-          :code="seitenstruktur"
-        />
+        <CodeExample title="Deutlich eingerückte Seitenstruktur" language="html" filename="index.html"
+          :code="seitenstruktur" />
         <ul class="lesson-list">
-          <li><code>header</code>, <code>main</code> und <code>footer</code> sind Kind-Elemente von <code>body</code>.</li>
+          <li><code>header</code>, <code>main</code> und <code>footer</code> sind Kind-Elemente von <code>body</code>.
+          </li>
           <li><code>section</code> und <code>article</code> sind Kind-Elemente von <code>main</code>.</li>
         </ul>
       </LessonStep>
@@ -171,6 +186,7 @@ const seitenstruktur = `<header>
           <li>Ohne gute Struktur wird Gestaltung mit CSS schnell unübersichtlich.</li>
         </ul>
       </LessonStep>
+
     </template>
 
     <template #recap>
